@@ -110,63 +110,9 @@ export const researchBriefs: ResearchBrief[] = [
 
 export const sourceLibrary: SourceItem[] = [
   {
-    title: 'The Oxford Handbook of Philosophy of Religion',
-    author: 'William Wainwright (ed.)',
-    type: 'Book',
-    url: 'https://global.oup.com'
-  },
-  {
-    title: 'On the Origin of Species',
-    author: 'Charles Darwin',
-    type: 'Book',
-    url: 'https://www.gutenberg.org'
-  },
-  {
-    title: 'A Defense of Abortion',
-    author: 'Judith Jarvis Thomson',
-    type: 'Paper',
-    url: 'https://rintintin.colorado.edu'
-  },
-  {
-    title: 'The Ethicist: Euthyphro dilemma explained',
-    author: 'Various',
+    title: 'How We Know Acts Is A Fake History',
+    author: 'Dr. Richard Carrier',
     type: 'Article',
-    url: 'https://plato.stanford.edu'
+    url: 'https://www.richardcarrier.info/archives/23447'
   },
-  {
-    title: 'Cosmos and Culture discussions',
-    author: 'NPR',
-    type: 'Article',
-    url: 'https://www.npr.org'
-  },
-  {
-    title: 'The Varieties of Scientific Experience',
-    author: 'Carl Sagan',
-    type: 'Video',
-    url: 'https://www.youtube.com'
-  },
-  {
-    title: 'The Great Debate: Theism and Atheism',
-    author: 'Various speakers',
-    type: 'Video',
-    url: 'https://www.youtube.com'
-  },
-  {
-    title: 'How to Read the Bible',
-    author: 'James Kugel',
-    type: 'Book',
-    url: 'https://www.simonandschuster.com'
-  },
-  {
-    title: 'The Impossibility of God',
-    author: 'Michael Martin',
-    type: 'Book',
-    url: 'https://prometheusbooks.com'
-  },
-  {
-    title: 'PhilPapers religion archive',
-    author: 'PhilPapers',
-    type: 'Article',
-    url: 'https://philpapers.org'
-  }
 ];

@@ -2,12 +2,12 @@ import { NavLink } from 'react-router-dom';
 
 const navItems = [
   { to: '/', label: 'Overview' },
-  { to: '/counter-apologetics', label: 'Counter-Apologetics' },
-  { to: '/research-briefs', label: 'Research Briefs' },
+  // { to: '/counter-apologetics', label: 'Counter-Apologetics' },
+  // { to: '/research-briefs', label: 'Research Briefs' },
+    { to: '/illustrations', label: 'Illustrations' },
+    { to: '/soundboard', label: 'Soundboard' },
   { to: '/source-library', label: 'Source Library' },
-  { to: '/stream-toolkit', label: 'Stream Toolkit' },
-  { to: '/soundboard', label: 'Soundboard' },
-  { to: '/illustrations', label: 'Illustrations' }
+  // { to: '/stream-toolkit', label: 'Stream Toolkit' },
 ];
 
 export function Sidebar() {

@@ -2,6 +2,8 @@ import { sourceLibrary } from '../data/resources';
 import { SEO } from '../seo';
 
 export function SourceLibraryPage() {
+  const sortedSources = [...sourceLibrary].sort((a, b) => a.title.localeCompare(b.title));
+
   return (
     <section aria-labelledby="library-heading">
       <SEO
@@ -25,7 +27,7 @@ export function SourceLibraryPage() {
             </tr>
           </thead>
           <tbody>
-            {sourceLibrary.map((source) => (
+            {sortedSources.map((source) => (
               <tr key={`${source.title}-${source.author}`}>
                 <td>{source.title}</td>
                 <td>{source.author}</td>

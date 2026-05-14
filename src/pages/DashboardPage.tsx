@@ -8,6 +8,21 @@ export function DashboardPage() {
         title="Skepticus Info Hub | Overview"
         description="Quick dashboard metrics and latest skeptical research briefs."
       />
+    <header className={"page-header"}>
+        <h1 id={"livestream-details"}>
+            Call in every Tuesday night 5PM CST (until...?) for the Skepticus livestream!
+        </h1>
+        <h2>
+            <a
+                aria-label={"Join the Skepticus livestream on YouTube"}
+                href={"https://tiny.cc/skepticus"}
+                target={"_blank"}
+                rel={"noreferrer"}
+            >
+                Join the livestream
+            </a>
+        </h2>
+    </header>
       <header className="page-header">
         <h2 id="overview-heading">Overview</h2>
         <p className="muted">Compact command center for live discussions and public reference.</p>

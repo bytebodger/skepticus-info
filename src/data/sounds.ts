@@ -51,6 +51,11 @@ export const soundList: Sound[] = [
     name: 'I Award You No Points',
     path: '/sounds/i-award-you-no-points.mp3'
   },
+  {
+    id: 'preachy-music',
+    name: 'Preachy Music',
+    path: '/sounds/preachy-music.mp3'
+  },
 ];
 
 /**

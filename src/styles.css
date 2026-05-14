@@ -261,6 +261,12 @@ th {
   color: var(--accent);
 }
 
+.sound-button.paused {
+  background: #2d3d5c;
+  border-color: #6a8fc4;
+  color: #b0c4e8;
+}
+
 .sound-name {
   font-weight: 500;
 }
@@ -274,6 +280,10 @@ th {
 
 .sound-button.playing .play-indicator {
   color: var(--accent);
+}
+
+.sound-button.paused .play-indicator {
+  color: #b0c4e8;
 }
 
 .illustration-list {

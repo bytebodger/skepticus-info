@@ -3,23 +3,43 @@ import { SEO } from '../seo';
 import { getSoundsSorted } from '../data/sounds';
 
 export function SoundboardPage() {
-  const [playing, setPlaying] = useState<string | null>(null);
+  const [playingSoundId, setPlayingSoundId] = useState<string | null>(null);
+  const [isPaused, setIsPaused] = useState(false);
   const audioRef = useRef<HTMLAudioElement>(null);
 
   const sounds = getSoundsSorted();
 
-  const playSound = (soundPath: string, soundId: string) => {
-    if (audioRef.current) {
-      audioRef.current.src = soundPath;
+  const handleSoundClick = (soundPath: string, soundId: string) => {
+    if (!audioRef.current) return;
+
+    // If clicking the same sound that's paused, resume it
+    if (playingSoundId === soundId && isPaused) {
       audioRef.current.play().catch((err) => {
-        console.error('Failed to play sound:', err);
+        console.error('Failed to resume sound:', err);
       });
-      setPlaying(soundId);
+      setIsPaused(false);
+      return;
     }
+
+    // If clicking the same sound that's playing, pause it
+    if (playingSoundId === soundId && !isPaused) {
+      audioRef.current.pause();
+      setIsPaused(true);
+      return;
+    }
+
+    // Otherwise, start a new sound from the beginning
+    audioRef.current.src = soundPath;
+    audioRef.current.play().catch((err) => {
+      console.error('Failed to play sound:', err);
+    });
+    setPlayingSoundId(soundId);
+    setIsPaused(false);
   };
 
   const handleAudioEnd = () => {
-    setPlaying(null);
+    setPlayingSoundId(null);
+    setIsPaused(false);
   };
 
   return (
@@ -35,20 +55,32 @@ export function SoundboardPage() {
 
       <div className="soundboard" role="region" aria-live="polite">
         <ul className="sound-list">
-          {sounds.map((sound) => (
-            <li key={sound.id}>
-              <button
-                className={`sound-button${playing === sound.id ? ' playing' : ''}`}
-                onClick={() => playSound(sound.path, sound.id)}
-                aria-label={`Play ${sound.name}`}
-              >
-                <span className="sound-name">{sound.name}</span>
-                <span className="play-indicator" aria-hidden="true">
-                  {playing === sound.id ? '▶ playing' : '▶'}
-                </span>
-              </button>
-            </li>
-          ))}
+          {sounds.map((sound) => {
+            const isThisSound = playingSoundId === sound.id;
+            const isPlaying = isThisSound && !isPaused;
+            const isPausedState = isThisSound && isPaused;
+
+            return (
+              <li key={sound.id}>
+                <button
+                  className={`sound-button${isPlaying ? ' playing' : ''}${isPausedState ? ' paused' : ''}`}
+                  onClick={() => handleSoundClick(sound.path, sound.id)}
+                  aria-label={
+                    isPlaying
+                      ? `Pause ${sound.name}`
+                      : isPausedState
+                        ? `Resume ${sound.name}`
+                        : `Play ${sound.name}`
+                  }
+                >
+                  <span className="sound-name">{sound.name}</span>
+                  <span className="play-indicator" aria-hidden="true">
+                    {isPlaying ? '⏸ pause' : isPausedState ? '▶ resume' : '▶ play'}
+                  </span>
+                </button>
+              </li>
+            );
+          })}
         </ul>
       </div>
 

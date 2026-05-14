@@ -5,30 +5,55 @@ import { DashboardPage } from './pages/DashboardPage';
 import { IllustrationsPage } from './pages/IllustrationsPage';
 import { NotFoundPage } from './pages/NotFoundPage';
 import { ResearchBriefsPage } from './pages/ResearchBriefsPage';
+import { SoundboardPage } from './pages/SoundboardPage';
 import { SourceLibraryPage } from './pages/SourceLibraryPage';
 import { StreamToolkitPage } from './pages/StreamToolkitPage';
-import { SoundboardPage } from './pages/SoundboardPage';
 import { SyllogismBuilderPage } from './pages/SyllogismBuilderPage';
 import { SyllogismsPage } from './pages/SyllogismsPage';
 
-function App() {
-  return (
-    <Routes>
-      <Route element={<Layout />}>
-        <Route path="/" element={<DashboardPage />} />
-        <Route path="/counter-apologetics" element={<CounterApologeticsPage />} />
-        <Route path="/research-briefs" element={<ResearchBriefsPage />} />
-        <Route path="/source-library" element={<SourceLibraryPage />} />
-        <Route path="/stream-toolkit" element={<StreamToolkitPage />} />
-        <Route path="/soundboard" element={<SoundboardPage />} />
-        <Route path="/illustrations" element={<IllustrationsPage />} />
-        <Route path="/syllogisms" element={<SyllogismsPage />} />
-        <Route path="/syllogism-builder" element={<SyllogismBuilderPage />} />
-        <Route path="/home" element={<Navigate to="/" replace />} />
-        <Route path="*" element={<NotFoundPage />} />
-      </Route>
-    </Routes>
-  );
+function App()
+{
+    return (
+        <Routes>
+            <Route element={
+                <Layout/>}>
+                <Route path='/'
+                    element={
+                        <DashboardPage/>}/>
+                <Route path='/counter-apologetics'
+                    element={
+                        <CounterApologeticsPage/>}/>
+                <Route path='/research-briefs'
+                    element={
+                        <ResearchBriefsPage/>}/>
+                <Route path='/source-library'
+                    element={
+                        <SourceLibraryPage/>}/>
+                <Route path='/stream-toolkit'
+                    element={
+                        <StreamToolkitPage/>}/>
+                <Route path='/soundboard'
+                    element={
+                        <SoundboardPage/>}/>
+                <Route path='/illustrations'
+                    element={
+                        <IllustrationsPage/>}/>
+                <Route path='/syllogisms'
+                    element={
+                        <SyllogismsPage/>}/>
+                <Route path='/syllogism-builder'
+                    element={
+                        <SyllogismBuilderPage/>}/>
+                <Route path='/home'
+                    element={
+                        <Navigate to='/'
+                            replace/>}/>
+                <Route path='*'
+                    element={
+                        <NotFoundPage/>}/>
+            </Route>
+        </Routes>
+    );
 }
 
 export default App;

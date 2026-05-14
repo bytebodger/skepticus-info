@@ -12,7 +12,7 @@ export function DashboardPage() {
         <h1 id={"livestream-details"}>
             Call in every Tuesday night 5PM CST (until...?) for the Skepticus livestream!
         </h1>
-        <h2>
+        <h1>
             <a
                 aria-label={"Join the Skepticus livestream on YouTube"}
                 href={"https://tiny.cc/skepticus"}
@@ -21,7 +21,7 @@ export function DashboardPage() {
             >
                 Join the livestream
             </a>
-        </h2>
+        </h1>
     </header>
       <header className="page-header">
         <h2 id="overview-heading">Overview</h2>

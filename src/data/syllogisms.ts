@@ -9,31 +9,55 @@ export type Syllogism = {
 // Static syllogism data. Update this list to add/edit syllogisms.
 export const syllogisms: Syllogism[] = [
   {
-    id: 'categorical-mortal-socrates',
-    title: 'All Humans Are Mortal',
-    premises: ['All humans are mortal.', 'Socrates is a human.'],
-    conclusion: 'Therefore, Socrates is mortal.',
-    notes: ['Classic categorical syllogism.', 'Useful for explaining validity vs. soundness.']
+    id: 'sacrifices-must-be-lost',
+    title: 'The Deific Jesus Cannot Be A Sacrifice',
+    premises: [
+      'According to Trinitarianism, Jesus IS god.',
+      'God is immortal.',
+      'A sacrifice is something that you LOSE.',
+      'Jesus was neither "lost" to Yahweh nor to humanity, since he was resurrected and ascended to heaven.',
+    ],
+    conclusion: 'Therefore, Jesus cannot be a sacrifice.',
+    notes: [],
   },
   {
-    id: 'modus-tollens-design',
-    title: 'Design Argument Modus Tollens',
+    id: 'you-cant-know-a-sacrifice-is-coming-back',
+    title: 'Resurrection Nullifies Jesus\'s Supposed "Sacrifice"',
     premises: [
-      'If apparent design always implied intelligent intervention, then naturally generated complexity would be impossible.',
-      'Naturally generated complexity is observed in multiple domains.'
+      'Yahweh is omniscient.',
+      'Yahweh always knew that Jesus would be resurrected.',
+      'A sacrifice is something that you LOSE.',
+      'Jesus was never truly "lost" to Yahweh or humanity, since he was resurrected and ascended to heaven.',
     ],
-    conclusion: 'Therefore, apparent design does not always imply intelligent intervention.',
-    notes: ['Structure follows modus tollens.', 'Keep focus on conditional form first, then content.']
+    conclusion: 'Therefore, Jesus cannot be a sacrifice.',
+    notes: [],
   },
   {
-    id: 'problem-evil-evidential',
-    title: 'Evidential Problem of Evil Skeleton',
+    id: 'god-cannot-prophecy',
+    title: 'God Cannot Make A Prophecy',
     premises: [
-      'If a perfectly good, all-powerful being exists, gratuitous suffering is unlikely.',
-      'There appears to be significant gratuitous suffering.'
+        'God is omniscient.',
+        'God is omnipotent.',
+        'God can easily make anything happen in the future.',
+        'God already knows everything that will happen in the future.',
     ],
-    conclusion: 'Therefore, the existence of such a being is less probable than some alternatives.',
-    notes: ['This is probabilistic, not a strict deductive contradiction.', 'Define gratuitous suffering before debate.']
+    conclusion: 'Therefore, God cannot make a prophecy.',
+    notes: [
+        'God can make a PROMISE about something that he will do.',
+        'God can enter into a COVENANT with someone about something that he will do.',
+        'But a prophecy is a specific prediction about something that will happen in the future, and if God already knows it will happen, then it is not really a prophecy.',
+    ],
+  },
+  {
+    id: 'yahweh-is-not-perfectly-just',
+    title: 'Yahweh Is Not Perfectly Just',
+    premises: [
+        'Yahweh sacrificed Jesus for us.',
+        'Jesus was without sin, meaning that he was without guilt.',
+        'Killing someone without guilt to save the guilty is not just.',
+    ],
+    conclusion: 'Yahweh is not perfectly just.',
+    notes: [],
   }
 ];
 

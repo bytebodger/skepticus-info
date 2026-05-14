@@ -36,24 +36,22 @@ export function SyllogismsPage() {
 
           <section aria-labelledby="conclusion-heading" className="section-gap">
             <p>
-              <strong>Conclusion:</strong> {selected.conclusion}
+              <strong>Conclusion:</strong><br/>{selected.conclusion}
             </p>
           </section>
 
-          <section aria-labelledby="notes-heading" className="section-gap">
-            <h4 id="notes-heading" className="syllogism-subheading">
-              Notes
-            </h4>
-            {selected.notes.length > 0 ? (
+          {selected.notes.length > 0 ? (
+            <section aria-labelledby="notes-heading" className="section-gap">
+              <h4 id="notes-heading" className="syllogism-subheading">
+                Notes
+              </h4>
               <ul className="syllogism-note-list">
                 {selected.notes.map((note, index) => (
                   <li key={`${selected.id}-note-${index}`}>{note}</li>
                 ))}
               </ul>
-            ) : (
-              <p className="muted">No notes for this syllogism.</p>
-            )}
-          </section>
+            </section>
+          ) : null}
 
           <div className="syllogism-view-actions">
             <button type="button" className="syllogism-clear" onClick={() => setSelected(null)}>

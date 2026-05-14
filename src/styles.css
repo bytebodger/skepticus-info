@@ -231,3 +231,119 @@ th {
     min-width: 600px;
   }
 }
+
+@media (max-width: 700px) {
+  :root {
+    font-size: 14px;
+  }
+
+  .sidebar {
+    padding: 10px;
+  }
+
+  .brand {
+    margin-bottom: 10px;
+  }
+
+  .nav-list {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    gap: 6px;
+    padding-bottom: 4px;
+    scrollbar-width: thin;
+  }
+
+  .nav-list li {
+    flex: 0 0 auto;
+  }
+
+  .nav-link {
+    padding: 7px 9px;
+    white-space: nowrap;
+  }
+
+  .main {
+    padding: 10px 12px 14px;
+  }
+
+  .page-header h2 {
+    font-size: 1rem;
+  }
+
+  .card-grid,
+  .split-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .stats-grid {
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  }
+
+  .card {
+    padding: 9px;
+  }
+
+  .table-wrap {
+    border-radius: 6px;
+  }
+
+  table {
+    min-width: 560px;
+  }
+
+  th,
+  td {
+    padding: 7px;
+  }
+}
+
+@media (max-width: 480px) {
+  .app-shell {
+    min-height: auto;
+  }
+
+  .sidebar {
+    padding: 8px;
+  }
+
+  .brand {
+    font-size: 1rem;
+  }
+
+  .nav-link {
+    padding: 6px 8px;
+  }
+
+  .main {
+    padding: 8px 10px 12px;
+  }
+
+  .page-header {
+    margin-bottom: 8px;
+  }
+
+  h3 {
+    font-size: 0.96rem;
+  }
+
+  .muted {
+    font-size: 0.88rem;
+  }
+
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .stat-card .value {
+    font-size: 1.15rem;
+  }
+
+  .tight-list {
+    padding-left: 14px;
+  }
+
+  table {
+    min-width: 500px;
+  }
+}

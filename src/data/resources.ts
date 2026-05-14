@@ -115,4 +115,10 @@ export const sourceLibrary: SourceItem[] = [
     type: 'Article',
     url: 'https://www.richardcarrier.info/archives/23447'
   },
+  {
+    title: 'What Were The Odds That You Would Actually Be Watching This Video?',
+    author: 'Skepticus',
+    type: 'Article',
+    url: 'https://docs.google.com/document/d/1drld6uo1T9sMTB4TNuEhJkG_Ocsqru8BRBOAx_xXoGc/edit?usp=sharing'
+  },
 ];

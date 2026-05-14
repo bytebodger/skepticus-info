@@ -28,6 +28,7 @@ A compact React + TypeScript dashboard designed for two audiences:
 - `Stream Toolkit`
 - `Soundboard`
 - `Illustrations`
+- `Syllogisms`
 - `Syllogism Builder`
 
 ## Logo setup
@@ -73,6 +74,18 @@ To add a new illustration:
 ```
 
 The list is automatically sorted alphabetically by `name` and opens each image in a full-screen overlay viewer.
+
+## Syllogisms setup
+
+The `Syllogisms` module uses static data in `src/data/syllogisms.ts`.
+
+Each syllogism object includes:
+
+- `premises` (minimum two)
+- `conclusion` (exactly one)
+- `notes` (zero or more)
+
+Titles are automatically sorted alphabetically in the module list.
 
 ## Quick start
 

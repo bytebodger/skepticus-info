@@ -6,6 +6,7 @@ const navItems = [
   // { to: '/research-briefs', label: 'Research Briefs' },
     { to: '/illustrations', label: 'Illustrations' },
     { to: '/soundboard', label: 'Soundboard' },
+    { to: '/syllogisms', label: 'Syllogisms' },
     { to: '/syllogism-builder', label: 'Syllogism Builder' },
   { to: '/source-library', label: 'Source Library' },
   // { to: '/stream-toolkit', label: 'Stream Toolkit' },

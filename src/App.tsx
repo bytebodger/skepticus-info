@@ -8,6 +8,7 @@ import { ResearchBriefsPage } from './pages/ResearchBriefsPage';
 import { SourceLibraryPage } from './pages/SourceLibraryPage';
 import { StreamToolkitPage } from './pages/StreamToolkitPage';
 import { SoundboardPage } from './pages/SoundboardPage';
+import { SyllogismBuilderPage } from './pages/SyllogismBuilderPage';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route path="/stream-toolkit" element={<StreamToolkitPage />} />
         <Route path="/soundboard" element={<SoundboardPage />} />
         <Route path="/illustrations" element={<IllustrationsPage />} />
+        <Route path="/syllogism-builder" element={<SyllogismBuilderPage />} />
         <Route path="/home" element={<Navigate to="/" replace />} />
         <Route path="*" element={<NotFoundPage />} />
       </Route>

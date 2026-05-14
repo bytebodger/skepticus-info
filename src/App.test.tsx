@@ -41,4 +41,17 @@ describe('App', () => {
     expect(screen.getByRole('heading', { level: 2, name: 'Illustrations' })).toBeInTheDocument();
     expect(screen.getAllByRole('button', { name: /open illustration/i }).length).toBeGreaterThan(0);
   });
+
+  it('renders syllogism builder module route', () => {
+    render(
+      <HelmetProvider>
+        <MemoryRouter initialEntries={['/syllogism-builder']}>
+          <App />
+        </MemoryRouter>
+      </HelmetProvider>
+    );
+
+    expect(screen.getByRole('heading', { level: 2, name: 'Syllogism Builder' })).toBeInTheDocument();
+    expect(screen.getByRole('button', { name: 'Add Premise' })).toBeInTheDocument();
+  });
 });

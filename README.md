@@ -28,6 +28,7 @@ A compact React + TypeScript dashboard designed for two audiences:
 - `Stream Toolkit`
 - `Soundboard`
 - `Illustrations`
+- `Syllogism Builder`
 
 ## Logo setup
 

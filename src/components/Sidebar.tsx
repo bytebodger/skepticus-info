@@ -6,7 +6,8 @@ const navItems = [
   { to: '/research-briefs', label: 'Research Briefs' },
   { to: '/source-library', label: 'Source Library' },
   { to: '/stream-toolkit', label: 'Stream Toolkit' },
-  { to: '/soundboard', label: 'Soundboard' }
+  { to: '/soundboard', label: 'Soundboard' },
+  { to: '/illustrations', label: 'Illustrations' }
 ];
 
 export function Sidebar() {

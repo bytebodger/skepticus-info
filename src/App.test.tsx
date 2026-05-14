@@ -28,4 +28,17 @@ describe('App', () => {
 
     expect(screen.getByRole('heading', { level: 2, name: 'Page not found' })).toBeInTheDocument();
   });
+
+  it('renders illustrations module route', () => {
+    render(
+      <HelmetProvider>
+        <MemoryRouter initialEntries={['/illustrations']}>
+          <App />
+        </MemoryRouter>
+      </HelmetProvider>
+    );
+
+    expect(screen.getByRole('heading', { level: 2, name: 'Illustrations' })).toBeInTheDocument();
+    expect(screen.getAllByRole('button', { name: /open illustration/i }).length).toBeGreaterThan(0);
+  });
 });

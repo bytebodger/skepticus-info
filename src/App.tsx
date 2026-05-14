@@ -2,6 +2,7 @@ import { Navigate, Route, Routes } from 'react-router-dom';
 import { Layout } from './components/Layout';
 import { CounterApologeticsPage } from './pages/CounterApologeticsPage';
 import { DashboardPage } from './pages/DashboardPage';
+import { IllustrationsPage } from './pages/IllustrationsPage';
 import { NotFoundPage } from './pages/NotFoundPage';
 import { ResearchBriefsPage } from './pages/ResearchBriefsPage';
 import { SourceLibraryPage } from './pages/SourceLibraryPage';
@@ -18,6 +19,7 @@ function App() {
         <Route path="/source-library" element={<SourceLibraryPage />} />
         <Route path="/stream-toolkit" element={<StreamToolkitPage />} />
         <Route path="/soundboard" element={<SoundboardPage />} />
+        <Route path="/illustrations" element={<IllustrationsPage />} />
         <Route path="/home" element={<Navigate to="/" replace />} />
         <Route path="*" element={<NotFoundPage />} />
       </Route>

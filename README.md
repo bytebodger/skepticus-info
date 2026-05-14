@@ -27,6 +27,7 @@ A compact React + TypeScript dashboard designed for two audiences:
 - `Source Library`
 - `Stream Toolkit`
 - `Soundboard`
+- `Illustrations`
 
 ## Logo setup
 
@@ -51,6 +52,26 @@ Add sounds to your soundboard by:
 ```
 
 Sounds are automatically sorted alphabetically by name in the UI.
+
+## Illustrations setup
+
+The `Illustrations` module uses an in-component object in `src/pages/IllustrationsPage.tsx`.
+
+To add a new illustration:
+
+1. Save your image file to `public/illustrations/`
+2. Add an object in the `illustrations` array inside `src/pages/IllustrationsPage.tsx`:
+
+```typescript
+{
+  id: 'illustration-unique-id',
+  name: 'Display Name',
+  path: '/illustrations/your-file.jpg',
+  alt: 'Accessible image description'
+}
+```
+
+The list is automatically sorted alphabetically by `name` and opens each image in a full-screen overlay viewer.
 
 ## Quick start
 

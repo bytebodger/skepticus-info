@@ -27,6 +27,13 @@ A compact React + TypeScript dashboard designed for two audiences:
 - `Source Library`
 - `Stream Toolkit`
 
+## Logo setup
+
+Place your logo image at `public/skepticus-logo.png`.
+
+- Recommended size: `128x128` (or larger square)
+- The app renders it as a compact icon in the upper-left sidebar brand row
+
 ## Quick start
 
 ```powershell

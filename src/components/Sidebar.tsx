@@ -11,7 +11,18 @@ const navItems = [
 export function Sidebar() {
   return (
     <aside className="sidebar" aria-label="Primary">
-      <h1 className="brand">Skepticus Info</h1>
+      <h1 className="brand">
+        <img
+          className="brand-logo"
+          src="/skepticus-logo.png"
+          alt="Skepticus Logo"
+          aria-hidden="true"
+          onError={(event) => {
+            event.currentTarget.style.display = 'none';
+          }}
+        />
+        <span>Skepticus Info</span>
+      </h1>
       <nav>
         <ul className="nav-list">
           {navItems.map((item) => (

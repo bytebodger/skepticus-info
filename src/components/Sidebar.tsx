@@ -5,7 +5,8 @@ const navItems = [
   { to: '/counter-apologetics', label: 'Counter-Apologetics' },
   { to: '/research-briefs', label: 'Research Briefs' },
   { to: '/source-library', label: 'Source Library' },
-  { to: '/stream-toolkit', label: 'Stream Toolkit' }
+  { to: '/stream-toolkit', label: 'Stream Toolkit' },
+  { to: '/soundboard', label: 'Soundboard' }
 ];
 
 export function Sidebar() {
@@ -15,7 +16,7 @@ export function Sidebar() {
         <img
           className="brand-logo"
           src="/skepticus-logo.png"
-          alt="Skepticus Logo"
+          alt=""
           aria-hidden="true"
           onError={(event) => {
             event.currentTarget.style.display = 'none';

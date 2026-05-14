@@ -6,6 +6,7 @@ import { NotFoundPage } from './pages/NotFoundPage';
 import { ResearchBriefsPage } from './pages/ResearchBriefsPage';
 import { SourceLibraryPage } from './pages/SourceLibraryPage';
 import { StreamToolkitPage } from './pages/StreamToolkitPage';
+import { SoundboardPage } from './pages/SoundboardPage';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="/research-briefs" element={<ResearchBriefsPage />} />
         <Route path="/source-library" element={<SourceLibraryPage />} />
         <Route path="/stream-toolkit" element={<StreamToolkitPage />} />
+        <Route path="/soundboard" element={<SoundboardPage />} />
         <Route path="/home" element={<Navigate to="/" replace />} />
         <Route path="*" element={<NotFoundPage />} />
       </Route>

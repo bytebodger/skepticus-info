@@ -26,6 +26,7 @@ A compact React + TypeScript dashboard designed for two audiences:
 - `Research Briefs`
 - `Source Library`
 - `Stream Toolkit`
+- `Soundboard`
 
 ## Logo setup
 
@@ -33,6 +34,23 @@ Place your logo image at `public/skepticus-logo.png`.
 
 - Recommended size: `128x128` (or larger square)
 - The app renders it as a compact icon in the upper-left sidebar brand row
+
+## Soundboard setup
+
+Add sounds to your soundboard by:
+
+1. Save your audio file (`.mp3`, `.wav`, etc.) to `public/sounds/`
+2. Add an entry to `src/data/sounds.ts`:
+
+```typescript
+{
+  id: 'unique-sound-id',
+  name: 'Display Name',
+  path: '/sounds/filename.mp3'
+}
+```
+
+Sounds are automatically sorted alphabetically by name in the UI.
 
 ## Quick start
 

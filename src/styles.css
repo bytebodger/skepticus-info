@@ -222,6 +222,60 @@ th {
   overflow: hidden;
 }
 
+.sound-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 8px;
+}
+
+.sound-button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 12px 14px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  color: var(--text);
+  cursor: pointer;
+  font-size: 0.95rem;
+  text-align: left;
+  transition: all 150ms ease;
+}
+
+.sound-button:hover {
+  background: var(--surface-soft);
+  border-color: #4a6db8;
+}
+
+.sound-button:active {
+  transform: scale(0.98);
+}
+
+.sound-button.playing {
+  background: #1b4d7c;
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.sound-name {
+  font-weight: 500;
+}
+
+.play-indicator {
+  margin-left: 12px;
+  font-size: 0.85rem;
+  color: var(--muted);
+  flex: 0 0 auto;
+}
+
+.sound-button.playing .play-indicator {
+  color: var(--accent);
+}
+
 @media (max-width: 900px) {
   .app-shell {
     grid-template-columns: 1fr;

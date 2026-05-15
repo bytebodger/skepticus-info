@@ -19,6 +19,12 @@ export const markdownDocs: MarkdownDoc[] = [
         summary: 'The odds are so infinitesimally small that they\'re effectively zero. You\'re more likely to be struck by lightning while winning the Powerball than to stumble upon a specific, randomly selected video without a direct link.',
         fileName: 'the-odds-that-you-would-watch-this-video.md',
     },
+    {
+        slug: 'do-biblical-troocounts-make-sense',
+        title: 'Do Biblical Troop Counts Make Sense?',
+        summary: 'If you take the text entirely literally, the armies fielded by Israel and its neighbors routinely dwarf the largest empires in antiquity. To understand why these numbers don\'t hold up under historical scrutiny, we have to look at the hard limits of ancient logistics, regional population data, and how ancient texts actually functioned.',
+        fileName: 'do-biblical-troop-counts-make-sense.md',
+    },
 ];
 
 export function getMarkdownDocsSorted(): MarkdownDoc[]

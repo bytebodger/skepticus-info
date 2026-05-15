@@ -46,6 +46,7 @@ export const syllogisms: Syllogism[] = [
             'God can make a PROMISE about something that he will do.',
             'God can enter into a COVENANT with someone about something that he will do.',
             'But a prophecy is a specific prediction about something that will happen in the future, and if God already knows it will happen, then it is not really a prophecy.',
+            'Giving god credit for making a prophecy is like giving credit to a weather forecaster for "predicting" the weather when they have access to a perfect weather prediction machine.',
         ],
     },
     {

@@ -137,4 +137,10 @@ export const sourceLibrary: SourceItem[] = [
         type: 'Article',
         url: 'https://docs.google.com/document/d/1drld6uo1T9sMTB4TNuEhJkG_Ocsqru8BRBOAx_xXoGc/edit?usp=sharing',
     },
+    {
+        title: 'How Likely Is The Growth Of The Hebrew Population In Egypt?',
+        author: 'Skepticus',
+        type: 'Article',
+        url: 'https://skepticus.info/markdowns/the-growth-of-the-hebrew-population-in-egypt.md',
+    },
 ];

@@ -1,6 +1,7 @@
 import { Navigate, Route, Routes } from 'react-router-dom';
 import { BibleVersesPage } from './pages/BibleVersesPage';
 import { Layout } from './components/Layout';
+import { ContradictionsPage } from './pages/ContradictionsPage';
 import { CounterApologeticsPage } from './pages/CounterApologeticsPage';
 import { DashboardPage } from './pages/DashboardPage';
 import { IllustrationsPage } from './pages/IllustrationsPage';
@@ -46,6 +47,9 @@ function App()
                 <Route path='/bible-verses'
                     element={
                         <BibleVersesPage/>}/>
+                <Route path='/contradictions'
+                    element={
+                        <ContradictionsPage/>}/>
                 <Route path='/syllogisms'
                     element={
                         <SyllogismsPage/>}/>

@@ -1,4 +1,4 @@
-import { useRef, useState } from 'react';
+import { useMemo, useRef, useState } from 'react';
 import { getSoundsSorted } from '../data/sounds';
 import { SEO } from '../seo';
 
@@ -6,9 +6,21 @@ export function SoundboardPage()
 {
     const [playingSoundId, setPlayingSoundId] = useState<string | null>(null);
     const [isPaused, setIsPaused] = useState(false);
+    const [filterValue, setFilterValue] = useState('');
     const audioRef = useRef<HTMLAudioElement>(null);
 
     const sounds = getSoundsSorted();
+    const filteredSounds = useMemo(() =>
+    {
+        const normalizedFilter = filterValue.trim().toLowerCase();
+
+        if (!normalizedFilter)
+        {
+            return sounds;
+        }
+
+        return sounds.filter((sound) => sound.name.toLowerCase().includes(normalizedFilter));
+    }, [filterValue, sounds]);
 
     const handleSoundClick = (soundPath: string, soundId: string) =>
     {
@@ -60,11 +72,27 @@ export function SoundboardPage()
                 <p className='muted'>Click a sound to play it during your stream.</p>
             </header>
 
+            <div className='sound-filter-wrap'>
+                <label htmlFor='sound-filter'
+                    className='sr-only'>
+                    Filter sounds
+                </label>
+                <input
+                    id='sound-filter'
+                    type='text'
+                    className='sound-filter'
+                    value={filterValue}
+                    onChange={(event) => setFilterValue(event.target.value)}
+                    placeholder='Filter sounds by name'
+                    aria-label='Filter sounds'
+                />
+            </div>
+
             <div className='soundboard'
                 role='region'
                 aria-live='polite'>
                 <ul className='sound-list'>
-                    {sounds.map((sound) =>
+                    {filteredSounds.map((sound) =>
                     {
                         const isThisSound = playingSoundId === sound.id;
                         const isPlaying = isThisSound && !isPaused;
@@ -93,6 +121,10 @@ export function SoundboardPage()
                         );
                     })}
                 </ul>
+
+                {filteredSounds.length === 0 ? (
+                    <p className='muted'>No sounds match your filter.</p>
+                ) : null}
             </div>
 
             <audio ref={audioRef}

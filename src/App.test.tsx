@@ -75,6 +75,23 @@ describe('App', () =>
         expect(screen.getAllByRole('button', { name: /open verse:/i }).length).toBeGreaterThan(0);
     });
 
+    it('renders contradictions module route', () =>
+    {
+        render(
+            <HelmetProvider>
+                <MemoryRouter initialEntries={['/contradictions']}>
+                    <App/>
+                </MemoryRouter>
+            </HelmetProvider>,
+        );
+
+        expect(screen.getByRole('heading', {
+            level: 2,
+            name: 'Contradictions',
+        })).toBeInTheDocument();
+        expect(screen.getAllByRole('button', { name: /open contradiction:/i }).length).toBeGreaterThan(0);
+    });
+
     it('renders syllogism builder module route', () =>
     {
         render(

@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import { SEO } from '../seo';
 
 type Illustration = {
@@ -40,6 +40,21 @@ export function IllustrationsPage()
     const sortedIllustrations = [...illustrations].sort((a, b) => a.name.localeCompare(b.name));
 
     const [selected, setSelected] = useState<Illustration | null>(null);
+    const [filterValue, setFilterValue] = useState('');
+    const filteredIllustrations = useMemo(() =>
+    {
+        const normalizedFilter = filterValue.trim().toLowerCase();
+
+        if (!normalizedFilter)
+        {
+            return sortedIllustrations;
+        }
+
+        return sortedIllustrations.filter((item) =>
+            item.name.toLowerCase().includes(normalizedFilter) ||
+            item.alt.toLowerCase().includes(normalizedFilter),
+        );
+    }, [filterValue, sortedIllustrations]);
 
     useEffect(() =>
     {
@@ -79,9 +94,25 @@ export function IllustrationsPage()
                 <p className='muted'>Select an illustration title to open it in a full-screen viewer.</p>
             </header>
 
+            <div className='illustration-filter-wrap'>
+                <label htmlFor='illustration-filter'
+                    className='sr-only'>
+                    Filter illustrations
+                </label>
+                <input
+                    id='illustration-filter'
+                    type='text'
+                    className='illustration-filter'
+                    value={filterValue}
+                    onChange={(event) => setFilterValue(event.target.value)}
+                    placeholder='Filter illustrations by title or description'
+                    aria-label='Filter illustrations'
+                />
+            </div>
+
             <ul className='illustration-list'
                 aria-label='Available illustrations'>
-                {sortedIllustrations.map((item) => (
+                {filteredIllustrations.map((item) => (
                     <li key={item.id}>
                         <button
                             type='button'
@@ -94,6 +125,10 @@ export function IllustrationsPage()
                     </li>
                 ))}
             </ul>
+
+            {filteredIllustrations.length === 0 ? (
+                <p className='muted'>No illustrations match your filter.</p>
+            ) : null}
 
             {selected ? (
                 <div className='illustration-overlay'

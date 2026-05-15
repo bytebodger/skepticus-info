@@ -29,6 +29,7 @@ A compact React + TypeScript dashboard designed for two audiences:
 - `Soundboard`
 - `Illustrations`
 - `Bible Verses`
+- `Contradictions`
 - `Syllogisms`
 - `Syllogism Builder`
 
@@ -91,6 +92,24 @@ Each verse object uses this structure:
 ```
 
 The list is automatically sorted alphabetically by `verse`, and clicking an entry opens an overlay with verse, summary, and full text.
+
+## Contradictions setup
+
+The `Contradictions` module uses static data in `src/data/contradictions.ts`.
+
+Each contradiction object uses this structure:
+
+```typescript
+{
+  title: 'Display title',
+  oneHand: 'First side of the contradiction',
+  oneHandVerses: 'Verse references supporting the first side',
+  otherHand: 'Second side of the contradiction',
+  otherHandVerses: 'Verse references supporting the second side'
+}
+```
+
+The list is automatically sorted alphabetically by `title`, and clicking an entry opens the full contradiction card.
 
 ## Syllogisms setup
 

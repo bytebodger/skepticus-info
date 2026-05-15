@@ -89,7 +89,7 @@ export const soundList: Sound[] = [
     {
         id: 'oh-my-god',
         name: 'Oh My God',
-        path: '/sounds/oh-my-god.mp3',
+        path: '/sounds/oh-my-god-meme.mp3',
     },
     {
         id: 'no-god-please-no',

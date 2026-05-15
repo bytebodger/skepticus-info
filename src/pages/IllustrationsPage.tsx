@@ -29,6 +29,12 @@ export function IllustrationsPage()
             path: '/illustrations/gods-plan-for-marriage.jpg',
             alt: 'A humorous illustration of the biblical plan for marriage.',
         },
+        {
+            id: 'the-evolution-of-language',
+            name: 'The Evolution of Language',
+            path: '/illustrations/indo-european-languages.png',
+            alt: 'A language tree of Indo-European languages, illustrating the evolution of language.',
+        },
     ];
 
     const sortedIllustrations = [...illustrations].sort((a, b) => a.name.localeCompare(b.name));

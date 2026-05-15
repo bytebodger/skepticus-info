@@ -468,6 +468,69 @@ th {
     justify-content: flex-end;
 }
 
+.prophecy-form {
+    display: grid;
+    gap: 10px;
+    max-width: 900px;
+}
+
+.prophecy-field {
+    display: grid;
+    gap: 6px;
+}
+
+.prophecy-label {
+    font-size: 0.92rem;
+    color: var(--muted);
+    font-weight: 600;
+}
+
+.prophecy-input {
+    width: 100%;
+    background: #0f1628;
+    color: var(--text);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 9px 10px;
+}
+
+.prophecy-textarea {
+    resize: vertical;
+    min-height: 84px;
+}
+
+.prophecy-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-top: 14px;
+}
+
+.prophecy-button,
+.prophecy-reset {
+    background: #203150;
+    color: var(--text);
+    border: 1px solid #395385;
+    border-radius: 6px;
+    padding: 9px 12px;
+    cursor: pointer;
+}
+
+.prophecy-button:hover,
+.prophecy-reset:hover {
+    background: #2b3f67;
+}
+
+.prophecy-button:disabled {
+    opacity: 0.55;
+    cursor: not-allowed;
+}
+
+.prophecy-scorecard {
+    margin-top: 14px;
+}
+
 @media (max-width: 900px) {
     .app-shell {
         grid-template-columns: 1fr;
@@ -569,6 +632,15 @@ th {
 
     .syllogism-form {
         grid-template-columns: 1fr;
+    }
+
+    .prophecy-actions {
+        justify-content: stretch;
+    }
+
+    .prophecy-button,
+    .prophecy-reset {
+        width: 100%;
     }
 }
 

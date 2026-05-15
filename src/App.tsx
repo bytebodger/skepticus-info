@@ -4,6 +4,7 @@ import { CounterApologeticsPage } from './pages/CounterApologeticsPage';
 import { DashboardPage } from './pages/DashboardPage';
 import { IllustrationsPage } from './pages/IllustrationsPage';
 import { NotFoundPage } from './pages/NotFoundPage';
+import { ProphecyScorecardPage } from './pages/ProphecyScorecardPage';
 import { ResearchBriefsPage } from './pages/ResearchBriefsPage';
 import { SoundboardPage } from './pages/SoundboardPage';
 import { SourceLibraryPage } from './pages/SourceLibraryPage';
@@ -20,6 +21,9 @@ function App()
                 <Route path='/'
                     element={
                         <DashboardPage/>}/>
+                <Route path='/prophecy-scorecard'
+                    element={
+                        <ProphecyScorecardPage/>}/>
                 <Route path='/counter-apologetics'
                     element={
                         <CounterApologeticsPage/>}/>

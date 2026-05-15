@@ -12,6 +12,10 @@ const navItems = [
         label: 'Illustrations',
     },
     {
+        to: '/prophecy-scorecard',
+        label: 'Prophecy Scorecard',
+    },
+    {
         to: '/soundboard',
         label: 'Soundboard',
     },

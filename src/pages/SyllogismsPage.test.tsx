@@ -22,16 +22,18 @@ describe('SyllogismsPage', () =>
         const sorted = [...labels].sort((a, b) => a.localeCompare(b));
         expect(labels).toEqual(sorted);
 
-        await user.click(screen.getByRole('button', { name: 'Open syllogism: All Humans Are Mortal' }));
+        await user.click(titleButtons[0]);
+
+        const openedTitle = labels[0];
 
         expect(screen.getByRole('heading', {
             level: 3,
-            name: 'All Humans Are Mortal',
+            name: openedTitle,
         })).toBeInTheDocument();
         expect(screen.getByText('Conclusion:')).toBeInTheDocument();
 
         await user.click(screen.getByRole('button', { name: 'Close Syllogism' }));
 
-        expect(screen.getByRole('button', { name: 'Open syllogism: All Humans Are Mortal' })).toBeInTheDocument();
+        expect(screen.getByRole('button', { name: `Open syllogism: ${openedTitle}` })).toBeInTheDocument();
     });
 });

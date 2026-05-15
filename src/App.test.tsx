@@ -16,9 +16,12 @@ describe('App', () =>
         );
 
         expect(screen.getByRole('navigation')).toBeInTheDocument();
-        expect(screen.getByRole('heading', {
-            level: 2,
+        expect(screen.getByRole('link', {
             name: 'Overview',
+        })).toHaveAttribute('aria-current', 'page');
+        expect(screen.getByRole('heading', {
+            level: 1,
+            name: /Call in every Tuesday night/i,
         })).toBeInTheDocument();
     });
 

@@ -59,6 +59,82 @@ export const syllogisms: Syllogism[] = [
         conclusion: 'Yahweh is not perfectly just.',
         notes: [],
     },
+    {
+        id: 'jesus-is-not-the-only-son-of-god',
+        title: 'Jesus Is Not The Only Son Of God',
+        premises: [
+            'From Genesis 6:2, there are clearly and obviously "sons of god".',
+            'Jesus is a son of god.',
+        ],
+        conclusion: 'Jesus is not THE son of god, he is A son of god.',
+        notes: [
+            'John 3:16 is an obvious apologetic for this, but it is a clear contradiction with Genesis 6:2.',
+        ],
+    },
+    {
+        id: 'the-quotes-of-jesus-are-fiction',
+        title: 'The Quotes Of Jesus Are Fiction',
+        premises: [
+            'The gospels have 53 pages of direct quotes from Jesus (https://www.wwj.org.nz/content/wwj46p39.pdf)',
+            'The earliest gospel (Mark) was written at least 33 years after the death of Jesus.',
+            'No one could possibly remember that many exact quotes after 3+ decades.',
+        ],
+        conclusion: 'The words of Jesus are fiction.',
+        notes: [
+            'A common apologetic would be that these quotes are all accurate due to divine inspiration. But if it\'s divinely inspired, why did he wait 33 years (at least) until the first gospel was written? And why does a divinely inspired account need to have four different versions?',
+        ],
+    },
+    {
+        id: 'the-immaculate-conception-is-pointless',
+        title: 'The Immaculate Conception Is Pointless',
+        premises: [
+            'According to the bible, the conception of Jesus was a miracle from god.',
+            'If the omnipotent creator god is capable of causing a virgin to conceive his son, then he\'s capable of having that son be free from Original Sin.',
+        ],
+        conclusion: 'The entire doctrine of the Immaculate Conception is pointless.',
+        notes: [],
+    },
+    {
+        id: 'the-hypostatic-union-violates-logic',
+        title: 'The Hypostatic Union Violates Logic',
+        premises: [
+            'The Hypostatic Union states that Jesus is fully god and fully human.',
+            'Gods are not humans.',
+            'Humans are not gods.',
+        ],
+        conclusion: 'The Hypostatic Union is false and violates the law of non-contradiction.',
+        notes: [
+            'Law of Non-Contradiction: Since gods (G) and humans (H) are fundamentally distinct, stating that anyone can be both a god and a human at the same time is the same as saying that a letter can be a G and an H at the same time.',
+        ],
+    },
+    {
+        id: 'jesus-cannot-be-the-christian-god',
+        title: 'Jesus Cannot Be The Christian God',
+        premises: [
+            'The Christian god is omnipresent.',
+            'Jesus has a physical body.',
+            'No physical body can be omnipresent.',
+        ],
+        conclusion: 'Jesus cannot be the Christian god.',
+        notes: [
+            'According to the Hypostatic Union, Jesus is fully god and fully man and you cannot be fully man without a physical body.',
+            'The NT asserts that Jesus was resurrected in physical form.',
+            'Standard Christian doctrine asserts that Jesus still has a physical body.',
+        ],
+    },
+    {
+        id: 'resurrection-does-not-bring-you-a-new-body',
+        title: 'Resurrection Does Not Bring You A New Body',
+        premises: [
+            'Christian theology holds that believers will be resurrected in bodily form, modeled after Jesus\'s physical resurrection.',
+            'Jesus still had injuries on his hands, feet, and side after being resurrected.',
+        ],
+        conclusion: 'Christians retain their injuries after resurrection.',
+        notes: [
+            'The NT doesn\'t mention whether Jesus retained other injuries from his crown of thorns and his scourging, but given the fact that he maintained the stigmata and the spear wound, it\'s reasonable to believe that his other wounds were still in place.',
+            'If resurrection doesn\'t remove outward wounds, why would anyone believe that it heals any other condition?  (like arthritis, dementia, or cancer)',
+        ],
+    },
 ];
 
 export function getSyllogismsSorted(): Syllogism[]

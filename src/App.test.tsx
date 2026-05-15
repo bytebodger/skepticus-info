@@ -92,6 +92,23 @@ describe('App', () =>
         expect(screen.getAllByRole('button', { name: /open contradiction:/i }).length).toBeGreaterThan(0);
     });
 
+    it('renders docs module route', () =>
+    {
+        render(
+            <HelmetProvider>
+                <MemoryRouter initialEntries={['/docs']}>
+                    <App/>
+                </MemoryRouter>
+            </HelmetProvider>,
+        );
+
+        expect(screen.getByRole('heading', {
+            level: 2,
+            name: 'Docs',
+        })).toBeInTheDocument();
+        expect(screen.getAllByRole('link', { name: /open doc:/i }).length).toBeGreaterThan(0);
+    });
+
     it('renders syllogism builder module route', () =>
     {
         render(

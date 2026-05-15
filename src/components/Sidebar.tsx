@@ -12,6 +12,10 @@ const navItems = [
         label: 'Bible Verses',
     },
     {
+        to: '/docs',
+        label: 'Docs',
+    },
+    {
         to: '/contradictions',
         label: 'Contradictions',
     },

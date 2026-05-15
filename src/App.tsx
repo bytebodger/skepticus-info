@@ -4,6 +4,7 @@ import { Layout } from './components/Layout';
 import { ContradictionsPage } from './pages/ContradictionsPage';
 import { CounterApologeticsPage } from './pages/CounterApologeticsPage';
 import { DashboardPage } from './pages/DashboardPage';
+import { DocsPage } from './pages/DocsPage';
 import { IllustrationsPage } from './pages/IllustrationsPage';
 import { NotFoundPage } from './pages/NotFoundPage';
 import { ProphecyScorecardPage } from './pages/ProphecyScorecardPage';
@@ -47,6 +48,12 @@ function App()
                 <Route path='/bible-verses'
                     element={
                         <BibleVersesPage/>}/>
+                <Route path='/docs'
+                    element={
+                        <DocsPage/>}/>
+                <Route path='/docs/:slug'
+                    element={
+                        <DocsPage/>}/>
                 <Route path='/contradictions'
                     element={
                         <ContradictionsPage/>}/>

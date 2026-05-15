@@ -30,6 +30,7 @@ A compact React + TypeScript dashboard designed for two audiences:
 - `Illustrations`
 - `Bible Verses`
 - `Contradictions`
+- `Docs`
 - `Syllogisms`
 - `Syllogism Builder`
 
@@ -110,6 +111,42 @@ Each contradiction object uses this structure:
 ```
 
 The list is automatically sorted alphabetically by `title`, and clicking an entry opens the full contradiction card.
+
+## Docs setup (Markdown)
+
+The `Docs` module renders markdown files directly in the app and also gives direct links to raw `.md` files.
+
+To add a new markdown doc:
+
+1. Put the markdown file in `public/markdown/`
+2. Add an entry in `src/data/docs.ts`
+
+```typescript
+{
+  slug: 'unique-url-slug',
+  title: 'Display Title',
+  summary: 'Short one-line summary',
+  fileName: 'my-file-name.md'
+}
+```
+
+Direct links:
+
+- App-rendered view: `/docs/unique-url-slug`
+- Raw markdown file: `/markdown/my-file-name.md`
+
+Math support in docs:
+
+- Inline math: `$E = mc^2$`
+- Block math:
+
+```markdown
+$$
+P(t)=P_0(1+r)^t
+$$
+```
+
+The docs viewer renders math with KaTeX.
 
 ## Syllogisms setup
 

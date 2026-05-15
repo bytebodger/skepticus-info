@@ -8,6 +8,10 @@ const navItems = [
     // { to: '/counter-apologetics', label: 'Counter-Apologetics' },
     // { to: '/research-briefs', label: 'Research Briefs' },
     {
+        to: '/bible-verses',
+        label: 'Bible Verses',
+    },
+    {
         to: '/illustrations',
         label: 'Illustrations',
     },
@@ -24,12 +28,12 @@ const navItems = [
         label: 'Source Library',
     },
     {
-        to: '/syllogisms',
-        label: 'Syllogisms',
-    },
-    {
         to: '/syllogism-builder',
         label: 'Syllogism Builder',
+    },
+    {
+        to: '/syllogisms',
+        label: 'Syllogisms',
     },
     // { to: '/stream-toolkit', label: 'Stream Toolkit' },
 ];

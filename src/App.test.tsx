@@ -58,6 +58,23 @@ describe('App', () =>
         expect(screen.getAllByRole('button', { name: /open illustration/i }).length).toBeGreaterThan(0);
     });
 
+    it('renders bible verses module route', () =>
+    {
+        render(
+            <HelmetProvider>
+                <MemoryRouter initialEntries={['/bible-verses']}>
+                    <App/>
+                </MemoryRouter>
+            </HelmetProvider>,
+        );
+
+        expect(screen.getByRole('heading', {
+            level: 2,
+            name: 'Bible Verses',
+        })).toBeInTheDocument();
+        expect(screen.getAllByRole('button', { name: /open verse:/i }).length).toBeGreaterThan(0);
+    });
+
     it('renders syllogism builder module route', () =>
     {
         render(

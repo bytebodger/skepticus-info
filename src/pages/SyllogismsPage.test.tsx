@@ -22,9 +22,27 @@ describe('SyllogismsPage', () =>
         const sorted = [...labels].sort((a, b) => a.localeCompare(b));
         expect(labels).toEqual(sorted);
 
-        await user.click(titleButtons[0]);
+        const filterInput = screen.getByRole('textbox', { name: 'Filter syllogisms' });
+
+        await user.type(filterInput, 'without guilt');
+        expect(screen.getAllByRole('button', { name: /open syllogism:/i })).toHaveLength(1);
+        expect(screen.getByRole('button', { name: 'Open syllogism: Yahweh Is Not Perfectly Just' })).toBeInTheDocument();
+
+        await user.clear(filterInput);
+        await user.type(filterInput, 'therefore, god cannot make a prophecy');
+        expect(screen.getAllByRole('button', { name: /open syllogism:/i })).toHaveLength(1);
+        expect(screen.getByRole('button', { name: 'Open syllogism: God Cannot Make A Prophecy' })).toBeInTheDocument();
+
+        await user.clear(filterInput);
+        await user.type(filterInput, 'covenant');
+        expect(screen.getAllByRole('button', { name: /open syllogism:/i })).toHaveLength(1);
+        expect(screen.getByRole('button', { name: 'Open syllogism: God Cannot Make A Prophecy' })).toBeInTheDocument();
+
+        await user.clear(filterInput);
 
         const openedTitle = labels[0];
+
+        await user.click(screen.getByRole('button', { name: `Open syllogism: ${openedTitle}` }));
 
         expect(screen.getByRole('heading', {
             level: 3,

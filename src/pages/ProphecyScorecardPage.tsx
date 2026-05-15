@@ -46,7 +46,6 @@ export const ProphecyScorecardPage = () => {
 
     const isFormComplete =
         draftValues.targetVerse.trim().length > 0 &&
-        draftValues.description.trim().length > 0 &&
         draftValues.fulfillmentVerse.trim().length > 0;
 
     const updateMarks = (index: number) => {
@@ -131,7 +130,6 @@ export const ProphecyScorecardPage = () => {
                             }))}
                             placeholder='The Last Supper foreshadowed'
                             aria-label='Description'
-                            required
                             rows={3}
                         />
                     </label>

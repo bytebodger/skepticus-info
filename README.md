@@ -28,6 +28,7 @@ A compact React + TypeScript dashboard designed for two audiences:
 - `Stream Toolkit`
 - `Soundboard`
 - `Illustrations`
+- `Bible Verses`
 - `Syllogisms`
 - `Syllogism Builder`
 
@@ -74,6 +75,22 @@ To add a new illustration:
 ```
 
 The list is automatically sorted alphabetically by `name` and opens each image in a full-screen overlay viewer.
+
+## Bible Verses setup
+
+The `Bible Verses` module uses local objects in `src/data/bibleVerses.ts`.
+
+Each verse object uses this structure:
+
+```typescript
+{
+  verse: 'Book Chapter:Verse',
+  summary: 'Short one-line summary',
+  text: 'Full verse text'
+}
+```
+
+The list is automatically sorted alphabetically by `verse`, and clicking an entry opens an overlay with verse, summary, and full text.
 
 ## Syllogisms setup
 

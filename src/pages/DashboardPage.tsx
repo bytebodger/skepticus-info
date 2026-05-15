@@ -19,7 +19,17 @@ export function DashboardPage()
                         target={'_blank'}
                         rel={'noreferrer'}
                     >
-                        Join the livestream
+                        Join the livestream (https://tiny.cc/skepticus)
+                    </a>
+                </h1>
+                <h1>
+                    <a
+                        aria-label={'Watch the Skepticus YouTube channel'}
+                        href={'https://www.youtube.com/@Skepticus.Channel'}
+                        target={'_blank'}
+                        rel={'noreferrer'}
+                    >
+                        Watch the Skepticus YouTube channel (https://www.youtube.com/@Skepticus.Channel)
                     </a>
                 </h1>
             </header>

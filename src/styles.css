@@ -429,6 +429,20 @@ th {
     gap: 8px;
 }
 
+.syllogism-filter-wrap {
+    margin: 0 0 10px;
+}
+
+.syllogism-filter {
+    width: 100%;
+    max-width: 560px;
+    background: #0f1628;
+    color: var(--text);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 9px 10px;
+}
+
 .syllogism-title-button {
     width: 100%;
     text-align: left;
@@ -466,6 +480,103 @@ th {
     margin-top: 12px;
     display: flex;
     justify-content: flex-end;
+}
+
+.bible-verse-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 8px;
+}
+
+.bible-verse-filter-wrap {
+    margin: 0 0 10px;
+}
+
+.bible-verse-filter {
+    width: 100%;
+    max-width: 560px;
+    background: #0f1628;
+    color: var(--text);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 9px 10px;
+}
+
+.bible-verse-button {
+    width: 100%;
+    text-align: left;
+    display: grid;
+    gap: 4px;
+    padding: 10px 12px;
+    background: var(--surface);
+    color: var(--text);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.bible-verse-button:hover {
+    background: var(--surface-soft);
+    border-color: #4a6db8;
+}
+
+.bible-verse-ref {
+    font-weight: 650;
+}
+
+.bible-verse-summary {
+    color: var(--muted);
+    font-size: 0.92rem;
+}
+
+.bible-verse-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 1250;
+    background: rgba(5, 9, 18, 0.95);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
+}
+
+.bible-verse-dialog {
+    width: min(1000px, 100%);
+    max-height: 100%;
+    overflow: auto;
+    background: #0f172b;
+    border: 1px solid #2f446f;
+    border-radius: 10px;
+    padding: 12px;
+}
+
+.bible-verse-close {
+    justify-self: end;
+    display: block;
+    margin-left: auto;
+    background: #243557;
+    color: var(--text);
+    border: 1px solid #385284;
+    border-radius: 6px;
+    padding: 7px 12px;
+    cursor: pointer;
+}
+
+.bible-verse-open-ref {
+    margin: 8px 0 6px;
+}
+
+.bible-verse-open-summary {
+    margin: 0 0 8px;
+    color: #b8d4ff;
+    font-weight: 600;
+}
+
+.bible-verse-open-text {
+    margin: 0;
+    white-space: pre-wrap;
 }
 
 .prophecy-form {
@@ -632,6 +743,14 @@ th {
 
     .syllogism-form {
         grid-template-columns: 1fr;
+    }
+
+    .bible-verse-overlay {
+        padding: 8px;
+    }
+
+    .bible-verse-dialog {
+        padding: 10px;
     }
 
     .prophecy-actions {

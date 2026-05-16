@@ -127,6 +127,12 @@ export const markdownDocs: MarkdownDoc[] = [
         summary: 'Based on the modern legal, historical, and sociological definitions of the term, the character of Yahweh as depicted in the Hebrew Bible is explicitly and definitionally genocidal.',
         fileName: 'yahweh-genocide.md',
     },
+    {
+        slug: 'yahweh-science',
+        title: 'Does Yahweh Understand Science?',
+        summary: 'From a historical-critical perspective, a literal reading of these verses reveals that the character of Yahweh possesses exactly the same level of knowledge about the universe as the iron-age and bronze-age humans who wrote the texts.',
+        fileName: 'yahweh-science.md',
+    },
 ];
 
 export function getMarkdownDocsSorted(): MarkdownDoc[]

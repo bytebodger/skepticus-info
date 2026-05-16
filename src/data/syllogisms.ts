@@ -193,6 +193,17 @@ export const syllogisms: Syllogism[] = [
         conclusion: 'The crucifixion of Jesus negates the omnipotence of God.',
         notes: [],
     },
+    {
+        id: 'jesus-not-from-david',
+        title: 'Jesus cannot be from the line of David.',
+        premises: [
+            'Jesus has NO DNA from Joseph, meaning that he can\'t possibly be of Joseph\'s line.',
+            'Jesus has no DNA from Mary (if we were to accept the Hypostatic Union that he is "fully god"), meaning that he can\'t possibly be of Mary\'s line.',
+            'Adoption was not considered sufficient to be part of someone\'s lineage.',
+        ],
+        conclusion: 'Whether you accept that Joseph or Mary were descended from David makes no difference - Jesus was not descended from David.',
+        notes: [],
+    },
 ];
 
 export function getSyllogismsSorted(): Syllogism[]

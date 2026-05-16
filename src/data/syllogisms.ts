@@ -183,6 +183,16 @@ export const syllogisms: Syllogism[] = [
         conclusion: 'There is no objective morality.',
         notes: [],
     },
+    {
+        id: 'crucifixion-negates-omnipotence',
+        title: 'The crucifixion of Jesus negates the omnipotence of God.',
+        premises: [
+            'Yahweh is omnipotent.',
+            'An omnipotent god could forgive you, for any reason, any time he wants to.',
+        ],
+        conclusion: 'The crucifixion of Jesus negates the omnipotence of God.',
+        notes: [],
+    },
 ];
 
 export function getSyllogismsSorted(): Syllogism[]

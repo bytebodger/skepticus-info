@@ -1,4 +1,4 @@
-Based on a literal, historical-critical reading of the provided verses, the text demonstrates that **Yahweh explicitly commands, sanctions, and executes the punishment and killing of individuals who are entirely innocent of the specific crimes being avenged.**
+Based on a literal, historical-critical reading, the text demonstrates that **Yahweh explicitly commands, sanctions, and executes the punishment and killing of individuals who are entirely innocent of the specific crimes being avenged.**
 
 While modern ethics and legal frameworks are built on individual accountability, the text of the Hebrew Bible operates largely on ancient Near Eastern concepts of **corporate identity, bloodguilt, and generational liability**. To the authors of these texts, a person wasn't an isolated moral agent; they were an extension of their father, their king, or their nation.
 

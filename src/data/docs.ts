@@ -109,6 +109,24 @@ export const markdownDocs: MarkdownDoc[] = [
         summary: 'Based on a literal, historical-critical reading of the provided verses, the text demonstrates that Yahweh explicitly commands, sanctions, and executes the punishment and killing of individuals who are entirely innocent of the specific crimes being avenged.',
         fileName: 'punishing-innocents.md',
     },
+    {
+        slug: 'yahweh-and-free-will',
+        title: 'Does Yahweh Violate Free Will?',
+        summary: 'Yahweh explicitly violates and overrides human free will, and he does so with the deliberate intent to bring about the catastrophic ruin of those individuals, their nations, and their descendants.',
+        fileName: 'yahweh-and-free-will.md',
+    },
+    {
+        slug: 'suffering-servant',
+        title: 'Is The "Suffering Servant" In Isaiah 53 A Prophecy About Jesus?',
+        summary: 'From a historical-critical perspective, the "Suffering Servant" described in the Book of Isaiah is NOT Jesus of Nazareth.',
+        fileName: 'suffering-servant.md',
+    },
+    {
+        slug: 'yahweh-genocide',
+        title: 'Is Yahweh Genocidal?',
+        summary: 'Based on the modern legal, historical, and sociological definitions of the term, the character of Yahweh as depicted in the Hebrew Bible is explicitly and definitionally genocidal.',
+        fileName: 'yahweh-genocide.md',
+    },
 ];
 
 export function getMarkdownDocsSorted(): MarkdownDoc[]

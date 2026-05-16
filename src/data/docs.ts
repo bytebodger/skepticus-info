@@ -25,6 +25,42 @@ export const markdownDocs: MarkdownDoc[] = [
         summary: 'If you take the text entirely literally, the armies fielded by Israel and its neighbors routinely dwarf the largest empires in antiquity. To understand why these numbers don\'t hold up under historical scrutiny, we have to look at the hard limits of ancient logistics, regional population data, and how ancient texts actually functioned.',
         fileName: 'do-biblical-troop-counts-make-sense.md',
     },
+    {
+        slug: 'nazis-and-atheism',
+        title: 'Is Atheism To Blame For Nazi Atrocities?',
+        summary: 'Attributing Nazi atrocities to atheism relies on a fundamental misunderstanding of historical facts, Nazi ideology, and the regime\'s political actions. Nazism wasn\'t an atheist movement; it was a totalitarian, ethno-nationalist ideology that explicitly rejected atheism, persecuted freethinkers, and co-opted religious frameworks to serve its racial goals.',
+        fileName: 'nazis-and-atheism.md',
+    },
+    {
+        slug: 'soviets-and-atheism',
+        title: 'Is Atheism To Blame For The Soviet Death Toll?',
+        summary: 'Attributing the massive toll of Soviet deaths—estimated between 15 and 20 million—entirely or even primarily to atheism is a historical category error.',
+        fileName: 'soviets-and-atheism.md',
+    },
+    {
+        slug: 'china-and-atheism',
+        title: 'Is Atheism To Blame For The Death Toll Under Chinese Communism?',
+        summary: 'The claim that atheism is responsible for the massive death toll of the Chinese Communist Party (CCP) under Mao Zedong—estimated between **40 and 80 million deaths**—is historically illiterate. While the CCP was, and remains, an officially atheist organization that has aggressively persecuted religious groups, atheism didn\'t drive the policies that killed tens of millions.',
+        fileName: 'china-and-atheism.md',
+    },
+    {
+        slug: 'khmer-rouge-and-atheism',
+        title: 'Is Atheism To Blame For The Atrocities of the Khmer Rouge?',
+        summary: 'Attributing the mass deaths caused by Pol Pot’s Khmer Rouge regime (1975–1979) to atheism is a fundamental error in historical causality. While the Khmer Rouge enforced a ruthlessly militant form of state atheism and sought to systematically obliterate all religious practices, atheism wasn\'t the engine driving the slaughter.',
+        fileName: 'khmer-rouge-and-atheism.md',
+    },
+    {
+        slug: 'impact-of-the-inquisitions',
+        title: 'What Were The Impacts of the Inquisitions?',
+        summary: 'The Inquisitions represent one of history\'s most successful experiments in bureaucratic totalitarianism. They proved that a highly organized, legally meticulous system could successfully terrorize an entire population, enforce ideological conformity, and paralyze intellectual progress for generations—all while executing only a small percentage of its citizens.',
+        fileName: 'impact-of-the-inquisitions.md',
+    },
+    {
+        slug: 'impact-of-the-crusades',
+        title: 'What Were The Impacts of the Crusades?',
+        summary: 'The Crusades were a violent, destabilizing catalyst that accelerated structural changes across both Europe and the Middle East.',
+        fileName: 'impact-of-the-crusades.md',
+    },
 ];
 
 export function getMarkdownDocsSorted(): MarkdownDoc[]

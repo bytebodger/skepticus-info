@@ -161,6 +161,18 @@ export const syllogisms: Syllogism[] = [
             'An apologist retort might be that this is just common sense. As in, why would you cut down fruit trees if you plan to occupy the city? But in Deuteronomy 20:19, it explicitly states that the rationale is not merely to preserve food sources. Rather, it\'s to preserve the life of the tree because they are not "human beings that they should come under seige from you".',
         ],
     },
+    {
+        id: 'the-bible-lies-about-prayer',
+        title: 'The Bible Lies About Prayer',
+        premises: [
+            'John 14:13-14, John 16:23-24, Matthew 7:7-11, and Matthew 18:19-20 all claim that if you ask god for something in prayer, he will give it to you.',
+            'If you pray to receive a billion dollars in the next 5 minutes, you will not receive a billion dollars in the next 5 minutes.',
+        ],
+        conclusion: 'The Bible lies about prayer.',
+        notes: [
+            'To be fair, there are other verses that say that god will not give you something in prayer if it\'s not good for you, but the verses cited in the premises make no such claim and are very clear that if you ask for something in prayer, you will receive it.',
+        ],
+    },
 ];
 
 export function getSyllogismsSorted(): Syllogism[]

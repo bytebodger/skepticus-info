@@ -133,6 +133,12 @@ export const markdownDocs: MarkdownDoc[] = [
         summary: 'From a historical-critical perspective, a literal reading of these verses reveals that the character of Yahweh possesses exactly the same level of knowledge about the universe as the iron-age and bronze-age humans who wrote the texts.',
         fileName: 'yahweh-science.md',
     },
+    {
+        slug: 'bible-slavery-endorsement',
+        title: 'Does The Bible Endorse Slavery?',
+        summary: 'Based on a historical-critical and textual analysis of the Hebrew Bible, the text explicitly endorses, codifies, and regulates slavery. It doesn\'t ban the practice in any form.',
+        fileName: 'bible-slavery-endorsement.md',
+    },
 ];
 
 export function getMarkdownDocsSorted(): MarkdownDoc[]

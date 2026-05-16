@@ -151,6 +151,12 @@ export const markdownDocs: MarkdownDoc[] = [
         summary: 'From a historical-critical perspective, the text doesn\'t just imply that Yahweh can cause harm—it explicitly states that Yahweh is the ultimate, intentional source of both good and evil.',
         fileName: 'bible-yahweh-evil.md',
     },
+    {
+        slug: 'messiah-requirements',
+        title: 'Did Jesus Fulfill The Messianic Requirements Of The Hebrew Bible?',
+        summary: 'If you evaluate the requirements using historical-grammatical literalism (the Jewish framework), Jesus didn\'t fulfill the core political and global requirements of the Messiah.',
+        fileName: 'messiah-requirements.md',
+    },
 ];
 
 export function getMarkdownDocsSorted(): MarkdownDoc[]

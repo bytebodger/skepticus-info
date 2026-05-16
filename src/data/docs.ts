@@ -85,6 +85,12 @@ export const markdownDocs: MarkdownDoc[] = [
         summary: 'The Bible frequently places things in the "Patriarchal Age" (Abraham/Isaac/Jacob) that didn\'t exist until centuries later.',
         fileName: 'philistines-and-camels.md',
     },
+    {
+        slug: 'belshazzars-father',
+        title: 'Who Was Belshazzar\'s Father?',
+        summary: 'In the Book of Daniel, Belshazzar is described as the King of Babylon and the "son" of Nebuchadnezzar.',
+        fileName: 'belshazzars-father.md',
+    },
 ];
 
 export function getMarkdownDocsSorted(): MarkdownDoc[]

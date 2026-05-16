@@ -10,7 +10,7 @@ export type Syllogism = {
 export const syllogisms: Syllogism[] = [
     {
         id: 'sacrifices-must-be-lost',
-        title: 'The Deific Jesus Cannot Be A Sacrifice',
+        title: 'The deific Jesus cannot be a sacrifice.',
         premises: [
             'According to Trinitarianism, Jesus IS god.',
             'God is immortal.',
@@ -22,7 +22,7 @@ export const syllogisms: Syllogism[] = [
     },
     {
         id: 'you-cant-know-a-sacrifice-is-coming-back',
-        title: 'Resurrection Nullifies Jesus\'s Supposed "Sacrifice"',
+        title: 'Resurrection nullifies Jesus\'s supposed "sacrifice".',
         premises: [
             'Yahweh is omniscient.',
             'Yahweh always knew that Jesus would be resurrected.',
@@ -34,7 +34,7 @@ export const syllogisms: Syllogism[] = [
     },
     {
         id: 'god-cannot-prophecy',
-        title: 'God Cannot Make A Prophecy',
+        title: 'God cannot make a prophecy.',
         premises: [
             'God is omniscient.',
             'God is omnipotent.',
@@ -51,7 +51,7 @@ export const syllogisms: Syllogism[] = [
     },
     {
         id: 'yahweh-is-not-perfectly-just',
-        title: 'Yahweh Is Not Perfectly Just',
+        title: 'Yahweh is not perfectly just.',
         premises: [
             'Yahweh sacrificed Jesus for us.',
             'Jesus was without sin, meaning that he was without guilt.',
@@ -62,7 +62,7 @@ export const syllogisms: Syllogism[] = [
     },
     {
         id: 'jesus-is-not-the-only-son-of-god',
-        title: 'Jesus Is Not The Only Son Of God',
+        title: 'Jesus is not the only son of god.',
         premises: [
             'From Genesis 6:2, there are clearly and obviously "sons of god".',
             'Jesus is a son of god.',
@@ -74,7 +74,7 @@ export const syllogisms: Syllogism[] = [
     },
     {
         id: 'the-quotes-of-jesus-are-fiction',
-        title: 'The Quotes Of Jesus Are Fiction',
+        title: 'The quotes of Jesus are fiction.',
         premises: [
             'The gospels have 53 pages of direct quotes from Jesus (https://www.wwj.org.nz/content/wwj46p39.pdf)',
             'The earliest gospel (Mark) was written at least 33 years after the death of Jesus.',
@@ -87,7 +87,7 @@ export const syllogisms: Syllogism[] = [
     },
     {
         id: 'the-immaculate-conception-is-pointless',
-        title: 'The Immaculate Conception Is Pointless',
+        title: 'The Immaculate Conception is pointless.',
         premises: [
             'According to the bible, the conception of Jesus was a miracle from god.',
             'If the omnipotent creator god is capable of causing a virgin to conceive his son, then he\'s capable of having that son be free from Original Sin.',
@@ -97,7 +97,7 @@ export const syllogisms: Syllogism[] = [
     },
     {
         id: 'the-hypostatic-union-violates-logic',
-        title: 'The Hypostatic Union Violates Logic',
+        title: 'The Hypostatic Union violates logic.',
         premises: [
             'The Hypostatic Union states that Jesus is fully god and fully human.',
             'Gods are not humans.',
@@ -110,7 +110,7 @@ export const syllogisms: Syllogism[] = [
     },
     {
         id: 'jesus-cannot-be-the-christian-god',
-        title: 'Jesus Cannot Be The Christian God',
+        title: 'Jesus cannot be the Christian god.',
         premises: [
             'The Christian god is omnipresent.',
             'Jesus has a physical body.',
@@ -125,7 +125,7 @@ export const syllogisms: Syllogism[] = [
     },
     {
         id: 'resurrection-does-not-bring-you-a-new-body',
-        title: 'Resurrection Does Not Bring You A New Body',
+        title: 'Resurrection does not bring you a new body.',
         premises: [
             'Christian theology holds that believers will be resurrected in bodily form, modeled after Jesus\'s physical resurrection.',
             'Jesus still had injuries on his hands, feet, and side after being resurrected.',
@@ -138,7 +138,7 @@ export const syllogisms: Syllogism[] = [
     },
     {
         id: 'yahweh-values-birds-over-humans',
-        title: 'Yahweh Values Birds Over Humans',
+        title: 'Yahweh values birds over humans.',
         premises: [
             'In Deuteronomy 22:6-7, Yahweh commands that if you find a bird\'s nest with eggs or chicks, you must not take the mother bird, but you can take the eggs or chicks.',
             'In Deuteronomy 20:16-17, Yahweh commands that when you conquer a city you must kill everyone in it.',
@@ -150,7 +150,7 @@ export const syllogisms: Syllogism[] = [
     },
     {
         id: 'yahweh-values-trees-over-humans',
-        title: 'Yahweh Values Trees Over Humans',
+        title: 'Yahweh values trees over humans.',
         premises: [
             'In Deuteronomy 20:19-20, Yahweh commands that when you besiege a city, you must not cut down any fruit trees, but you can cut down non-fruit trees.',
             'In Deuteronomy 20:16-17, Yahweh commands that when you conquer a city you must kill everyone in it.',
@@ -163,12 +163,22 @@ export const syllogisms: Syllogism[] = [
     },
     {
         id: 'no-objective-morality',
-        title: 'There Is No Objective Morality',
+        title: 'There is no objective morality.',
         premises: [
             'The very meaning of "objective" dictates that it must be mind-independent. In other words, it must be true regardless of what anyone thinks about it, or even whether anyone thinks about it at all.',
             'Any moral system that is based on the conventions of humanity cannot be indepent of human minds.',
             'Any moral system that is based on the commands of a god cannot be independent of that god\'s mind.',
             'There is no moral system that is independent of human minds or the mind of a god.',
+        ],
+        conclusion: 'There is no objective morality.',
+        notes: [],
+    },
+    {
+        id: 'no-objective-morality-bible',
+        title: 'There is no objective morality in the bible.',
+        premises: [
+            'Objective morality cannot come from a mind (even the mind of Yahweh/Jesus).',
+            'Objective morality would need to be defined in objective terms.',
         ],
         conclusion: 'There is no objective morality.',
         notes: [],

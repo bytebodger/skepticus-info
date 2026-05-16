@@ -157,6 +157,12 @@ export const markdownDocs: MarkdownDoc[] = [
         summary: 'If you evaluate the requirements using historical-grammatical literalism (the Jewish framework), Jesus didn\'t fulfill the core political and global requirements of the Messiah.',
         fileName: 'messiah-requirements.md',
     },
+    {
+        slug: 'blood-atonement',
+        title: 'Was Blood Atonement Required For Salvation In The Old Testament?',
+        summary: 'The short answer is no. The Hebrew Bible explicitly demonstrates that blood sacrifice wasn\'t an absolute, non-negotiable prerequisite for individual or national forgiveness.',
+        fileName: 'blood-atonement.md',
+    },
 ];
 
 export function getMarkdownDocsSorted(): MarkdownDoc[]

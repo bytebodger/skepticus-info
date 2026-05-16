@@ -204,6 +204,17 @@ export const syllogisms: Syllogism[] = [
         conclusion: 'Whether you accept that Joseph or Mary were descended from David makes no difference - Jesus was not descended from David.',
         notes: [],
     },
+    {
+        id: 'jesus-died-for-nothing',
+        title: 'Jesus died for nothing.',
+        premises: [
+            'Jesus died for our sins.',
+            'We\'re told that there are consequences for our sins.  (e.g., pain in childbirth,  burning in hell, death)',
+            'Those consequences are still in place.',
+        ],
+        conclusion: 'Jesus died for nothing.',
+        notes: [],
+    },
 ];
 
 export function getSyllogismsSorted(): Syllogism[]

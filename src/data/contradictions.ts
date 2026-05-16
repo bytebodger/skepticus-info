@@ -43,6 +43,13 @@ export const contradictions: Contradiction[] = [
         otherHand: 'No',
         otherHandVerses: '1 Samuel 17:55-58',
     },
+    {
+        title: 'When Was Man Created?',
+        oneHand: 'After the vegetation, the land animals, and the birds',
+        oneHandVerses: 'Genesis 1:11-25',
+        otherHand: 'Before the vegetation, the land animals, and the birds',
+        otherHandVerses: 'Genesis 2:4-19',
+    },
 ];
 
 export function getContradictionsSorted(): Contradiction[]

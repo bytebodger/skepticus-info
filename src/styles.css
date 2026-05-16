@@ -711,7 +711,8 @@ th {
 }
 
 .docs-viewer {
-    min-height: 360px;
+    min-height: 0;
+    max-height: calc(100vh - 100px);
     overflow-y: auto;
     min-width: 0;
 }

@@ -97,6 +97,18 @@ export const markdownDocs: MarkdownDoc[] = [
         summary: 'It\'s possible that any given chariot horse may have been resurrected as many as **three times**, just so they could meet their ultimate fate at the bottom of the Red Sea.',
         fileName: 'resurrection-horses.md',
     },
+    {
+        slug: 'holy-land-lies',
+        title: 'Did Yahweh Lie To The Israelites About The Promised Land?',
+        summary: 'The Bible narrative of the Promised Land is riddled with contradictions, historical inaccuracies, and geographical impossibilities. The land that Yahweh promised to the Israelites was supposed to be a fertile, prosperous territory flowing with "milk and honey," but the actual historical and archaeological record paints a very different picture.',
+        fileName: 'holy-land-lies.md',
+    },
+    {
+        slug: 'punishing-innocents',
+        title: 'Does Yahweh Punish The Innocent?',
+        summary: 'Based on a literal, historical-critical reading of the provided verses, the text demonstrates that Yahweh explicitly commands, sanctions, and executes the punishment and killing of individuals who are entirely innocent of the specific crimes being avenged.',
+        fileName: 'punishing-innocents.md',
+    },
 ];
 
 export function getMarkdownDocsSorted(): MarkdownDoc[]

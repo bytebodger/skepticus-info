@@ -139,6 +139,18 @@ export const markdownDocs: MarkdownDoc[] = [
         summary: 'Based on a historical-critical and textual analysis of the Hebrew Bible, the text explicitly endorses, codifies, and regulates slavery. It doesn\'t ban the practice in any form.',
         fileName: 'bible-slavery-endorsement.md',
     },
+    {
+        slug: 'what-about-the-canaanites',
+        title: 'Was There Any Way For The Canaanites To Be Spared?',
+        summary: 'From a historical-critical perspective, the biblical narrative creates a closed legal and theological loop designed to justify the ethnic cleansing of the Levant.',
+        fileName: 'what-about-the-canaanites.md',
+    },
+    {
+        slug: 'bible-yahweh-evil',
+        title: 'Does The Bible Depict Yahweh As Evil?',
+        summary: 'From a historical-critical perspective, the text doesn\'t just imply that Yahweh can cause harm—it explicitly states that Yahweh is the ultimate, intentional source of both good and evil.',
+        fileName: 'bible-yahweh-evil.md',
+    },
 ];
 
 export function getMarkdownDocsSorted(): MarkdownDoc[]

@@ -162,16 +162,16 @@ export const syllogisms: Syllogism[] = [
         ],
     },
     {
-        id: 'the-bible-lies-about-prayer',
-        title: 'The Bible Lies About Prayer',
+        id: 'no-objective-morality',
+        title: 'There Is No Objective Morality',
         premises: [
-            'John 14:13-14, John 16:23-24, Matthew 7:7-11, and Matthew 18:19-20 all claim that if you ask god for something in prayer, he will give it to you.',
-            'If you pray to receive a billion dollars in the next 5 minutes, you will not receive a billion dollars in the next 5 minutes.',
+            'The very meaning of "objective" dictates that it must be mind-independent. In other words, it must be true regardless of what anyone thinks about it, or even whether anyone thinks about it at all.',
+            'Any moral system that is based on the conventions of humanity cannot be indepent of human minds.',
+            'Any moral system that is based on the commands of a god cannot be independent of that god\'s mind.',
+            'There is no moral system that is independent of human minds or the mind of a god.',
         ],
-        conclusion: 'The Bible lies about prayer.',
-        notes: [
-            'To be fair, there are other verses that say that god will not give you something in prayer if it\'s not good for you, but the verses cited in the premises make no such claim and are very clear that if you ask for something in prayer, you will receive it.',
-        ],
+        conclusion: 'There is no objective morality.',
+        notes: [],
     },
 ];
 

@@ -91,6 +91,12 @@ export const markdownDocs: MarkdownDoc[] = [
         summary: 'In the Book of Daniel, Belshazzar is described as the King of Babylon and the "son" of Nebuchadnezzar.',
         fileName: 'belshazzars-father.md',
     },
+    {
+        slug: 'resurrection-horses',
+        title: 'Yahweh\'s Magic Resurrection Horses: A Case Study In Biblical Absurdity',
+        summary: 'It\'s possible that any given chariot horse may have been resurrected as many as **three times**, just so they could meet their ultimate fate at the bottom of the Red Sea.',
+        fileName: 'resurrection-horses.md',
+    },
 ];
 
 export function getMarkdownDocsSorted(): MarkdownDoc[]

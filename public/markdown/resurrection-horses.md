@@ -1,0 +1,9 @@
+**In Exodus 9:6 (the 5th plague),** it states that **all** of the livestocks were killed.
+
+**In Exodus 9:25 (the 7th plague),** it states that all livestock _in the field_ were killed. But according to the narrative of the 5th plague, there should not have been a single livestock animal alive. This apparently means that some of the animals killed in the 5th plague _were resurrected_, purely so they could be killed again while they were standing in the field.
+
+**In Exodus 12:29 (the 10th plague),** it states that the firstborn of all livestock were killed. But according to the narrative of the 5th and 7th plagues, there should not have been a single livestock animal alive. This apparently means that some of the animals killed in the 5th plague _were resurrected_, purely so they could be killed again while they were standing in the field.  And then, if they were **a firstborn animal**, then they were resurrected, _again_, purely so they could be killed in the 10th plague.
+
+**In Exodus 14:28,** as the Egyptians are chasing the Hebrews at the Red Sea, it states that **all** chariot horses were killed. Chariot horses are absolutely considered to be livestock. This means that it's possible that any given chariot horse may have been resurrected as many as **three times**, just so they could meet their ultimate fate at the bottom of the Red Sea.
+
+**Conclusion:** Any firstborn chariot horse would had to have been resurrected **at least twice** before ultimately dying at the Red Sea.  (The first time, after the Plague of Livestock, and the second time after the Plague of the Firstborn.) If that horse just so happened to be standing outside in the field during the Plague of Hail, then it would have had to have been resurrected **three times** before being killed, yet again, at the Red Sea.

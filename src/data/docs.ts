@@ -163,6 +163,12 @@ export const markdownDocs: MarkdownDoc[] = [
         summary: 'The short answer is no. The Hebrew Bible explicitly demonstrates that blood sacrifice wasn\'t an absolute, non-negotiable prerequisite for individual or national forgiveness.',
         fileName: 'blood-atonement.md',
     },
+    {
+        slug: 'jesus-passover-lamb',
+        title: 'Did Jesus Fulfill The Passover Lamb Prophecy?',
+        summary: 'If you evaluate the crucifixion using the strict, literal legal code of the Old Testament, Jesus did not qualify as an acceptable sacrifice.',
+        fileName: 'jesus-passover-lamb.md',
+    },
 ];
 
 export function getMarkdownDocsSorted(): MarkdownDoc[]

@@ -67,6 +67,18 @@ export const markdownDocs: MarkdownDoc[] = [
         summary: 'The Gospel of Luke attempts to place Jesus\' birth during a Roman census while Herod the Great was King of Judea. This creates an impossible timeline.',
         fileName: 'census-of-quirinius.md',
     },
+    {
+        slug: 'joshua-jericho-ai',
+        title: 'Were Jericho And Ai Conquered By Joshua?',
+        summary: 'The Book of Joshua describes a military "blitzkrieg" where Israelites destroyed fortified Canaanite cities around 1400–1200 BCE.',
+        fileName: 'joshua-jericho-ai.md',
+    },
+    {
+        slug: 'population-of-preexodus-egypt',
+        title: 'What Was The pPpulation Of Pre-Exodus Egypt?',
+        summary: 'TThe best archaeological and demographic estimate for the total population of Egypt during the 13th century BCE (the Ramesside period) is between 3 million and 4.5 million people.',
+        fileName: 'population-of-preexodus-egypt.md',
+    },
 ];
 
 export function getMarkdownDocsSorted(): MarkdownDoc[]

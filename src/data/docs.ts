@@ -61,6 +61,12 @@ export const markdownDocs: MarkdownDoc[] = [
         summary: 'The Crusades were a violent, destabilizing catalyst that accelerated structural changes across both Europe and the Middle East.',
         fileName: 'impact-of-the-crusades.md',
     },
+    {
+        slug: 'census-of-quirinius',
+        title: 'When Did The Census Of Quirinius Occur?',
+        summary: 'The Gospel of Luke attempts to place Jesus\' birth during a Roman census while Herod the Great was King of Judea. This creates an impossible timeline.',
+        fileName: 'census-of-quirinius.md',
+    },
 ];
 
 export function getMarkdownDocsSorted(): MarkdownDoc[]

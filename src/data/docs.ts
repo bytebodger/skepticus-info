@@ -75,9 +75,15 @@ export const markdownDocs: MarkdownDoc[] = [
     },
     {
         slug: 'population-of-preexodus-egypt',
-        title: 'What Was The pPpulation Of Pre-Exodus Egypt?',
-        summary: 'TThe best archaeological and demographic estimate for the total population of Egypt during the 13th century BCE (the Ramesside period) is between 3 million and 4.5 million people.',
+        title: 'What Was The Population Of Pre-Exodus Egypt?',
+        summary: 'The best archaeological and demographic estimate for the total population of Egypt during the 13th century BCE (the Ramesside period) is between 3 million and 4.5 million people.',
         fileName: 'population-of-preexodus-egypt.md',
+    },
+    {
+        slug: 'philistines-and-camels',
+        title: 'When Did Camels And Philistines Come To The Levant?',
+        summary: 'The Bible frequently places things in the "Patriarchal Age" (Abraham/Isaac/Jacob) that didn\'t exist until centuries later.',
+        fileName: 'philistines-and-camels.md',
     },
 ];
 

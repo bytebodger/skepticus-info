@@ -10,10 +10,10 @@ export type Contradiction = {
 export const contradictions: Contradiction[] = [
     {
         title: 'Can God Be Seen?',
-        oneHand: 'Several passages say that people saw God directly.',
-        oneHandVerses: 'Genesis 32:30; Exodus 24:9-11',
+        oneHand: 'Many passages say that people saw God directly.',
+        oneHandVerses: 'Genesis 12:7; Genesis 18:1; Genesis 26:2; Genesis 26:24; Genesis 32:30; Genesis 35:9; Genesis 48:3; Exodus 24:9-11; Exodus 33:11; Exodus 33:23; Exodus 34:5-8; Deuteronomy 5:4; Numbers 12:8; Matthew 5:8; Every single time that someone saw Jesus;',
         otherHand: 'Other passages say no one has seen God or can see God.',
-        otherHandVerses: 'John 1:18; 1 Timothy 6:16',
+        otherHandVerses: 'Exodus 33:20; John 1:18; 1 John 4:12; 1 Timothy 1:17; 1 Timothy 6:16',
     },
     {
         title: 'Does Yahweh Tempt Anyone?',
@@ -35,6 +35,13 @@ export const contradictions: Contradiction[] = [
         oneHandVerses: 'Matthew 26:14-16',
         otherHand: 'Another account frames the payment as what the priests offered after the betrayal plan was already underway.',
         otherHandVerses: 'Mark 14:10-11',
+    },
+    {
+        title: 'Did Saul Know Who David Was?',
+        oneHand: 'Yes',
+        oneHandVerses: '1 Samuel 16:21-23',
+        otherHand: 'No',
+        otherHandVerses: '1 Samuel 17:55-58',
     },
 ];
 

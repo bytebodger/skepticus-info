@@ -136,6 +136,31 @@ export const syllogisms: Syllogism[] = [
             'If resurrection doesn\'t remove outward wounds, why would anyone believe that it heals any other condition?  (like arthritis, dementia, or cancer)',
         ],
     },
+    {
+        id: 'yahweh-values-birds-over-humans',
+        title: 'Yahweh Values Birds Over Humans',
+        premises: [
+            'In Deuteronomy 22:6-7, Yahweh commands that if you find a bird\'s nest with eggs or chicks, you must not take the mother bird, but you can take the eggs or chicks.',
+            'In Deuteronomy 20:16-17, Yahweh commands that when you conquer a city you must kill everyone in it.',
+        ],
+        conclusion: 'Yahweh values the lives of birds more than the lives of humans.',
+        notes: [
+            'The commandment in Deuteronomy 20:16-17 does say to "leave alive nothing that breathes", but it is clear that this is a command to kill all the humans and the livestock in the city, and not a command to kill any of the wild birds who happen to be in the city.  Furthermore, there\'s no reason to believe that the Israelites could have caught/killed the birds in those cities.',
+        ],
+    },
+    {
+        id: 'yahweh-values-trees-over-humans',
+        title: 'Yahweh Values Trees Over Humans',
+        premises: [
+            'In Deuteronomy 20:19-20, Yahweh commands that when you besiege a city, you must not cut down any fruit trees, but you can cut down non-fruit trees.',
+            'In Deuteronomy 20:16-17, Yahweh commands that when you conquer a city you must kill everyone in it.',
+        ],
+        conclusion: 'Yahweh values the lives of trees more than the lives of humans.',
+        notes: [
+            'The commandment in Deuteronomy 20:16-17 does say to "leave alive nothing that breathes", and trees do technically breathe, but it is clear that this is a command to kill all the humans and the livestock in the city, and not a command to cut down any of the trees that happen to be in the city.  Furthermore, there\'s no reason to believe that the Israelites would have understood that trees do in fact breathe.',
+            'An apologist retort might be that this is just common sense. As in, why would you cut down fruit trees if you plan to occupy the city? But in Deuteronomy 20:19, it explicitly states that the rationale is not merely to preserve food sources. Rather, it\'s to preserve the life of the tree because they are not "human beings that they should come under seige from you".',
+        ],
+    },
 ];
 
 export function getSyllogismsSorted(): Syllogism[]

@@ -217,12 +217,12 @@ export const syllogisms: Syllogism[] = [
     },
     {
         id: 'the-bible-lies-about-prayer',
-        title: 'The Bible Lies About Prayer',
+        title: 'The bible lies about prayer.',
         premises: [
             'John 14:13-14, John 16:23-24, Matthew 7:7-11, and Matthew 18:19-20 all claim that if you ask god for something in prayer, he will give it to you.',
             'If you pray to receive something obvious and tangible that is not the course of natural consequence (e.g. a billion dollars in the next 5 minutes), you will not receive it. And you can repeat this test over and over ad infinitum and it will always fail.',
         ],
-        conclusion: 'The Bible lies about prayer.',
+        conclusion: 'The bible lies about prayer.',
         notes: [
             'To be fair, there are other verses that say that god will not give you something in prayer if it\'s not good for you, but the verses cited in the premises make no such claim and are very clear that if you ask for something in prayer, you will receive it.',
         ],

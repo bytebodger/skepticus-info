@@ -169,6 +169,12 @@ export const markdownDocs: MarkdownDoc[] = [
         summary: 'If you evaluate the crucifixion using the strict, literal legal code of the Old Testament, Jesus did not qualify as an acceptable sacrifice.',
         fileName: 'jesus-passover-lamb.md',
     },
+    {
+        slug: 'jesus-as-king',
+        title: 'Was (Or, Is) Jesus A King?',
+        summary: 'The proposition that Jesus was or is a king under Old Testament guidelines is textually unsustainable without completely redefining the terms.',
+        fileName: 'jesus-as-king.md',
+    },
 ];
 
 export function getMarkdownDocsSorted(): MarkdownDoc[]

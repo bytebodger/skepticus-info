@@ -220,7 +220,7 @@ export const syllogisms: Syllogism[] = [
         title: 'The bible lies about prayer.',
         premises: [
             'John 14:13-14, John 16:23-24, Matthew 7:7-11, and Matthew 18:19-20 all claim that if you ask god for something in prayer, he will give it to you.',
-            'If you pray to receive something obvious and tangible that is not the course of natural consequence (e.g. a billion dollars in the next 5 minutes), you will not receive it. And you can repeat this test over and over ad infinitum and it will always fail.',
+            'If you pray to receive something obvious and tangible that is not the course of natural consequence (e.g. you want to receive a billion dollars in the next 5 minutes), you will not receive it. And you can repeat this test over and over ad infinitum and it will always fail.',
         ],
         conclusion: 'The bible lies about prayer.',
         notes: [

@@ -255,6 +255,22 @@ export const syllogisms: Syllogism[] = [
         conclusion: 'There is no objective morality in the bible.',
         notes: [],
     },
+    {
+        id: 'fundamentalism-is-unworkable',
+        title: 'Biblical fundamentalism/literalism is unworkable.',
+        premises: [
+            'Yahweh is quoted using metaphors and hyperbole in the bible. (e.g., "I will make your enemies a footstool for your feet")',
+            'Jesus frequently uses metaphors and parables in the bible. (e.g., "the kingdom of heaven is like a mustard seed")',
+            'If you take the bible literally, then you would have to take these verses literally as well.',
+            'Taking these verses literally leads to absurd conclusions.',
+            'The bible itself offers no guidance on how to determine which verses are meant to be taken literally and which are meant to be taken figuratively.',
+        ],
+        conclusion: 'Biblical fundamentalism/literalism is unworkable.',
+        notes: [
+            'Fundamentalists see themselves as being more faithful to the text by taking it literally, but in doing so they end up with a very inconsistent and incoherent interpretation of the bible.',
+            'Every fundamentalist, whether they realize it or not, has to make some sort of subjective judgment call about which verses are meant to be taken literally and which are meant to be taken figuratively. This is a problem for fundamentalism because it claims to be based on the text alone, but in reality it relies on subjective interpretation just as much as any other approach.',
+        ],
+    },
 ];
 
 export function getSyllogismsSorted(): Syllogism[]

@@ -211,6 +211,18 @@ export const markdownDocs: MarkdownDoc[] = [
         summary: 'The tensions described here are real. They\'re not invented by critics. Many of them were identified by early Christian theologians themselves, which is precisely why councils had to meet and creeds had to be written.',
         fileName: 'bible-vs-trinity.md',
     },
+    {
+        slug: 'old-testament-hell',
+        title: 'How Is Hell Depicted In The Old Testament?',
+        summary: 'If you\'re looking for the modern concept of Hell — a fire-and-brimstone playground of the devil where the wicked are tortured for eternity — you won\'t find it in the Old Testament.',
+        fileName: 'old-testament-hell.md',
+    },
+    {
+        slug: 'old-testament-heaven',
+        title: 'How Is Heaven Depicted In The Old Testament?',
+        summary: 'Just like the Old Testament concept of Hell, the ancient Hebrew concept of Heaven is radically different from modern popular theology.',
+        fileName: 'old-testament-heaven.md',
+    },
 ];
 
 export function getMarkdownDocsSorted(): MarkdownDoc[]

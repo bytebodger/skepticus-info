@@ -1,6 +1,3 @@
-This is a meaty theological and philosophical question, so let me give it the careful treatment it deserves.
-
----
 
 ## The Trinity and Biblical Tension: A Detailed Analysis
 

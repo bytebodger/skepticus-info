@@ -223,6 +223,18 @@ export const markdownDocs: MarkdownDoc[] = [
         summary: 'Just like the Old Testament concept of Hell, the ancient Hebrew concept of Heaven is radically different from modern popular theology.',
         fileName: 'old-testament-heaven.md',
     },
+    {
+        slug: 'unchanging-objective-morals',
+        title: 'Objective Morals: Are They Unchanging And Absolute?',
+        summary: 'For the claim that "Christian morality is objective" to be coherent, it needs to be grounded in that underlying standard - something like the character of God, or the principle of love, or human flourishing - rather than in the specific biblical commands, which demonstrably shift.',
+        fileName: 'unchanging-objective-morals.md',
+    },
+    {
+        slug: 'are-psalms-prophecies',
+        title: 'Are The Psalms Prophecies About Jesus?',
+        summary: 'If your axiom is that a text can only logically mean what its original historical author intended it to mean, then treating the Psalms as prophecy is illogical.',
+        fileName: 'are-psalms-prophecies.md',
+    },
 ];
 
 export function getMarkdownDocsSorted(): MarkdownDoc[]

@@ -244,6 +244,17 @@ export const syllogisms: Syllogism[] = [
             'If you have no human DNA, then you can\'t be human. If you have no divine DNA, then you can\'t be divine. If you have some of both, then you can\'t be fully either.',
         ],
     },
+    {
+        id: 'no-objective-morality-bible-2',
+        title: 'There is no objective morality in the bible. (2)',
+        premises: [
+            'An objective moral standard would not change unless it is based upon some other objective standard that also changes.',
+            'An objective moral standard cannot be defined in subjective terms.',
+            'The moral standards in the bible change over time and/or are defined in subjective terms.',
+        ],
+        conclusion: 'There is no objective morality in the bible.',
+        notes: [],
+    },
 ];
 
 export function getSyllogismsSorted(): Syllogism[]

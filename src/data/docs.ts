@@ -235,6 +235,30 @@ export const markdownDocs: MarkdownDoc[] = [
         summary: 'If your axiom is that a text can only logically mean what its original historical author intended it to mean, then treating the Psalms as prophecy is illogical.',
         fileName: 'are-psalms-prophecies.md',
     },
+    {
+        slug: 'god-is-not-omnipotent',
+        title: 'Is God Omnipotent?',
+        summary: 'The concept of absolute omnipotence — the philosophical idea that God can do absolutely anything without limitation — is a later theological development.',
+        fileName: 'god-is-not-omnipotent.md',
+    },
+    {
+        slug: 'god-is-not-omniscient',
+        title: 'Is God Omniscient?',
+        summary: 'Just as with omnipotence, the concept of absolute omniscience—the idea that God possesses simultaneous, exhaustive knowledge of all past, present, and future events, including human thoughts—is a philosophical framework layered onto the text long after it was written.',
+        fileName: 'god-is-not-omniscient.md',
+    },
+    {
+        slug: 'god-is-not-omnipresent',
+        title: 'Is God Omnipresent?',
+        summary: 'The concept of absolute omnipresence—the theological claim that God is simultaneously, essentially, and equally present in every point of space throughout the universe—is entirely missing from vast stretches of the Biblical narrative.',
+        fileName: 'god-is-not-omnipresent.md',
+    },
+    {
+        slug: 'old-testament-satan',
+        title: 'How Is Satan Depicted In The Old Testament?',
+        summary: 'If you\'re looking for the red, horned ruler of Hell who wages a cosmic war against God, you won\'t find him in the Hebrew Bible (the Old Testament).',
+        fileName: 'old-testament-satan.md',
+    },
 ];
 
 export function getMarkdownDocsSorted(): MarkdownDoc[]

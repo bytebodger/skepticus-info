@@ -227,6 +227,23 @@ export const syllogisms: Syllogism[] = [
             'To be fair, there are other verses that say that god will not give you something in prayer if it\'s not good for you, but the verses cited in the premises make no such claim and are very clear that if you ask for something in prayer, you will receive it.',
         ],
     },
+    {
+        id: 'hypostatic-union-is-impossible',
+        title: 'The Hypostatic Union is impossible.',
+        premises: [
+            'Children receive half of their DNA from their mother and half from their father (which is something that wasn\'t properly understood when the bible was written).',
+            'The Hypostatic Union claims that Jesus is fully god and fully human.',
+            'Mary was impregnated by the Holy Spirit and not by a human father.',
+            'If Jesus received half of his DNA from Mary and half from the Holy Spirit, then he could not have been "fully god". He would have been a demigod.',
+            'If Jesus received all of his DNA from the Holy Spirit, then he could not have been "fully human". He would been have a god.',
+            'If Jesus received all of his DNA from Mary, then he could not have been "fully god". He would have been a human.',
+        ],
+        conclusion: 'The Hypostatic Union is impossible.',
+        notes: [
+            'There is no "god\'s ways are mysterious" escape hatch here. You can\'t have a human body without DNA, and Jesus had to get his DNA from somewhere.',
+            'If you have no human DNA, then you can\'t be human. If you have no divine DNA, then you can\'t be divine. If you have some of both, then you can\'t be fully either.',
+        ],
+    },
 ];
 
 export function getSyllogismsSorted(): Syllogism[]

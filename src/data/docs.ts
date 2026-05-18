@@ -205,6 +205,12 @@ export const markdownDocs: MarkdownDoc[] = [
         summary: 'To get from "unexplained artifact" to "burial cloth of the Son of God" requires several inferential leaps, each of which is contestable.',
         fileName: 'shroud-of-turin.md',
     },
+    {
+        slug: 'bible-vs-trinity',
+        title: 'How And Where Does The Bible Conflict With The Doctrine Of The Trinity?',
+        summary: 'The tensions described here are real. They\'re not invented by critics. Many of them were identified by early Christian theologians themselves, which is precisely why councils had to meet and creeds had to be written.',
+        fileName: 'bible-vs-trinity.md',
+    },
 ];
 
 export function getMarkdownDocsSorted(): MarkdownDoc[]

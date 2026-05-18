@@ -175,6 +175,30 @@ export const markdownDocs: MarkdownDoc[] = [
         summary: 'The proposition that Jesus was or is a king under Old Testament guidelines is textually unsustainable without completely redefining the terms.',
         fileName: 'jesus-as-king.md',
     },
+    {
+        slug: 'dating-the-new-testament',
+        title: 'What Are The Earliest Compelete Manuscripts Of The New Testament?',
+        summary: 'While we have 2nd-century papyrus fragments containing a few verses (like the famous, credit-card-sized P52 for the Gospel of John), we don\'t see fully intact, unbroken copies of individual books until the late 3rd to mid-4th centuries.',
+        fileName: 'dating-the-new-testament.md',
+    },
+    {
+        slug: 'biblical-autographs',
+        title: 'How Many Original Autographs Of The Bible Do We Have?',
+        summary: 'We don\'t have any. The exact number is zero.',
+        fileName: 'biblical-autographs.md',
+    },
+    {
+        slug: 'contemporary-jesus-sources',
+        title: 'How Many Contemporary Sources Do We Have For Jesus?',
+        summary: 'We don\'t have any. The exact number is zero.',
+        fileName: 'contemporary-jesus-sources.md',
+    },
+    {
+        slug: 'jesus-attestation',
+        title: 'Is Jesus The Best-Attested Figure Of Antiquity?',
+        summary: 'The assertion that Jesus is the "best-attested figure in antiquity" is a staple of popular apologetics, but from a rigorous historical perspective, it is flatly incorrect. When extended to comparisons with Julius Caesar, the claim falls apart completely.',
+        fileName: 'jesus-attestation.md',
+    },
 ];
 
 export function getMarkdownDocsSorted(): MarkdownDoc[]

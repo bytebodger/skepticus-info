@@ -199,6 +199,12 @@ export const markdownDocs: MarkdownDoc[] = [
         summary: 'The assertion that Jesus is the "best-attested figure in antiquity" is a staple of popular apologetics, but from a rigorous historical perspective, it is flatly incorrect. When extended to comparisons with Julius Caesar, the claim falls apart completely.',
         fileName: 'jesus-attestation.md',
     },
+    {
+        slug: 'shroud-of-turin',
+        title: 'Is The Shroud Of Turin Authentic?',
+        summary: 'To get from "unexplained artifact" to "burial cloth of the Son of God" requires several inferential leaps, each of which is contestable.',
+        fileName: 'shroud-of-turin.md',
+    },
 ];
 
 export function getMarkdownDocsSorted(): MarkdownDoc[]

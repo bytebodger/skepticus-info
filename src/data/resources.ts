@@ -19,7 +19,7 @@ export type ResearchBrief = {
 export type SourceItem = {
     title: string;
     author: string;
-    type: 'Book' | 'Paper' | 'Article' | 'Video';
+    type: 'Book' | 'Paper' | 'Article' | 'Video' | 'Channel';
     url: string;
 };
 
@@ -130,5 +130,59 @@ export const sourceLibrary: SourceItem[] = [
         author: 'Dr. Richard Carrier',
         type: 'Article',
         url: 'https://www.richardcarrier.info/archives/23447',
+    },
+    {
+        title: 'Alex O\'Connor',
+        author: 'Alex O\'Connor',
+        type: 'Channel',
+        url: 'https://www.youtube.com/@CosmicSkeptic',
+    },
+    {
+        title: 'Alyssa Grenfell',
+        author: 'Alyssa Grenfell',
+        type: 'Channel',
+        url: 'https://www.youtube.com/@alyssadgrenfell',
+    },
+    {
+        title: 'Answerman',
+        author: 'Answerman',
+        type: 'Channel',
+        url: 'https://www.youtube.com/@TheOriginalAnswerman',
+    },
+    {
+        title: 'Bart Ehrman',
+        author: 'Bart Ehrman',
+        type: 'Channel',
+        url: 'https://www.youtube.com/@bartdehrman',
+    },
+    {
+        title: 'Belief It Or Not',
+        author: 'Trevor Poelman',
+        type: 'Channel',
+        url: 'https://www.youtube.com/@BeliefItOrNot',
+    },
+    {
+        title: 'C. J. Cornthwaite',
+        author: 'C. J. Cornthwaite',
+        type: 'Channel',
+        url: 'https://www.youtube.com/@cjcornthwaite',
+    },
+    {
+        title: 'Dan McClellan',
+        author: 'Dan McClellan',
+        type: 'Channel',
+        url: 'https://www.youtube.com/@maklelan',
+    },
+    {
+        title: 'Darante\' LaMar',
+        author: 'Darante\' LaMar',
+        type: 'Channel',
+        url: 'https://www.youtube.com/@DaranteLaMar',
+    },
+    {
+        title: 'Deconstruction Zone',
+        author: 'Justin',
+        type: 'Channel',
+        url: 'https://www.youtube.com/@Deconstruction_Zone',
     },
 ];

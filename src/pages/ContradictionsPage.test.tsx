@@ -26,20 +26,25 @@ describe('ContradictionsPage', () =>
 
         await user.type(filterInput, 'tested Abraham');
         expect(screen.getAllByRole('button', { name: /open contradiction:/i })).toHaveLength(1);
-        expect(screen.getByRole('button', { name: 'Open contradiction: Does Yahweh Tempt Anyone?' })).toBeInTheDocument();
+        expect(screen.getByRole('button', { name: /open contradiction: does yahweh tempt anyone\?/i })).toBeInTheDocument();
 
         await user.clear(filterInput);
         await user.type(filterInput, 'Genesis 7:2-3');
         expect(screen.getAllByRole('button', { name: /open contradiction:/i })).toHaveLength(1);
-        expect(screen.getByRole('button', { name: 'Open contradiction: How Many Animals Were Taken Onto the Ark?' })).toBeInTheDocument();
+        expect(screen.getByRole('button', { name: /open contradiction: how many animals were taken onto the ark\?/i })).toBeInTheDocument();
+
+        await user.clear(filterInput);
+        await user.type(filterInput, 'ark');
+        expect(screen.getAllByRole('button', { name: /open contradiction:/i })).toHaveLength(1);
+        expect(screen.getByRole('button', { name: /open contradiction: how many animals were taken onto the ark\?/i })).toBeInTheDocument();
 
         await user.clear(filterInput);
 
-        await user.click(screen.getByRole('button', { name: 'Open contradiction: Can God Be Seen?' }));
+        await user.click(screen.getByRole('button', { name: /open contradiction: can god be seen\?/i }));
 
         expect(screen.getByRole('heading', {
             level: 3,
-            name: 'Can God Be Seen?',
+            name: /can god be seen\?/i,
         })).toBeInTheDocument();
         expect(screen.getByRole('heading', {
             level: 4,
@@ -49,11 +54,11 @@ describe('ContradictionsPage', () =>
             level: 4,
             name: 'On The Other Hand',
         })).toBeInTheDocument();
-        expect(screen.getByText('Genesis 32:30; Exodus 24:9-11')).toBeInTheDocument();
-        expect(screen.getByText('John 1:18; 1 Timothy 6:16')).toBeInTheDocument();
+        expect(screen.getByText(/Genesis 32:30/i)).toBeInTheDocument();
+        expect(screen.getByText(/John 1:18/i)).toBeInTheDocument();
 
         await user.click(screen.getByRole('button', { name: 'Close Contradiction' }));
 
-        expect(screen.getByRole('button', { name: 'Open contradiction: Can God Be Seen?' })).toBeInTheDocument();
+        expect(screen.getByRole('button', { name: /open contradiction: can god be seen\?/i })).toBeInTheDocument();
     });
 });

@@ -2,6 +2,43 @@ import { useMemo, useState } from 'react';
 import { Contradiction, getContradictionsSorted } from '../data/contradictions';
 import { SEO } from '../seo';
 
+function normalizeSearchValue(value: string): string
+{
+    return value.trim().toLowerCase();
+}
+
+function getSearchTokens(value: string): string[]
+{
+    return normalizeSearchValue(value).match(/[a-z0-9]+/g) ?? [];
+}
+
+function matchesContradiction(item: Contradiction, filterValue: string): boolean
+{
+    const normalizedFilter = normalizeSearchValue(filterValue);
+
+    if (!normalizedFilter)
+    {
+        return true;
+    }
+
+    const searchableValues = [
+        item.title,
+        item.oneHand,
+        item.oneHandVerses,
+        item.otherHand,
+        item.otherHandVerses,
+    ];
+
+    const isSimpleWordQuery = /^[a-z0-9]+$/i.test(normalizedFilter);
+
+    if (isSimpleWordQuery)
+    {
+        return searchableValues.some((value) => getSearchTokens(value).includes(normalizedFilter));
+    }
+
+    return searchableValues.some((value) => normalizeSearchValue(value).includes(normalizedFilter));
+}
+
 export function ContradictionsPage()
 {
     const [selected, setSelected] = useState<Contradiction | null>(null);
@@ -9,20 +46,7 @@ export function ContradictionsPage()
     const sortedContradictions = getContradictionsSorted();
     const filteredContradictions = useMemo(() =>
     {
-        const normalizedFilter = filterValue.trim().toLowerCase();
-
-        if (!normalizedFilter)
-        {
-            return sortedContradictions;
-        }
-
-        return sortedContradictions.filter((item) =>
-            item.title.toLowerCase().includes(normalizedFilter) ||
-            item.oneHand.toLowerCase().includes(normalizedFilter) ||
-            item.oneHandVerses.toLowerCase().includes(normalizedFilter) ||
-            item.otherHand.toLowerCase().includes(normalizedFilter) ||
-            item.otherHandVerses.toLowerCase().includes(normalizedFilter),
-        );
+        return sortedContradictions.filter((item) => matchesContradiction(item, filterValue));
     }, [filterValue, sortedContradictions]);
 
     return (

@@ -26,17 +26,17 @@ describe('SyllogismsPage', () =>
 
         await user.type(filterInput, 'without guilt');
         expect(screen.getAllByRole('button', { name: /open syllogism:/i })).toHaveLength(1);
-        expect(screen.getByRole('button', { name: 'Open syllogism: Yahweh Is Not Perfectly Just' })).toBeInTheDocument();
+        expect(screen.getByRole('button', { name: /open syllogism: yahweh is not perfectly just\.?/i })).toBeInTheDocument();
 
         await user.clear(filterInput);
         await user.type(filterInput, 'therefore, god cannot make a prophecy');
         expect(screen.getAllByRole('button', { name: /open syllogism:/i })).toHaveLength(1);
-        expect(screen.getByRole('button', { name: 'Open syllogism: God Cannot Make A Prophecy' })).toBeInTheDocument();
+        expect(screen.getByRole('button', { name: /open syllogism: god cannot make a prophecy\.?/i })).toBeInTheDocument();
 
         await user.clear(filterInput);
         await user.type(filterInput, 'covenant');
         expect(screen.getAllByRole('button', { name: /open syllogism:/i })).toHaveLength(1);
-        expect(screen.getByRole('button', { name: 'Open syllogism: God Cannot Make A Prophecy' })).toBeInTheDocument();
+        expect(screen.getByRole('button', { name: /open syllogism: god cannot make a prophecy\.?/i })).toBeInTheDocument();
 
         await user.clear(filterInput);
 

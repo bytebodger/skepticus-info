@@ -232,7 +232,7 @@ export const markdownDocs: MarkdownDoc[] = [
     {
         slug: 'are-psalms-prophecies',
         title: 'Are The Psalms Prophecies About Jesus?',
-        summary: 'If your axiom is that a text can only logically mean what its original historical author intended it to mean, then treating the Psalms as prophecy is illogical.',
+        summary: 'The Psalms do not contain predictive, forward-looking prophecies about a future historical figure named Jesus of Nazareth.',
         fileName: 'are-psalms-prophecies.md',
     },
     {

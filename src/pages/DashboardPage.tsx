@@ -9,9 +9,6 @@ export function DashboardPage()
                 description='Quick dashboard metrics and latest skeptical research briefs.'
             />
             <header className={'page-header'}>
-                <h1 id={'livestream-details'}>
-                    Call in every Tuesday night 5PM CST (until...?) for the Skepticus livestream!
-                </h1>
                 <h1>
                     <a
                         aria-label={'Join the Skepticus livestream on YouTube'}
@@ -19,7 +16,8 @@ export function DashboardPage()
                         target={'_blank'}
                         rel={'noreferrer'}
                     >
-                        Join the livestream (https://tiny.cc/skepticus)
+                        Call in to the livestream (https://tiny.cc/skepticus)<br/>
+                        (Every Tuesday night 5PM CST until...?)
                     </a>
                 </h1>
                 <h1>

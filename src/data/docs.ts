@@ -266,10 +266,10 @@ export const markdownDocs: MarkdownDoc[] = [
         fileName: 'perfectly-just-god.md',
     },
     {
-        slug: 'god-is-love',
-        title: 'Is God Love?',
-        summary: 'To claim that "God is love" based on the Bible requires a selective reading that prioritizes short, late New Testament epistles while ignoring the vast, sweeping narrative arc of the scriptures.',
-        fileName: 'god-is-love.md',
+        slug: 'how-are-you-saved',
+        title: 'What Does The Bible Say About How To Be Saved?',
+        summary: 'The short answer is that the Bible does not have a single, unified view on salvation. Instead, you have competing theological systems running through both the Old and New Testaments.',
+        fileName: 'how-are-you-saved.md',
     },
 ];
 

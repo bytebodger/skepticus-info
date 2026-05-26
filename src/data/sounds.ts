@@ -111,6 +111,11 @@ export const soundList: Sound[] = [
         name: 'You Are A False Prophet',
         path: '/sounds/you-are-a-false-prophet.mp3',
     },
+    {
+        id: 'price-is-right-horns',
+        name: 'Losing Horns (Price Is Right)',
+        path: '/sounds/price-is-right-horns.mp3',
+    },
 ];
 
 /**

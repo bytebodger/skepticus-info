@@ -114,7 +114,7 @@ export const soundList: Sound[] = [
     {
         id: 'price-is-right-horns',
         name: 'Losing Horns (Price Is Right)',
-        path: '/sounds/price-is-right-horns.mp3',
+        path: '/sounds/losing-horns.mp3',
     },
 ];
 

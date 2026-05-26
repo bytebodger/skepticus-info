@@ -259,6 +259,18 @@ export const markdownDocs: MarkdownDoc[] = [
         summary: 'If you\'re looking for the red, horned ruler of Hell who wages a cosmic war against God, you won\'t find him in the Hebrew Bible (the Old Testament).',
         fileName: 'old-testament-satan.md',
     },
+    {
+        slug: 'perfectly-just-god',
+        title: 'Is God Perfectly Just?',
+        summary: 'The text of the Bible demonstrates that the character of Yahweh does not operate under a framework of perfect, objective justice.',
+        fileName: 'perfectly-just-god.md',
+    },
+    {
+        slug: 'god-is-love',
+        title: 'Is God Love?',
+        summary: 'To claim that "God is love" based on the Bible requires a selective reading that prioritizes short, late New Testament epistles while ignoring the vast, sweeping narrative arc of the scriptures.',
+        fileName: 'god-is-love.md',
+    },
 ];
 
 export function getMarkdownDocsSorted(): MarkdownDoc[]

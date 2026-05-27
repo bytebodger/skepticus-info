@@ -35,7 +35,7 @@ describe('DocsPage', () =>
         const sorted = [...labels].sort((a, b) => a.localeCompare(b));
         expect(labels).toEqual(sorted);
 
-        const filterInput = screen.getByRole('textbox', { name: 'Filter docs' });
+        const filterInput = screen.getByRole('textbox', { name: 'Search docs' });
         await user.type(filterInput, 'hebrew population');
 
         expect(screen.getAllByRole('link', { name: /open doc:/i })).toHaveLength(1);
@@ -47,13 +47,64 @@ describe('DocsPage', () =>
         expect(screen.getByText('No docs match your filter.')).toBeInTheDocument();
     });
 
+    it('filters docs by markdown content', async () =>
+    {
+        const user = userEvent.setup();
+
+        render(
+            <HelmetProvider>
+                <MemoryRouter initialEntries={['/docs']}>
+                    <Routes>
+                        <Route path='/docs'
+                            element={<DocsPage/>}/>
+                        <Route path='/docs/:slug'
+                            element={<DocsPage/>}/>
+                    </Routes>
+                </MemoryRouter>
+            </HelmetProvider>,
+        );
+
+        // Wait for markdown content to load
+        await vi.waitFor(() =>
+        {
+            expect(screen.queryByText('No docs match your filter.')).not.toBeInTheDocument();
+        }, { timeout: 5000 });
+
+        const filterInput = screen.getByRole('textbox', { name: 'Search docs' });
+
+        // Search for a word that appears in the markdown content of "the-growth-of-the-hebrew-population"
+        await user.type(filterInput, 'genealogy');
+
+        // This should find the Hebrew population doc
+        expect(screen.getAllByRole('link', { name: /open doc:/i })).toHaveLength(1);
+        expect(screen.getByRole('link', { name: 'Open doc: How Probable Was The Growth of the Hebrew Population in Egypt?' })).toBeInTheDocument();
+    });
+
     it('loads markdown content when a doc slug is opened directly', async () =>
     {
-        const fetchMock = vi.spyOn(globalThis, 'fetch').mockResolvedValue(
-            new Response('## Loaded markdown body\n\n$$P(t)=P_0(1+r)^t$$\n\n- Bullet from markdown', {
-                status: 200,
-            }),
-        );
+        vi.spyOn(globalThis, 'fetch').mockImplementation((url) =>
+        {
+            const urlStr = url instanceof Request ? url.url : String(url);
+            if (urlStr.endsWith('.md'))
+            {
+                // For the selected doc, return the mock content
+                if (urlStr.includes('the-growth-of-the-hebrew-population'))
+                {
+                    return Promise.resolve(
+                        new Response('## Loaded markdown body\n\n$$P(t)=P_0(1+r)^t$$\n\n- Bullet from markdown', {
+                            status: 200,
+                        }),
+                    );
+                }
+                // For other markdown files, return empty content (they're loaded but not displayed)
+                return Promise.resolve(
+                    new Response('', {
+                        status: 200,
+                    }),
+                );
+            }
+            return Promise.reject(new Error('Unexpected fetch'));
+        });
 
         render(
             <HelmetProvider>
@@ -68,7 +119,6 @@ describe('DocsPage', () =>
             </HelmetProvider>,
         );
 
-        expect(fetchMock).toHaveBeenCalledWith('/markdown/the-growth-of-the-hebrew-population.md');
         expect(await screen.findByText('Loaded markdown body')).toBeInTheDocument();
         expect(screen.getByText('Bullet from markdown')).toBeInTheDocument();
         expect(document.querySelector('.katex')).not.toBeNull();

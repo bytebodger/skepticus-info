@@ -15,9 +15,37 @@ export function DocsPage()
     const [filterValue, setFilterValue] = useState('');
     const [markdownContent, setMarkdownContent] = useState('');
     const [status, setStatus] = useState<LoadStatus>('idle');
+    const [markdownCache, setMarkdownCache] = useState<Record<string, string>>({});
 
     const docs = getMarkdownDocsSorted();
     const selectedDoc = docs.find((doc) => doc.slug === slug) ?? null;
+
+    // Load all markdown files on mount
+    useEffect(() =>
+    {
+        const loadAllMarkdown = async () =>
+        {
+            const cache: Record<string, string> = {};
+            for (const doc of docs)
+            {
+                try
+                {
+                    const response = await fetch(`/markdown/${doc.fileName}`);
+                    if (response.ok)
+                    {
+                        cache[doc.slug] = await response.text();
+                    }
+                }
+                catch
+                {
+                    // If a markdown file fails to load, continue with others
+                }
+            }
+            setMarkdownCache(cache);
+        };
+
+        loadAllMarkdown();
+    }, [docs]);
 
     const filteredDocs = useMemo(() =>
     {
@@ -29,11 +57,15 @@ export function DocsPage()
         }
 
         return docs.filter((doc) =>
-            doc.title.toLowerCase().includes(normalizedFilter) ||
-            doc.summary.toLowerCase().includes(normalizedFilter) ||
-            doc.slug.toLowerCase().includes(normalizedFilter),
-        );
-    }, [docs, filterValue]);
+        {
+            const titleMatch = doc.title.toLowerCase().includes(normalizedFilter);
+            const summaryMatch = doc.summary.toLowerCase().includes(normalizedFilter);
+            const slugMatch = doc.slug.toLowerCase().includes(normalizedFilter);
+            const contentMatch = markdownCache[doc.slug]?.toLowerCase().includes(normalizedFilter) ?? false;
+
+            return titleMatch || summaryMatch || slugMatch || contentMatch;
+        });
+    }, [docs, filterValue, markdownCache]);
 
     useEffect(() =>
     {
@@ -116,8 +148,8 @@ export function DocsPage()
                             className='docs-filter'
                             value={filterValue}
                             onChange={(event) => setFilterValue(event.target.value)}
-                            placeholder='Filter docs by title, summary, or slug'
-                            aria-label='Filter docs'
+                            placeholder='Search docs by title, summary, content, or slug'
+                            aria-label='Search docs'
                         />
                     </div>
 

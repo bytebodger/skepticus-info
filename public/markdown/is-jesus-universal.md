@@ -1,4 +1,4 @@
-The short answer is that the texts support **both** ideas, but they do so across a historical and theological timeline. The contradiction you are picking up on is real.
+The short answer is that the texts support **both** ideas, but they do so across a historical and theological timeline. The contradiction is real.
 
 If you look strictly at the text, the trajectory moves from **Jewish particularism** (Yahweh as the tribal God of Israel; Jesus as the Jewish Messiah sent to reform Israel) to **global universalism** (salvation extended to all humanity).
 

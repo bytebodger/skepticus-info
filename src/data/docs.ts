@@ -271,6 +271,12 @@ export const markdownDocs: MarkdownDoc[] = [
         summary: 'The short answer is that the Bible does not have a single, unified view on salvation. Instead, you have competing theological systems running through both the Old and New Testaments.',
         fileName: 'how-are-you-saved.md',
     },
+    {
+        slug: 'is-jesus-universal',
+        title: 'Is Christian Salvation Universal?',
+        summary: 'The short answer is that the texts support both ideas, but they do so across a historical and theological timeline. The contradiction is real.',
+        fileName: 'is-jesus-universal.md',
+    },
 ];
 
 export function getMarkdownDocsSorted(): MarkdownDoc[]

@@ -12,6 +12,10 @@ const navItems = [
         label: 'Bible Verses',
     },
     {
+        to: '/christian-quiz',
+        label: 'Christian Quiz',
+    },
+    {
         to: '/docs',
         label: 'Docs',
     },

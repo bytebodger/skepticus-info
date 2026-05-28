@@ -37,7 +37,7 @@ export const contradictions: Contradiction[] = [
         otherHandVerses: 'Mark 14:10-11',
     },
     {
-        title: 'Did saul know who David was?',
+        title: 'Did Saul already know who David was?',
         oneHand: 'Yes',
         oneHandVerses: '1 Samuel 16:21-23',
         otherHand: 'No',
@@ -196,6 +196,13 @@ export const contradictions: Contradiction[] = [
         oneHandVerses: 'Matthew 27:5',
         otherHand: 'His guts burst out',
         otherHandVerses: 'Acts 1:18',
+    },
+    {
+        title: 'Joshua was sold as a slave to whom?',
+        oneHand: 'The Ishmaelites',
+        oneHandVerses: 'Genesis 37:28, Genesis 39:1',
+        otherHand: 'The Midianites',
+        otherHandVerses: 'Genesis 37:36',
     },
 ];
 

@@ -9,6 +9,13 @@ export type Contradiction = {
 // Static contradiction data. Update this list to add or revise contradictions.
 export const contradictions: Contradiction[] = [
     {
+        title: 'When does Aaron go to meet Moses in the wilderness?',
+        oneHand: 'Before Yahweh tries to kill Moses.',
+        oneHandVerses: 'Exodus 4:14',
+        otherHand: 'After Yahweh tries to kill Moses.',
+        otherHandVerses: 'Exodus 4:27',
+    },
+    {
         title: 'What is the name of Moses\' father-in-law?',
         oneHand: 'Reuel',
         oneHandVerses: 'Exodus 2:18; Numbers 10:29',

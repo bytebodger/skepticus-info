@@ -440,9 +440,9 @@ export const christianQuizQuestions: QuizQuestion[] = [
         reference: 'Genesis 24:3-4, Genesis 28:1-2',
         answers: [
             'Find a wife for him amongst his cousins instead.',
+            'Kill all of the Canaanites, so he is never tempted to marry any of them.',
             'Find a Canaanite woman who can be converted to follow Yahweh, then have your son marry her.',
             'Find him a Canaanite wife for the time being but send her away once you find someone more suitable.',
-            'Kill all of the Canaanites, so he is never tempted to marry any of them.',
             'Teach him to have healthy, loving, adult relationships and trust that, when the time is right, he will meet someone who will be a great wife to him.',
         ],
     },

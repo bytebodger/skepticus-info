@@ -9,6 +9,13 @@ export type Contradiction = {
 // Static contradiction data. Update this list to add or revise contradictions.
 export const contradictions: Contradiction[] = [
     {
+        title: 'What is the name of Moses\' father-in-law?',
+        oneHand: 'Reuel',
+        oneHandVerses: 'Exodus 2:18; Numbers 10:29',
+        otherHand: 'Jethro',
+        otherHandVerses: 'Exodus 3:1; Exodus 4:18; Exodus 18:1-2; Exodus 18:5-6; Exodus 18:12',
+    },
+    {
         title: 'Can god be seen?',
         oneHand: 'Many passages say that people saw God directly.',
         oneHandVerses: 'Genesis 12:7; Genesis 18:1; Genesis 26:2; Genesis 26:24; Genesis 32:30; Genesis 35:9; Genesis 48:3; Exodus 24:9-11; Exodus 33:11; Exodus 33:23; Exodus 34:5-8; Deuteronomy 5:4; Numbers 12:8; Matthew 5:8; Every single time that someone saw Jesus;',

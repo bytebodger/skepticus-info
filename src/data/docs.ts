@@ -277,6 +277,12 @@ export const markdownDocs: MarkdownDoc[] = [
         summary: 'The short answer is that the texts support both ideas, but they do so across a historical and theological timeline. The contradiction is real.',
         fileName: 'is-jesus-universal.md',
     },
+    {
+        slug: 'signs-of-god',
+        title: 'Can You Demand Signs From God?',
+        summary: 'When humans take the initiative to request a sign or negotiate terms, the text reveals a highly specific list of interactions.',
+        fileName: 'signs-of-god.md',
+    },
 ];
 
 export function getMarkdownDocsSorted(): MarkdownDoc[]

@@ -1316,7 +1316,7 @@ export const christianQuizQuestions: QuizQuestion[] = [
         ],
     },
     {
-        question: 'How was a perfect god be corrected when he petulantly planned to wipe out nearly every one of his followers?',
+        question: 'How was a perfect god corrected when he petulantly planned to wipe out nearly every one of his followers?',
         reference: 'Exodus 32:11-14',
         answers: [
             'Moses reminded Yahweh of the covenants he\'d be breaking and explained how bad this would make him look in the eyes of foreigners.',

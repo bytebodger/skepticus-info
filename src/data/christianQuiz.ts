@@ -892,7 +892,7 @@ export const christianQuizQuestions: QuizQuestion[] = [
         answers: [
             'By telling his people to self-identify by smearing lamb\'s blood on their doorpost.',
             'God already always knows if someone follows him or not.',
-            'His followers speak Hebrews. Everyone else does not.',
+            'His followers speak Hebrew. Everyone else does not.',
             'By asking them whether they follow him.',
             'He doesn\'t know. According to his own guidelines, he would have slaughtered the firstborn of any Hebrew that did not smear blood on the doorpost, and he would have spared the firstborn of any Egyptian who did.',
         ],

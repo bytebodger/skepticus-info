@@ -198,7 +198,7 @@ export const christianQuizQuestions: QuizQuestion[] = [
         reference: 'Genesis 8:11',
         answers: [
             'Our god, who is apparently incapable of, or unwilling to, correct the wicked behavior of his own people, is perfectly capable of miraculously covering the entire world in a flood - and therefore, also capable of keeping an olive tree alive while being fully submerged for many months.',
-            'In a non-canonical text, Yahweh also found the only righteous olive tree on earth, and instructed that olive tree to build its own arc, which it used to survive the flood.',
+            'In a non-canonical text, Yahweh also found the only righteous olive tree on earth, and instructed that olive tree to build its own ark, which it used to survive the flood.',
             'Ancient aliens planted new olive trees as soon as the first patches of dry land reappeared.',
             'The olive was held above the water by the valiant efforts of the unicorns. Of course, those unicorns eventually drowned as a result of the heroic olive-tree rescue.',
             'There was no miraculous olive tree and no global flood. It\'s fucking fairytale. And a disgustingly dark one at that.',

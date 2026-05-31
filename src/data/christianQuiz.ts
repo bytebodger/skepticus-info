@@ -1367,7 +1367,7 @@ export const christianQuizQuestions: QuizQuestion[] = [
             'Yahweh knew the names of the prophets, but nowadays, Jesus knows everyone by name.',
             'Yahweh knows your name but he doesn\'t want you to know that he knows your name, otherwise it might go to your head.',
             'Yahweh has known everyone\'s name at some point - but he\'s forgetful.',
-            'If it\'s a simple matter of fact that Yahweh knows everyone\'s name, then it\'s nonsensical for him to explicitly tell Moses, "...and I know you by name." The clear implication is that there are a great many people - probably, nearly all people - who Yahweh does not know by name.',
+            'If it\'s a simple matter of fact that Yahweh knows everyone\'s name, then it\'s nonsensical for him to explicitly tell Moses, "...and I know you by name." The clear implication is that there are a great many people - maybe, nearly all people - who Yahweh does not know by name.',
         ],
     },
     {

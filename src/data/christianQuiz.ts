@@ -465,7 +465,7 @@ export const christianQuizQuestions: QuizQuestion[] = [
             'Jacob\'s descendants will be dirty, dusty people.',
             'Jacob\'s descendants will get caked in the crevices of your body and will need to be frequently washed away.',
             'Jacob\'s descendants will be microscopically tiny people.',
-            'It\'s a foolish lie. There are more dust particles on earth than the number of every multicelled organisms that have ever lived, and will ever live, on the planet.',
+            'It\'s a foolish lie. There are more dust particles on earth than the total number of multicelled organisms that have ever lived, and will ever live, on the planet.',
         ],
     },
     {

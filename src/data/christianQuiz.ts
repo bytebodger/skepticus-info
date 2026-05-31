@@ -223,7 +223,7 @@ export const christianQuizQuestions: QuizQuestion[] = [
             'He will never again destroy the earth and all flesh.',
             'He will only ever destroy all wicked people.',
             'Next time, he will intervene responsibly and lovingly long before he ever feels compelled to commit mass multi-species genocide.',
-            'What difference does it make? His covenants are worth less than a campaign promise written on used toilet paper.',
+            'What difference does it make? His covenants are worth less than a campaign promise written on twice-used toilet paper.',
         ],
     },
     {

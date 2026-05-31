@@ -991,7 +991,7 @@ export const christianQuizQuestions: QuizQuestion[] = [
         answers: [
             'Apparently, they are indistinguishable.',
             'They are visually identical, but Yahweh is angrier and more vindictive.',
-            'Yahweh is every cloud, every star, every mountain, every waterfall, every desiccated piece of feces in the desert, every bloated festering carcass - he is everything, at every moment.',
+            'Yahweh is in every cloud, every star, every mountain, every waterfall, every desiccated piece of feces in the desert, every bloated festering carcass - he is everything, at every moment.',
             'A Yahweh cloud has far more helpful advice about who you can sleep with.',
             'One is a well documented atmospheric phenomenon. The other is a fairytale.',
         ],
@@ -1035,8 +1035,8 @@ export const christianQuizQuestions: QuizQuestion[] = [
         answers: [
             'Apparently, they are indistinguishable.',
             'They are audibly identical, but Yahweh\'s voice is pettier and far more jealous.',
-            'Yahweh is every thunder clap, every star, every mountain, every waterfall, every wet fart, every bloated festering carcass - he is everything, at every moment.',
-            'Yahweh thunder has far more helpful advice about who you can sleep with.',
+            'Yahweh is in every thunder clap, every star, every mountain, every waterfall, every wet fart, every bloated festering carcass - he is everything, at every moment.',
+            'Yahweh\'s thunder has far more helpful advice about who you can sleep with.',
             'One is a well documented atmospheric phenomenon. The other is a fairytale.',
         ],
     },

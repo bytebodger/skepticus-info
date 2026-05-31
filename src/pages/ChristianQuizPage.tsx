@@ -1,4 +1,4 @@
-import { useMemo, useRef, useState } from 'react';
+import { useEffect, useMemo, useRef, useState } from 'react';
 import { christianQuizQuestions, QuizQuestion } from '../data/christianQuiz';
 import { SEO } from '../seo';
 
@@ -22,21 +22,61 @@ interface QuizState {
     answerOrders: number[][];
 }
 
-function buildQuizState(): QuizState {
-    const questions = shuffle(christianQuizQuestions);
+function getBookName(reference: string): string {
+    return reference.split(' ')[0];
+}
+
+const TOTAL_QUESTION_COUNT = christianQuizQuestions.length;
+const BASE_MIN_QUIZ_SIZE = 10;
+const AVAILABLE_BOOKS = Array.from(
+    new Set(christianQuizQuestions.map((question) => getBookName(question.reference))),
+);
+
+function buildQuizState(questionPool: QuizQuestion[], questionCount: number): QuizState {
+    const questions = shuffle(questionPool).slice(0, questionCount);
     const answerOrders = questions.map(() => shuffle([0, 1, 2, 3, 4]));
     return { questions, answerOrders };
 }
 
 export function ChristianQuizPage() {
-    const [quiz, setQuiz] = useState<QuizState>(() => buildQuizState());
+    const [selectedQuestionCount, setSelectedQuestionCount] = useState<number>(TOTAL_QUESTION_COUNT);
+    const [selectedBooks, setSelectedBooks] = useState<string[]>(AVAILABLE_BOOKS);
+    const [quiz, setQuiz] = useState<QuizState>(() =>
+        buildQuizState(christianQuizQuestions, TOTAL_QUESTION_COUNT),
+    );
     const [currentIndex, setCurrentIndex] = useState(0);
     // originalIndex of the chosen answer for each question, or null if not yet answered
-    const [selections, setSelections] = useState<(number | null)[]>(() =>
-        new Array(christianQuizQuestions.length).fill(null),
-    );
+    const [selections, setSelections] = useState<(number | null)[]>(() => new Array(TOTAL_QUESTION_COUNT).fill(null));
+    const [hasStarted, setHasStarted] = useState(false);
     const [complete, setComplete] = useState(false);
     const topRef = useRef<HTMLDivElement>(null);
+
+    const questionsByBook = useMemo(() => {
+        const counts = new Map<string, number>();
+        for (const question of christianQuizQuestions) {
+            const book = getBookName(question.reference);
+            counts.set(book, (counts.get(book) ?? 0) + 1);
+        }
+        return counts;
+    }, []);
+
+    const filteredQuestions = useMemo(
+        () =>
+            christianQuizQuestions.filter((question) =>
+                selectedBooks.includes(getBookName(question.reference)),
+            ),
+        [selectedBooks],
+    );
+
+    const maxQuestionCount = filteredQuestions.length;
+    const minQuestionCount = Math.min(BASE_MIN_QUIZ_SIZE, maxQuestionCount);
+
+    useEffect(() => {
+        setSelectedQuestionCount((prev) => {
+            if (maxQuestionCount === 0) return 0;
+            return Math.min(Math.max(prev, minQuestionCount), maxQuestionCount);
+        });
+    }, [minQuestionCount, maxQuestionCount]);
 
     const answeredCount = selections.filter((s) => s !== null).length;
     const score = selections.reduce<number>((sum, sel) => sum + (sel !== null ? pointsFor(sel) : 0), 0);
@@ -70,11 +110,35 @@ export function ChristianQuizPage() {
         topRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
 
-    function handleRestart() {
-        setQuiz(buildQuizState());
+    function handleToggleBook(book: string) {
+        setSelectedBooks((prev) => {
+            const isSelected = prev.includes(book);
+            if (isSelected && prev.length === 1) {
+                return prev;
+            }
+            if (isSelected) {
+                return prev.filter((value) => value !== book);
+            }
+            return [...prev, book];
+        });
+    }
+
+    function handleStartQuiz() {
+        const questionCount = Math.max(minQuestionCount, Math.min(selectedQuestionCount, maxQuestionCount));
+        setQuiz(buildQuizState(filteredQuestions, questionCount));
         setCurrentIndex(0);
-        setSelections(new Array(christianQuizQuestions.length).fill(null));
+        setSelections(new Array(questionCount).fill(null));
         setComplete(false);
+        setHasStarted(true);
+        topRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+
+    function handleRestart() {
+        setQuiz(buildQuizState(filteredQuestions, selectedQuestionCount));
+        setCurrentIndex(0);
+        setSelections(new Array(selectedQuestionCount).fill(null));
+        setComplete(false);
+        setHasStarted(false);
         topRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
 
@@ -104,7 +168,65 @@ export function ChristianQuizPage() {
 
             <div ref={topRef} />
 
-            {complete ? (
+            {!hasStarted ? (
+                <div className='quiz-setup card'>
+                    <p className='quiz-setup-copy'>
+                        Choose how many questions you want before starting.
+                    </p>
+                    <div className='quiz-size-control'>
+                        <label htmlFor='quiz-size-slider' className='quiz-size-label'>
+                            Number of questions: <strong>{selectedQuestionCount}</strong>
+                        </label>
+                        <div className='quiz-book-filter'>
+                            <p className='quiz-book-filter-label'>Include books:</p>
+                            <div className='quiz-book-options'>
+                                {AVAILABLE_BOOKS.map((book) => {
+                                    const isSelected = selectedBooks.includes(book);
+                                    const disableUncheck = isSelected && selectedBooks.length === 1;
+                                    return (
+                                        <label key={book} className='quiz-book-option'>
+                                            <input
+                                                type='checkbox'
+                                                checked={isSelected}
+                                                disabled={disableUncheck}
+                                                onChange={() => handleToggleBook(book)}
+                                            />
+                                            <span>
+                                                {book}{' '}
+                                                <span className='muted'>
+                                                    ({questionsByBook.get(book) ?? 0})
+                                                </span>
+                                            </span>
+                                        </label>
+                                    );
+                                })}
+                            </div>
+                        </div>
+                        <input
+                            id='quiz-size-slider'
+                            className='quiz-size-input'
+                            type='range'
+                            min={minQuestionCount}
+                            max={maxQuestionCount}
+                            step={1}
+                            value={selectedQuestionCount}
+                            onChange={(event) => setSelectedQuestionCount(parseInt(event.target.value, 10))}
+                        />
+                        <div className='quiz-size-range muted'>
+                            <span>Min: {minQuestionCount}</span>
+                            <span>Max: {maxQuestionCount}</span>
+                        </div>
+                    </div>
+                    <button
+                        type='button'
+                        className='quiz-next-btn'
+                        onClick={handleStartQuiz}
+                        disabled={maxQuestionCount === 0}
+                    >
+                        Start Quiz
+                    </button>
+                </div>
+            ) : complete ? (
                 // ── Final results screen ──────────────────────────────────────
                 <div className='quiz-results card'>
                     <h3 className='quiz-results-label'>{getFinalLabel(finalPctNum)}</h3>
@@ -177,7 +299,12 @@ export function ChristianQuizPage() {
 
                     {/* Question card */}
                     <div className='quiz-card card'>
-                        <p className='quiz-reference muted'>{currentQuestion.reference}</p>
+                        <p
+                            className={`quiz-reference muted ${isAnswered ? '' : 'quiz-reference-hidden'}`.trim()}
+                            aria-hidden={!isAnswered}
+                        >
+                            {currentQuestion.reference}
+                        </p>
                         <p className='quiz-question'>{currentQuestion.question}</p>
 
                         <ol className='quiz-answers' aria-label='Answer choices'>

@@ -234,7 +234,7 @@ export const christianQuizQuestions: QuizQuestion[] = [
             'He will always remember his covenant. He never forgets a covenant.',
             'He will remember it until the people break his laws.',
             'He will remember it as long the people continue to worship him.',
-            'What difference does it make? His covenants are worth less than a campaign promise written on used toilet paper.',
+            'What difference does it make? His covenants are worth less than a campaign promise written on twice-used toilet paper.',
         ],
     },
     {

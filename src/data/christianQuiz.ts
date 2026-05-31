@@ -47,7 +47,7 @@ export const christianQuizQuestions: QuizQuestion[] = [
             'So there would be something to sacrifice.',
             'To guard the tree of the knowledge of good and evil.',
             'To keep the foliage from becoming overgrown.',
-            'To keep Adam from messing around with the Nephilim.',
+            'Because at this point in the narrative Yahweh hadn\'t even bothered to consider procreation yet.',
         ],
     },
     {

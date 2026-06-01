@@ -21,7 +21,7 @@ export const galleryImages: GalleryImage[] = [
         location: '/gallery/abandoned-baptist-church.png',
     },
     {
-        title: 'Abraham Covered In Kids Wide',
+        title: 'Abraham Covered In Kids',
         location: '/gallery/abraham-covered-in-kids-wide.png',
     },
     {
@@ -49,7 +49,7 @@ export const galleryImages: GalleryImage[] = [
         location: '/gallery/ambiguity.png',
     },
     {
-        title: 'Ancient Retcon Wide',
+        title: 'Ancient Retcon',
         location: '/gallery/ancient-retcon-wide.png',
     },
     {
@@ -97,7 +97,7 @@ export const galleryImages: GalleryImage[] = [
         location: '/gallery/angry-moses.png',
     },
     {
-        title: 'Anonymous Group Wide',
+        title: 'Anonymous Group',
         location: '/gallery/anonymous-group-wide.png',
     },
     {
@@ -125,7 +125,7 @@ export const galleryImages: GalleryImage[] = [
         location: '/gallery/aryan-cult.png',
     },
     {
-        title: 'A Threatening God Wide',
+        title: 'A Threatening God',
         location: '/gallery/a-threatening-god-wide.png',
     },
     {
@@ -201,7 +201,7 @@ export const galleryImages: GalleryImage[] = [
         location: '/gallery/bible-collage.png',
     },
     {
-        title: 'Bible Creepies Wide',
+        title: 'Bible Creepies',
         location: '/gallery/bible-creepies-wide.png',
     },
     {
@@ -213,11 +213,11 @@ export const galleryImages: GalleryImage[] = [
         location: '/gallery/bible-drunkard.png',
     },
     {
-        title: 'Bible Fairy Tales Wide',
+        title: 'Bible Fairy Tales',
         location: '/gallery/bible-fairy-tales-wide.png',
     },
     {
-        title: 'Bible Fascist Wide',
+        title: 'Bible Fascist',
         location: '/gallery/bible-fascist-WIDE.png',
     },
     {
@@ -225,11 +225,11 @@ export const galleryImages: GalleryImage[] = [
         location: '/gallery/bible-hatcheting.png',
     },
     {
-        title: 'Bible Indoctrination Wide',
+        title: 'Bible Indoctrination',
         location: '/gallery/bible-indoctrination-wide.png',
     },
     {
-        title: 'Bible Investigation Wide',
+        title: 'Bible Investigation',
         location: '/gallery/bible-investigation-wide.png',
     },
     {
@@ -237,11 +237,11 @@ export const galleryImages: GalleryImage[] = [
         location: '/gallery/bible-supports.png',
     },
     {
-        title: 'Bible Trash Wide',
+        title: 'Bible Trash',
         location: '/gallery/bible-trash-wide.png',
     },
     {
-        title: 'Biblical Child Stoner Wide',
+        title: 'Biblical Child Stoner',
         location: '/gallery/biblical-child-stoner-wide.png',
     },
     {
@@ -253,11 +253,11 @@ export const galleryImages: GalleryImage[] = [
         location: '/gallery/biblical-fairy-servant.png',
     },
     {
-        title: 'Biblical Illusionist Wide',
+        title: 'Biblical Illusionist',
         location: '/gallery/biblical-illusionist-wide.png',
     },
     {
-        title: 'Biblical Prophet Wide',
+        title: 'Biblical Prophet',
         location: '/gallery/biblical-prophet-wide.png',
     },
     {
@@ -281,7 +281,7 @@ export const galleryImages: GalleryImage[] = [
         location: '/gallery/blind-bible-writing.png',
     },
     {
-        title: 'Blind Christians Wide',
+        title: 'Blind Christians',
         location: '/gallery/blind-christians-wide.png',
     },
     {
@@ -305,7 +305,7 @@ export const galleryImages: GalleryImage[] = [
         location: '/gallery/blind-witnesses.png',
     },
     {
-        title: 'Bloodthirsty Israelites Wide',
+        title: 'Bloodthirsty Israelites',
         location: '/gallery/bloodthirsty-israelites-wide.png',
     },
     {
@@ -353,7 +353,7 @@ export const galleryImages: GalleryImage[] = [
         location: '/gallery/brawny-hebrew-woman.png',
     },
     {
-        title: 'Burn Baby Burn Wide',
+        title: 'Burn Baby Burn',
         location: '/gallery/burn-baby-burn-wide.png',
     },
     {
@@ -373,7 +373,7 @@ export const galleryImages: GalleryImage[] = [
         location: '/gallery/burning-the-witch.png',
     },
     {
-        title: 'Burn Them All Wide',
+        title: 'Burn Them All',
         location: '/gallery/burn-them-all-wide.png',
     },
     {
@@ -383,5 +383,257 @@ export const galleryImages: GalleryImage[] = [
     {
         title: 'Caged Priests',
         location: '/gallery/caged-priests.png',
+    },
+    {
+        title: 'Caged Woman',
+        location: '/gallery/caged-woman-wide.png',
+    },
+    {
+        title: 'Calvin Smith',
+        location: '/gallery/calvin-smith.png',
+    },
+    {
+        title: 'Cameron Bertuzzi Magician',
+        location: '/gallery/cameron-bertuzzi-magician.png',
+    },
+    {
+        title: 'Canaanite Gods',
+        location: '/gallery/canaanite-gods.png',
+    },
+    {
+        title: 'Can Of Worms',
+        location: '/gallery/can-of-worms.png',
+    },
+    {
+        title: 'Cathedral',
+        location: '/gallery/cathedral.png',
+    },
+    {
+        title: 'Chainbreaker',
+        location: '/gallery/chainbreaker.png',
+    },
+    {
+        title: 'Checking Calendars',
+        location: '/gallery/checking-calendars.png',
+    },
+    {
+        title: 'Checking Circumcisions',
+        location: '/gallery/checking-circumcisions.png',
+    },
+    {
+        title: 'Cheering Genocide',
+        location: '/gallery/cheering-genocide.png',
+    },
+    {
+        title: 'Chess With A Pigeon',
+        location: '/gallery/chess-with-a-pigeon-wide.png',
+    },
+    {
+        title: 'Childlike Robot',
+        location: '/gallery/childlike-robot.png',
+    },
+    {
+        title: 'Child Sacrifice',
+        location: '/gallery/child-sacrifice.png',
+    },
+    {
+        title: 'Christian Crybaby',
+        location: '/gallery/christian-crybaby.png',
+    },
+    {
+        title: 'Christian Crybaby2',
+        location: '/gallery/christian-crybaby2.png',
+    },
+    {
+        title: 'Christian Indoctrination',
+        location: '/gallery/christian-indoctrination.png',
+    },
+    {
+        title: 'Christian Infighting',
+        location: '/gallery/christian-infighting.png',
+    },
+    {
+        title: 'Christian Lies',
+        location: '/gallery/christian-lies.png',
+    },
+    {
+        title: 'Christian Magic Tricks',
+        location: '/gallery/christian-magic-tricks-wide.png',
+    },
+    {
+        title: 'Christian Nationalist Pride',
+        location: '/gallery/christian-nationalist-pride.png',
+    },
+    {
+        title: 'Christian Obedience',
+        location: '/gallery/christian-obedience.png',
+    },
+    {
+        title: 'Christians Fleeing Scientists',
+        location: '/gallery/christians-fleeing-scientists.png',
+    },
+    {
+        title: 'Christians Vs FSM',
+        location: '/gallery/christians-vs-fsm.png',
+    },
+    {
+        title: 'Christians With Torches And Pitchforks',
+        location: '/gallery/christians-with-torches-and-pitchforks.png',
+    },
+    {
+        title: 'Church Glue',
+        location: '/gallery/church-glue.png',
+    },
+    {
+        title: 'Church Puppets',
+        location: '/gallery/church-puppets.png',
+    },
+    {
+        title: 'City Of Refuge',
+        location: '/gallery/city-of-refuge.png',
+    },
+    {
+        title: 'Clinging To Bible',
+        location: '/gallery/clinging-to-bible.png',
+    },
+    {
+        title: 'Clinging To The Planet',
+        location: '/gallery/clinging-to-the-planet.png',
+    },
+    {
+        title: 'Clockwork Christian',
+        location: '/gallery/clockwork-christian-wide.png',
+    },
+    {
+        title: 'Clown',
+        location: '/gallery/clown.png',
+    },
+    {
+        title: 'Clown Church',
+        location: '/gallery/clown-church.png',
+    },
+    {
+        title: 'Clown Jebus',
+        location: '/gallery/clown-jebus.png',
+    },
+    {
+        title: 'Clueless God2',
+        location: '/gallery/clueless-god2.png',
+    },
+    {
+        title: 'Clumsy Moses',
+        location: '/gallery/clumsy-moses.png',
+    },
+    {
+        title: 'Cognitive Bias',
+        location: '/gallery/cognitive-bias.png',
+    },
+    {
+        title: 'Computer Brain',
+        location: '/gallery/computer-brain.png',
+    },
+    {
+        title: 'Confused Bible Reader',
+        location: '/gallery/confused-bible-reader.png',
+    },
+    {
+        title: 'Confused God',
+        location: '/gallery/confused-god.png',
+    },
+    {
+        title: 'Confused Moses With Bush',
+        location: '/gallery/confused-moses-with-bush.png',
+    },
+    {
+        title: 'Confused Parishioners',
+        location: '/gallery/confused-parishioners.png',
+    },
+    {
+        title: 'Confused Readers',
+        location: '/gallery/confused-readers.png',
+    },
+    {
+        title: 'Confusing Crucifixion',
+        location: '/gallery/confusing-crucifixion.png',
+    },
+    {
+        title: 'Confusing Crucifixion2',
+        location: '/gallery/confusing-crucifixion2.png',
+    },
+    {
+        title: 'Consciousness',
+        location: '/gallery/consciousness.png',
+    },
+    {
+        title: 'Conspiracist',
+        location: '/gallery/conspiracist.png',
+    },
+    {
+        title: 'Conspiracy Man',
+        location: '/gallery/conspiracy-man-wide.png',
+    },
+    {
+        title: 'Control',
+        location: '/gallery/control.png',
+    },
+    {
+        title: 'Crazed Warriors',
+        location: '/gallery/crazed-warriors.png',
+    },
+    {
+        title: 'Crazy Abraham',
+        location: '/gallery/crazy-abraham.png',
+    },
+    {
+        title: 'Crazy God Talk',
+        location: '/gallery/crazy-god-talk-wide.png',
+    },
+    {
+        title: 'Crazy Sermon On The Mount',
+        location: '/gallery/crazy-sermon-on-the-mount-wide.png',
+    },
+    {
+        title: 'Crazy Yahweh',
+        location: '/gallery/crazy-yahweh.png',
+    },
+    {
+        title: 'Creation2',
+        location: '/gallery/creation2.png',
+    },
+    {
+        title: 'Crisis Of Faith',
+        location: '/gallery/crisis-of-faith-wide.png',
+    },
+    {
+        title: 'Crocodile Moses',
+        location: '/gallery/crocodile-moses.png',
+    },
+    {
+        title: 'Crown',
+        location: '/gallery/crown.png',
+    },
+    {
+        title: 'Crucified Lamb',
+        location: '/gallery/crucified-lamb-wide.png',
+    },
+    {
+        title: 'Crumbled Cathedral',
+        location: '/gallery/crumbled-cathedral.png',
+    },
+    {
+        title: 'Crybaby',
+        location: '/gallery/crybaby.png',
+    },
+    {
+        title: 'Crying Christians',
+        location: '/gallery/crying-christians.png',
+    },
+    {
+        title: 'Crystal Ball Staring',
+        location: '/gallery/crystal-ball-staring.png',
+    },
+    {
+        title: 'Damned Cultures',
+        location: '/gallery/damned-cultures.png',
     },
 ];

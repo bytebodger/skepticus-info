@@ -21,10 +21,6 @@ export const galleryImages: GalleryImage[] = [
         location: '/gallery/abandoned-baptist-church.png',
     },
     {
-        title: 'Abraham Covered In Kids',
-        location: '/gallery/abraham-covered-in-kids.png',
-    },
-    {
         title: 'Abraham Covered In Kids Wide',
         location: '/gallery/abraham-covered-in-kids-wide.png',
     },

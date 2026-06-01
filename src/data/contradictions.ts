@@ -218,6 +218,13 @@ export const contradictions: Contradiction[] = [
         otherHand: 'The Midianites',
         otherHandVerses: 'Genesis 37:36',
     },
+    {
+        title: 'Can you eat locusts?',
+        oneHand: 'Yes',
+        oneHandVerses: 'Leviticus 11:22',
+        otherHand: 'No',
+        otherHandVerses: 'Leviticus 11:41-42',
+    },
 ];
 
 export function getContradictionsSorted(): Contradiction[]

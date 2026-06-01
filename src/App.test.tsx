@@ -58,6 +58,23 @@ describe('App', () =>
         expect(screen.getAllByRole('button', { name: /open illustration/i }).length).toBeGreaterThan(0);
     });
 
+    it('renders gallery module route', () =>
+    {
+        render(
+            <HelmetProvider>
+                <MemoryRouter initialEntries={['/gallery']}>
+                    <App/>
+                </MemoryRouter>
+            </HelmetProvider>,
+        );
+
+        expect(screen.getByRole('heading', {
+            level: 2,
+            name: 'Gallery',
+        })).toBeInTheDocument();
+        expect(screen.getAllByRole('button', { name: /open gallery image:/i }).length).toBeGreaterThan(0);
+    });
+
     it('renders bible verses module route', () =>
     {
         render(

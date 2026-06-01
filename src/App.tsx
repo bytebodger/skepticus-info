@@ -6,6 +6,7 @@ import { ContradictionsPage } from './pages/ContradictionsPage';
 import { CounterApologeticsPage } from './pages/CounterApologeticsPage';
 import { DashboardPage } from './pages/DashboardPage';
 import { DocsPage } from './pages/DocsPage';
+import { GalleryPage } from './pages/GalleryPage';
 import { IllustrationsPage } from './pages/IllustrationsPage';
 import { NotFoundPage } from './pages/NotFoundPage';
 import { ProphecyScorecardPage } from './pages/ProphecyScorecardPage';
@@ -46,6 +47,9 @@ function App()
                 <Route path='/illustrations'
                     element={
                         <IllustrationsPage/>}/>
+                <Route path='/gallery'
+                    element={
+                        <GalleryPage/>}/>
                 <Route path='/bible-verses'
                     element={
                         <BibleVersesPage/>}/>

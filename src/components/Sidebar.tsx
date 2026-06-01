@@ -28,6 +28,10 @@ const navItems = [
         label: 'Illustrations',
     },
     {
+        to: '/gallery',
+        label: 'Gallery',
+    },
+    {
         to: '/prophecy-scorecard',
         label: 'Prophecy Scorecard',
     },

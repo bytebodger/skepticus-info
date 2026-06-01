@@ -438,6 +438,144 @@ th {
     object-fit: contain;
 }
 
+.gallery-filter-wrap {
+    margin: 0 0 10px;
+}
+
+.gallery-filter {
+    width: 100%;
+    max-width: 560px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.035), rgba(255, 255, 255, 0)), #0f1628;
+    color: var(--text);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 9px 10px;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.04);
+}
+
+.gallery-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+    gap: 10px;
+    overflow-y: auto;
+}
+
+.gallery-item {
+    min-width: 0;
+}
+
+.gallery-thumb-button {
+    width: 100%;
+    display: grid;
+    gap: 8px;
+    text-align: left;
+    padding: 10px;
+    background: linear-gradient(180deg, rgba(108, 183, 255, 0.06), rgba(255, 255, 255, 0)), var(--surface);
+    color: var(--text);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    cursor: pointer;
+    transition: border-color 150ms ease, box-shadow 150ms ease, background 150ms ease;
+}
+
+.gallery-thumb-button:hover {
+    background: linear-gradient(180deg, rgba(108, 183, 255, 0.12), rgba(140, 123, 255, 0.06)), var(--surface-soft);
+    border-color: rgba(108, 183, 255, 0.42);
+    box-shadow: 0 10px 22px rgba(6, 14, 28, 0.18);
+}
+
+.gallery-thumb-image {
+    width: 100%;
+    aspect-ratio: 16 / 10;
+    object-fit: cover;
+    border-radius: 6px;
+    background: #0b1324;
+}
+
+.gallery-thumb-title {
+    font-size: 0.92rem;
+    color: #e8f1ff;
+}
+
+.gallery-lightbox {
+    position: fixed;
+    inset: 0;
+    z-index: 1300;
+    background: linear-gradient(180deg, rgba(9, 15, 28, 0.985), rgba(7, 13, 25, 0.985));
+    display: grid;
+    grid-template-rows: auto 1fr;
+    gap: 8px;
+    padding: 10px;
+}
+
+.gallery-lightbox-toolbar {
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+}
+
+.gallery-lightbox-close {
+    justify-self: end;
+    background: linear-gradient(135deg, rgba(108, 183, 255, 0.26), rgba(140, 123, 255, 0.16)), #243557;
+    color: var(--text);
+    border: 1px solid rgba(108, 183, 255, 0.42);
+    border-radius: 6px;
+    padding: 7px 12px;
+    cursor: pointer;
+}
+
+.gallery-lightbox-stage {
+    min-height: 0;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    padding: 6px;
+    touch-action: pan-y;
+}
+
+.gallery-lightbox-stage-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 44px;
+    height: 44px;
+    border-radius: 999px;
+    border: 1px solid rgba(108, 183, 255, 0.45);
+    background: linear-gradient(135deg, rgba(108, 183, 255, 0.28), rgba(140, 123, 255, 0.16)), #203150;
+    color: #f1f6ff;
+    font-size: 1.4rem;
+    line-height: 1;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 10px 24px rgba(4, 10, 24, 0.34);
+}
+
+.gallery-lightbox-stage-nav:hover {
+    background: linear-gradient(135deg, rgba(108, 183, 255, 0.38), rgba(255, 124, 168, 0.16)), #2b3f67;
+}
+
+.gallery-lightbox-stage-nav-left {
+    left: 12px;
+}
+
+.gallery-lightbox-stage-nav-right {
+    right: 12px;
+}
+
+.gallery-lightbox-image {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+}
+
 .syllogism-grid {
     display: grid;
     gap: 10px;
@@ -1108,6 +1246,15 @@ th {
         padding: 8px;
     }
 
+    .gallery-lightbox {
+        padding: 8px;
+    }
+
+    .gallery-lightbox-stage-nav {
+        width: 40px;
+        height: 40px;
+    }
+
     .syllogism-form {
         grid-template-columns: 1fr;
     }
@@ -1195,6 +1342,24 @@ th {
 
     .illustration-close {
         padding: 6px 10px;
+    }
+
+    .gallery-lightbox-close {
+        padding: 6px 10px;
+    }
+
+    .gallery-lightbox-stage-nav {
+        width: 36px;
+        height: 36px;
+        font-size: 1.2rem;
+    }
+
+    .gallery-lightbox-stage-nav-left {
+        left: 8px;
+    }
+
+    .gallery-lightbox-stage-nav-right {
+        right: 8px;
     }
 
     .syllogism-item {

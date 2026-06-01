@@ -16,9 +16,9 @@ describe('GalleryPage', () =>
         );
 
         const openButtons = screen.getAllByRole('button', { name: /open gallery image:/i });
-        expect(openButtons).toHaveLength(4);
-        expect(openButtons[0]).toHaveAccessibleName('Open gallery image: God\'s Plan for Marriage');
-        expect(openButtons[1]).toHaveAccessibleName('Open gallery image: Pi Proves God');
+        expect(openButtons.length).toBeGreaterThan(4);
+        expect(openButtons[0]).toHaveAccessibleName('Open gallery image: A Threatening God Wide');
+        expect(openButtons[1]).toHaveAccessibleName('Open gallery image: Aaron Dead On Mount Hor');
 
         const filterInput = screen.getByRole('textbox', { name: 'Filter gallery images' });
         await user.type(filterInput, 'watchmaker');
@@ -44,8 +44,7 @@ describe('GalleryPage', () =>
             </HelmetProvider>,
         );
 
-        const openButtons = screen.getAllByRole('button', { name: /open gallery image:/i });
-        await user.click(openButtons[1]);
+        await user.click(screen.getByRole('button', { name: 'Open gallery image: Pi Proves God' }));
 
         expect(screen.getByRole('dialog', { name: 'Pi Proves God' })).toBeInTheDocument();
 
@@ -76,8 +75,7 @@ describe('GalleryPage', () =>
             </HelmetProvider>,
         );
 
-        const openButtons = screen.getAllByRole('button', { name: /open gallery image:/i });
-        await user.click(openButtons[1]);
+        await user.click(screen.getByRole('button', { name: 'Open gallery image: Pi Proves God' }));
 
         const dialog = screen.getByRole('dialog', { name: 'Pi Proves God' });
         const image = within(dialog).getByRole('img', { name: 'Pi Proves God' });

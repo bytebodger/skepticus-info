@@ -636,4 +636,152 @@ export const galleryImages: GalleryImage[] = [
         title: 'Damned Cultures',
         location: '/gallery/damned-cultures.png',
     },
+    {
+        title: 'Bible Interpreters',
+        location: '/gallery/bible-interpreters.png',
+    },
+    {
+        title: 'Cipher Key',
+        location: '/gallery/cipher-key.png',
+    },
+    {
+        title: 'Cloning Machine',
+        location: '/gallery/cloning-machine.png',
+    },
+    {
+        title: 'Code Forest',
+        location: '/gallery/code-forest.png',
+    },
+    {
+        title: 'Condescending Morality',
+        location: '/gallery/condescending-morality.png',
+    },
+    {
+        title: 'Cramming DNA Into The System',
+        location: '/gallery/cramming-dna-into-the-system.png',
+    },
+    {
+        title: 'Criminal Mayhem',
+        location: '/gallery/criminal-mayhem.png',
+    },
+    {
+        title: 'Dan Tree',
+        location: '/gallery/dan-tree.png',
+    },
+    {
+        title: 'Dawkins Jesus',
+        location: '/gallery/dawkins-jesus.png',
+    },
+    {
+        title: 'DNA Builder',
+        location: '/gallery/dna-builder.png',
+    },
+    {
+        title: 'DNA Causal Chain',
+        location: '/gallery/dna-causal-chain.png',
+    },
+    {
+        title: 'DNA Filters',
+        location: '/gallery/dna-filters.png',
+    },
+    {
+        title: 'DNA Jebus',
+        location: '/gallery/dna-jebus.png',
+    },
+    {
+        title: 'DNA Toddler',
+        location: '/gallery/dna-toddler.png',
+    },
+    {
+        title: 'DNA Vs Code Definition',
+        location: '/gallery/dna-vs-code-definition.png',
+    },
+    {
+        title: 'DNA Watchmaker',
+        location: '/gallery/dna-watchmaker.png',
+    },
+    {
+        title: 'DNA Watchmaker Shell Game',
+        location: '/gallery/dna-watchmaker-shell-game.png',
+    },
+    {
+        title: 'Everyone Is A King',
+        location: '/gallery/everyone-is-a-king.png',
+    },
+    {
+        title: 'Food Standards',
+        location: '/gallery/food-standards.png',
+    },
+    {
+        title: 'Functions',
+        location: '/gallery/functions.png',
+    },
+    {
+        title: 'Gods Laws',
+        location: '/gallery/gods-laws.png',
+    },
+    {
+        title: 'Good Or Bad Food',
+        location: '/gallery/good-or-bad-food.png',
+    },
+    {
+        title: 'Input Output',
+        location: '/gallery/input-output.png',
+    },
+    {
+        title: 'Logic Gates',
+        location: '/gallery/logic-gates.png',
+    },
+    {
+        title: 'Loops',
+        location: '/gallery/loops.png',
+    },
+    {
+        title: 'Make Believe Dolls',
+        location: '/gallery/make-believe-dolls.png',
+    },
+    {
+        title: 'Morality For Dummies',
+        location: '/gallery/morality-for-dummies.png',
+    },
+    {
+        title: 'Objective Morality',
+        location: '/gallery/objective-morality.png',
+    },
+    {
+        title: 'Objective Morality 2',
+        location: '/gallery/objective-morality-2.png',
+    },
+    {
+        title: 'Objective Morality New Improved',
+        location: '/gallery/objective-morality-new-improved.png',
+    },
+    {
+        title: 'Objective Universal Law',
+        location: '/gallery/objective-universal-law.png',
+    },
+    {
+        title: 'Operators',
+        location: '/gallery/operators.png',
+    },
+    {
+        title: 'Programming DNA',
+        location: '/gallery/programming-dna.png',
+    },
+    {
+        title: 'Snowflake',
+        location: '/gallery/snowflake.png',
+    },
+    {
+        title: 'Societal Free For All',
+        location: '/gallery/societal-free-for-all.png',
+    },
+    {
+        title: 'Subjective Law',
+        location: '/gallery/subjective-law.png',
+    },
+    {
+        title: 'Variables',
+        location: '/gallery/variables.png',
+    },
 ];

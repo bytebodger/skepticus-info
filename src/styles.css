@@ -1,3 +1,4 @@
+
 :root {
     color-scheme: dark;
     --bg: #07111f;
@@ -142,10 +143,11 @@ button:focus-visible,
 .main {
     padding: 12px 16px;
     overflow-x: auto;
+    overflow-y: auto;
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.015) 0%, rgba(255, 255, 255, 0) 100%);
     display: flex;
     flex-direction: column;
-    min-height: 0;
+    height: 100vh;
 }
 
 section {
@@ -438,8 +440,24 @@ th {
     object-fit: contain;
 }
 
+.gallery-page {
+    display: flex;
+    flex-direction: column;
+}
+
+.gallery-browser {
+    display: flex;
+    flex-direction: column;
+}
+
 .gallery-filter-wrap {
     margin: 0 0 10px;
+    position: sticky;
+    top: 0;
+    z-index: 15;
+    padding: 4px 0 8px;
+    flex: 0 0 auto;
+    background: linear-gradient(180deg, rgba(7, 17, 31, 0.98), rgba(7, 17, 31, 0.9));
 }
 
 .gallery-filter {
@@ -460,7 +478,6 @@ th {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
     gap: 10px;
-    overflow-y: auto;
 }
 
 .gallery-item {

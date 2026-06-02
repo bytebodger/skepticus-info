@@ -179,7 +179,8 @@ export function GalleryPage()
     }, [selected, filteredImages.length]);
 
     return (
-        <section aria-labelledby='gallery-heading'>
+        <section aria-labelledby='gallery-heading'
+            className='gallery-page'>
             <SEO
                 title='Skepticus Info Hub | Gallery'
                 description='Browse and open archived Skepticus images in a full-screen lightbox.'
@@ -189,48 +190,49 @@ export function GalleryPage()
                 <p className='muted'>Browse thumbnails from past videos and open any image full-screen.</p>
             </header>
 
-            <div className='gallery-filter-wrap'>
-                <label htmlFor='gallery-filter'
-                    className='sr-only'>
-                    Filter gallery images
-                </label>
-                <input
-                    id='gallery-filter'
-                    type='text'
-                    className='gallery-filter'
-                    value={filterValue}
-                    onChange={(event) => setFilterValue(event.target.value)}
-                    placeholder='Filter gallery by title'
-                    aria-label='Filter gallery images'
-                />
+            <div className='gallery-browser'>
+                <div className='gallery-filter-wrap'>
+                    <label htmlFor='gallery-filter'
+                        className='sr-only'>
+                        Filter gallery images
+                    </label>
+                    <input
+                        id='gallery-filter'
+                        type='text'
+                        className='gallery-filter'
+                        value={filterValue}
+                        onChange={(event) => setFilterValue(event.target.value)}
+                        placeholder='Filter gallery by title'
+                        aria-label='Filter gallery images'
+                    />
+                </div>
+
+                <ul className='gallery-list'
+                    aria-label='Gallery images'>
+                    {filteredImages.map((item, index) => (
+                        <li key={item.location}
+                            className='gallery-item'>
+                            <button
+                                type='button'
+                                className='gallery-thumb-button'
+                                onClick={() => setSelectedIndex(index)}
+                                aria-label={`Open gallery image: ${item.title}`}>
+                                <img
+                                    src={item.location}
+                                    alt={item.title}
+                                    className='gallery-thumb-image'
+                                    loading='lazy'
+                                />
+                                <span className='gallery-thumb-title'>{item.title}</span>
+                            </button>
+                        </li>
+                    ))}
+                </ul>
+
+                {filteredImages.length === 0 ? (
+                    <p className='muted'>No gallery images match your filter.</p>
+                ) : null}
             </div>
-
-            <ul className='gallery-list'
-                aria-label='Gallery images'>
-                {filteredImages.map((item, index) => (
-                    <li key={item.location}
-                        className='gallery-item'>
-                        <button
-                            type='button'
-                            className='gallery-thumb-button'
-                            onClick={() => setSelectedIndex(index)}
-                            aria-label={`Open gallery image: ${item.title}`}
-                        >
-                            <img
-                                src={item.location}
-                                alt={item.title}
-                                className='gallery-thumb-image'
-                                loading='lazy'
-                            />
-                            <span className='gallery-thumb-title'>{item.title}</span>
-                        </button>
-                    </li>
-                ))}
-            </ul>
-
-            {filteredImages.length === 0 ? (
-                <p className='muted'>No gallery images match your filter.</p>
-            ) : null}
 
             {selected ? (
                 <div className='gallery-lightbox'

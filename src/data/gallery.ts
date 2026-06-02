@@ -784,4 +784,205 @@ export const galleryImages: GalleryImage[] = [
         title: 'Variables',
         location: '/gallery/variables.png',
     },
-];
+    {
+        title: 'Data Manipulating Scientist',
+        location: '/gallery/data manipulating scientist.png',
+    },    {
+        title: 'Deal With The Devil',
+        location: '/gallery/deal with the devil wide.png',
+    },    {
+        title: 'Death Judge',
+        location: '/gallery/death judge.png',
+    },    {
+        title: 'Delusions Of Slavery',
+        location: '/gallery/delusions of slavery.png',
+    },    {
+        title: 'Demiurge',
+        location: '/gallery/demiurge.png',
+    },    {
+        title: 'Demon Dwarf2',
+        location: '/gallery/demon dwarf2 wide.png',
+    },    {
+        title: 'Demon Lightning',
+        location: '/gallery/demon lightning.png',
+    },    {
+        title: 'Demon Video Gamer',
+        location: '/gallery/demon video gamer.png',
+    },    {
+        title: 'Demon Watch',
+        location: '/gallery/demon watch.png',
+    },    {
+        title: 'Demonic Handbag',
+        location: '/gallery/demonic handbag.png',
+    },    {
+        title: 'Demonic Preacher',
+        location: '/gallery/demonic preacher.png',
+    },    {
+        title: 'Denialism',
+        location: '/gallery/denialism.png',
+    },    {
+        title: 'Denominational War',
+        location: '/gallery/denominational war.png',
+    },    {
+        title: 'Desert Caravan',
+        location: '/gallery/desert caravan.png',
+    },    {
+        title: 'Desert Coronation',
+        location: '/gallery/desert coronation.png',
+    },    {
+        title: 'Desert Marchers',
+        location: '/gallery/desert marchers wide.png',
+    },    {
+        title: 'Desert Reverence',
+        location: '/gallery/desert reverence.png',
+    },    {
+        title: 'Desert Singing 2',
+        location: '/gallery/desert singing 2.png',
+    },    {
+        title: 'Desert Wanderers',
+        location: '/gallery/desert wanderers.png',
+    },    {
+        title: 'Desert Wanderers2',
+        location: '/gallery/desert wanderers2.png',
+    },    {
+        title: 'Desert Wandering',
+        location: '/gallery/desert wandering wide.png',
+    },    {
+        title: 'Desperate Prayers',
+        location: '/gallery/desperate prayers.png',
+    },    {
+        title: 'Desperate Worshippers',
+        location: '/gallery/desperate worshippers.png',
+    },    {
+        title: 'Destroying Pagan Temple',
+        location: '/gallery/destroying pagan temple wide.png',
+    },    {
+        title: 'Deuteronomy 07',
+        location: '/gallery/deuteronomy 07.png',
+    },    {
+        title: 'Deuteronomy 08',
+        location: '/gallery/deuteronomy 08.png',
+    },    {
+        title: 'Deuteronomy 09',
+        location: '/gallery/deuteronomy 09 wide.png',
+    },    {
+        title: 'Deuteronomy 11',
+        location: '/gallery/deuteronomy 11 wide.png',
+    },    {
+        title: 'Deuteronomy 13',
+        location: '/gallery/deuteronomy 13.png',
+    },    {
+        title: 'Deuteronomy 14',
+        location: '/gallery/deuteronomy 14 wide.png',
+    },    {
+        title: 'Deuteronomy 15',
+        location: '/gallery/deuteronomy 15.png',
+    },    {
+        title: 'Deuteronomy 16',
+        location: '/gallery/deuteronomy 16.png',
+    },    {
+        title: 'Deuteronomy 17',
+        location: '/gallery/deuteronomy 17.png',
+    },    {
+        title: 'Deuteronomy 18',
+        location: '/gallery/deuteronomy 18.png',
+    },    {
+        title: 'Deuteronomy 19',
+        location: '/gallery/deuteronomy 19.png',
+    },    {
+        title: 'Deuteronomy 20',
+        location: '/gallery/deuteronomy 20.png',
+    },    {
+        title: 'Deuteronomy 21',
+        location: '/gallery/deuteronomy 21 wide.png',
+    },    {
+        title: 'Deuteronomy 22',
+        location: '/gallery/deuteronomy 22.png',
+    },    {
+        title: 'Deuteronomy 23',
+        location: '/gallery/deuteronomy 23.png',
+    },    {
+        title: 'Deuteronomy 24',
+        location: '/gallery/deuteronomy 24.png',
+    },    {
+        title: 'Deuteronomy 25',
+        location: '/gallery/deuteronomy 25.png',
+    },    {
+        title: 'Deuteronomy 26',
+        location: '/gallery/deuteronomy 26.png',
+    },    {
+        title: 'Deuteronomy 27',
+        location: '/gallery/deuteronomy 27.png',
+    },    {
+        title: 'Deuteronomy 28',
+        location: '/gallery/deuteronomy 28 wide.png',
+    },    {
+        title: 'Deuteronomy 29',
+        location: '/gallery/deuteronomy 29.png',
+    },    {
+        title: 'Deuteronomy 30',
+        location: '/gallery/deuteronomy 30.png',
+    },    {
+        title: 'Deuteronomy 31',
+        location: '/gallery/deuteronomy 31.png',
+    },    {
+        title: 'Deuteronomy 32',
+        location: '/gallery/deuteronomy 32.png',
+    },    {
+        title: 'Deuteronomy 33',
+        location: '/gallery/deuteronomy 33.png',
+    },    {
+        title: 'Deuteronomy 34',
+        location: '/gallery/deuteronomy 34.png',
+    },    {
+        title: 'Devil Advice',
+        location: '/gallery/devil advice wide.png',
+    },    {
+        title: 'Dinah Fleeing',
+        location: '/gallery/dinah fleeing.png',
+    },    {
+        title: 'Dinosaur Popes',
+        location: '/gallery/dinosaur popes.png',
+    },    {
+        title: 'Dirty Priests',
+        location: '/gallery/dirty priests.png',
+    },    {
+        title: 'Disgusting Text Brainwashing',
+        location: '/gallery/disgusting text brainwashing.png',
+    },    {
+        title: 'Dismayed Bible Burner',
+        location: '/gallery/dismayed bible burner.png',
+    },    {
+        title: 'Divination',
+        location: '/gallery/divination.png',
+    },    {
+        title: 'Divine Justice',
+        location: '/gallery/divine justice.png',
+    },    {
+        title: 'Double One Way',
+        location: '/gallery/double one way.png',
+    },    {
+        title: 'Dour Dance Party',
+        location: '/gallery/dour dance party.png',
+    },    {
+        title: 'Downward Trend',
+        location: '/gallery/downward trend.png',
+    },    {
+        title: 'Dragging A Suspected Woman',
+        location: '/gallery/dragging a suspected woman.png',
+    },    {
+        title: 'Drunk Adam Santa',
+        location: '/gallery/drunk adam santa.png',
+    },    {
+        title: 'Dumping Religions',
+        location: '/gallery/dumping religions.png',
+    },    {
+        title: 'Dunce Cap',
+        location: '/gallery/dunce cap.png',
+    },    {
+        title: 'Dying In The Desert',
+        location: '/gallery/dying in the desert wide.png',
+    },    {
+        title: 'Dystopian Christian School',
+        location: '/gallery/dystopian christian school.png',
+    },];

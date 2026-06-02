@@ -271,6 +271,169 @@ export const syllogisms: Syllogism[] = [
             'Every fundamentalist, whether they realize it or not, has to make some sort of subjective judgment call about which verses are meant to be taken literally and which are meant to be taken figuratively. This is a problem for fundamentalism because it claims to be based on the text alone, but in reality it relies on subjective interpretation just as much as any other approach.',
         ],
     },
+    {
+        id: 'trinity-violates-monotheism',
+        title: 'The Trinity violates monotheism.',
+        premises: [
+            'Christianity claims to be a monotheistic religion.',
+            'Monotheism is the belief in exactly one god.',
+            'The Trinity doctrine holds that the Father, Son, and Holy Spirit are three distinct persons.',
+            'Three distinct persons cannot be one god without violating the definition of "one."',
+        ],
+        conclusion: 'The Trinity doctrine is incompatible with monotheism.',
+        notes: [],
+    },
+    {
+        id: 'omniscient-god-cannot-be-surprised-angered-disappointed',
+        title: 'An omniscient god cannot be surprised, angered, or disappointed.',
+        premises: [
+            'Yahweh is omniscient.',
+            'Omniscience means knowing everything - past, present, and future.',
+            'Surprise, anger, and disappointment are reactions to unexpected or unwanted outcomes.',
+            'An omniscient being cannot encounter unexpected outcomes.',
+        ],
+        conclusion: 'Yahweh cannot genuinely experience surprise, anger, or disappointment.',
+        notes: [
+            'The bible repeatedly depicts Yahweh as surprised, angered, or disappointed by human behavior. (e.g., Genesis 6:6, where Yahweh "regrets" creating mankind.)',
+            'If these are genuine emotional reactions, then Yahweh is not omniscient. If Yahweh is omniscient, then these depicted emotions are false.',
+        ],
+    },
+    {
+        id: 'omniscient-god-cannot-genuinely-test-anyone',
+        title: 'An omniscient god cannot genuinely "test" anyone.',
+        premises: [
+            'Yahweh is omniscient.',
+            'A test is designed to reveal information that is currently unknown.',
+            'An omniscient being already knows the outcome of any test.',
+        ],
+        conclusion: 'Yahweh cannot genuinely test anyone.',
+        notes: [
+            'The binding of Isaac (Genesis 22) is explicitly framed as a test. But if Yahweh already knew what Abraham would do, the test reveals nothing new to Yahweh.',
+            'If the test wasn\'t for Yahweh\'s benefit, then it was purely to cause Abraham suffering - which raises serious moral questions.',
+        ],
+    },
+    {
+        id: 'free-will-and-omniscience-are-incompatible',
+        title: 'Free will and omniscience are incompatible.',
+        premises: [
+            'Yahweh is omniscient.',
+            'Omniscience means Yahweh knows, with certainty, every choice every person will ever make.',
+            'If a future choice is already known with certainty, it cannot be otherwise.',
+            'If a choice cannot be otherwise, it is not a free choice.',
+        ],
+        conclusion: 'Free will cannot exist under an omniscient god.',
+        notes: [
+            'A common apologetic is that god "foreknows" without "foreordaining." But knowing something will happen with certainty is functionally identical to it being determined. The distinction doesn\'t hold up.',
+        ],
+    },
+    {
+        id: 'hell-incompatible-with-omnibenevolent-god',
+        title: 'Hell is incompatible with an omnibenevolent god.',
+        premises: [
+            'Yahweh is omnibenevolent - perfectly good and loving.',
+            'Omnibenevolence means Yahweh always acts in the most loving way possible.',
+            'Eternal conscious torment in hell is the worst possible punishment.',
+            'No finite sin can justify an infinite punishment.',
+        ],
+        conclusion: 'Hell is incompatible with an omnibenevolent god.',
+        notes: [],
+    },
+    {
+        id: 'omnipotent-god-has-no-need-of-worship',
+        title: 'An omnipotent god has no need of worship.',
+        premises: [
+            'Yahweh is omnipotent and self-sufficient.',
+            'A self-sufficient being has no unmet needs.',
+            'Worship exists to honor, please, or appease a being.',
+            'A self-sufficient being cannot genuinely need to be honored, pleased, or appeased.',
+        ],
+        conclusion: 'Yahweh has no need of worship.',
+        notes: [
+            'If Yahweh genuinely desires or demands worship despite having no need for it, that describes vanity - not perfect goodness.',
+        ],
+    },
+    {
+        id: 'original-sin-cannot-be-inherited',
+        title: 'Original sin cannot be inherited.',
+        premises: [
+            'Christian doctrine holds that all humans inherit Original Sin from Adam and Eve.',
+            'A sin is a moral failing for which the sinner bears responsibility.',
+            'You cannot bear responsibility for actions you did not take and choices you did not make.',
+        ],
+        conclusion: 'Original Sin cannot be inherited.',
+        notes: [
+            'Punishing someone for the actions of an ancestor isn\'t justice. By any reasonable moral standard, it\'s the opposite.',
+        ],
+    },
+    {
+        id: 'hell-undermines-free-will',
+        title: 'Hell undermines free will.',
+        premises: [
+            'Christian doctrine holds that humans must freely choose to follow god.',
+            'A genuine free choice requires that the options be presented without coercion.',
+            'Threatening someone with eternal torment if they choose incorrectly is coercion.',
+        ],
+        conclusion: 'The threat of hell makes genuine free choice impossible.',
+        notes: [],
+    },
+    {
+        id: 'divine-hiddenness-disproves-omnibenevolent-god',
+        title: 'The problem of divine hiddenness disproves an omnibenevolent god.',
+        premises: [
+            'An omnibenevolent god would want all people to have the opportunity to know him.',
+            'A relationship with god is, according to Christianity, the most important thing a person can have.',
+            'Many people sincerely seek god and find nothing.',
+            'An omnibenevolent, omnipotent god could make himself known to anyone who sincerely seeks him.',
+        ],
+        conclusion: 'The existence of sincere, unrequited seekers is incompatible with an omnibenevolent god.',
+        notes: [],
+    },
+    {
+        id: 'answered-prayer-indistinguishable-from-coincidence',
+        title: 'Answered prayer is indistinguishable from coincidence.',
+        premises: [
+            'Christians claim that prayer produces results.',
+            'The outcomes attributed to answered prayer are statistically indistinguishable from random chance.',
+            'If a phenomenon is statistically indistinguishable from random chance, there\'s no basis for concluding it has a supernatural cause.',
+        ],
+        conclusion: 'There is no evidence that prayer produces results beyond what random chance would predict.',
+        notes: [],
+    },
+    {
+        id: 'eternal-hell-makes-repentance-irrelevant',
+        title: 'An eternal hell makes repentance irrelevant.',
+        premises: [
+            'Standard Christian doctrine holds that a person who dies without accepting Jesus goes to hell permanently, with no possibility of future repentance.',
+            'Christianity also holds that Yahweh desires all people to repent and be saved. (2 Peter 3:9)',
+            'A god who permanently removes the opportunity for repentance cannot genuinely desire all people to repent.',
+        ],
+        conclusion: 'Eternal hell is incompatible with the claim that Yahweh desires all people to be saved.',
+        notes: [],
+    },
+    {
+        id: 'global-flood-is-logically-impossible',
+        title: 'The global flood is logically impossible.',
+        premises: [
+            'Genesis describes a global flood that covered every mountain on earth.',
+            'The earth\'s oceans contain approximately 1.335 billion cubic kilometers of water.',
+            'Covering every mountain on earth would require roughly 4.4 billion cubic kilometers of water - more than three times the water currently on earth.',
+            'The bible gives no account of where this additional water came from or where it went.',
+        ],
+        conclusion: 'The global flood as described in Genesis is physically impossible.',
+        notes: [],
+    },
+    {
+        id: 'bible-authorship-undermines-authority',
+        title: 'The bible\'s authorship undermines its authority.',
+        premises: [
+            'Christians claim the bible is the authoritative word of god.',
+            'The bible was written by dozens of human authors over hundreds of years.',
+            'Those authors disagreed with each other on key doctrinal points.',
+            'A document with contradicting authors cannot be a unified, authoritative statement from a single, coherent divine source.',
+        ],
+        conclusion: 'The bible cannot be the authoritative word of god.',
+        notes: [],
+    },
 ];
 
 export function getSyllogismsSorted(): Syllogism[]

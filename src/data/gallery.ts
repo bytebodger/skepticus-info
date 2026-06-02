@@ -1418,8 +1418,80 @@ export const galleryImages: GalleryImage[] = [
          title: 'Greek God Statues',
          location: '/gallery/greek god statues.png',
      },
-     {
-         title: 'Gypsy Divinations',
-         location: '/gallery/gypsy divinations wide.png',
-     },
- ];
+      {
+          title: 'Gypsy Divinations',
+          location: '/gallery/gypsy divinations wide.png',
+      },
+    {
+        title: 'Fnord',
+        location: '/gallery/fnord.png',
+    },
+    {
+        title: 'Fnord Arrogance',
+        location: '/gallery/fnord-arrogance.png',
+    },
+    {
+        title: 'Fnord Bible',
+        location: '/gallery/fnord-bible.png',
+    },
+    {
+        title: 'Fnord Buckets',
+        location: '/gallery/fnord-buckets.png',
+    },
+    {
+        title: 'Fnord Castle',
+        location: '/gallery/fnord-castle.png',
+    },
+    {
+        title: 'Fnord Chess',
+        location: '/gallery/fnord-chess.png',
+    },
+    {
+        title: 'Fnord City',
+        location: '/gallery/fnord-city.png',
+    },
+    {
+        title: 'Fnord Coffee',
+        location: '/gallery/fnord-coffee.png',
+    },
+    {
+        title: 'Fnord Fight',
+        location: '/gallery/fnord-fight.png',
+    },
+    {
+        title: 'Fnord Headphones',
+        location: '/gallery/fnord-headphones.png',
+    },
+    {
+        title: 'Fnord Laboratory',
+        location: '/gallery/fnord-laboratory.png',
+    },
+    {
+        title: 'Fnord Museum',
+        location: '/gallery/fnord-museum.png',
+    },
+    {
+        title: 'Fnord Night Chase',
+        location: '/gallery/fnord-night-chase.png',
+    },
+    {
+        title: 'Fnord Preaching',
+        location: '/gallery/fnord-preaching.png',
+    },
+    {
+        title: 'Fnord Road',
+        location: '/gallery/fnord-road.png',
+    },
+    {
+        title: 'Fnord Shield',
+        location: '/gallery/fnord-shield.png',
+    },
+    {
+        title: 'Fnord Times Square',
+        location: '/gallery/fnord-times-square.png',
+    },
+    {
+        title: 'Ford Newspaper',
+        location: '/gallery/ford-newspaper.png',
+    },
+  ];

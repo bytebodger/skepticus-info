@@ -3483,5 +3483,69 @@ export const galleryImages: GalleryImage[] = [
         title: 'Zombie Jesus2',
         location: '/gallery/zombie-jesus2.png',
     },
+    {
+        title: 'Brain Community Service',
+        location: '/gallery/brain-community-service.png',
+    },
+    {
+        title: 'Brain Disaster Relief',
+        location: '/gallery/brain-disaster-relief.png',
+    },
+    {
+        title: 'Brain Empathy',
+        location: '/gallery/brain-empathy.png',
+    },
+    {
+        title: 'Brain God Of The Gaps',
+        location: '/gallery/brain-god-of-the-gaps.png',
+    },
+    {
+        title: 'Brain Heaven',
+        location: '/gallery/brain-heaven.png',
+    },
+    {
+        title: 'Brain Hot Cold',
+        location: '/gallery/brain-hot-cold.png',
+    },
+    {
+        title: 'Brain Inspection',
+        location: '/gallery/brain-inspection.png',
+    },
+    {
+        title: 'Brain Measurements',
+        location: '/gallery/brain-measurements.png',
+    },
+    {
+        title: 'Brain Moral Lottery',
+        location: '/gallery/brain-moral-lottery.png',
+    },
+    {
+        title: 'Brain Party',
+        location: '/gallery/brain-party.png',
+    },
+    {
+        title: 'Brain Pizza',
+        location: '/gallery/brain-pizza.png',
+    },
+    {
+        title: 'Brain Scared',
+        location: '/gallery/brain-scared.png',
+    },
+    {
+        title: 'Brain Smuggling',
+        location: '/gallery/brain-smuggling.png',
+    },
+    {
+        title: 'Brain Tossing Jesus',
+        location: '/gallery/brain-tossing-jesus.png',
+    },
+    {
+        title: 'Frightened Woman',
+        location: '/gallery/frightened-woman.png',
+    },
+    {
+        title: 'Heavenly Stairs',
+        location: '/gallery/heavenly-stairs.png',
+    },
 
 ];

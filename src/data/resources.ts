@@ -185,4 +185,10 @@ export const sourceLibrary: SourceItem[] = [
         type: 'Channel',
         url: 'https://www.youtube.com/@Deconstruction_Zone',
     },
+    {
+        title: 'When Jesus Insulted People: A Comprehensive List',
+        author: 'Levi Secord',
+        type: 'Article',
+        url: 'https://www.christbible.net/escape-from-reason/when-jesus-insulted-people-a-comprehensive-list',
+    },
 ];

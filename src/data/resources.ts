@@ -1,9 +1,3 @@
-export type QuickStat = {
-    label: string;
-    value: string;
-    hint: string;
-};
-
 export type CounterArgument = {
     claim: string;
     response: string;
@@ -22,29 +16,6 @@ export type SourceItem = {
     type: 'Book' | 'Paper' | 'Article' | 'Video' | 'Channel';
     url: string;
 };
-
-export const quickStats: QuickStat[] = [
-    {
-        label: 'Modules',
-        value: '5',
-        hint: 'Core dashboard sections ready',
-    },
-    {
-        label: 'Counter Points',
-        value: '8',
-        hint: 'Fast on-air references',
-    },
-    {
-        label: 'Primary Sources',
-        value: '10',
-        hint: 'Direct links for citations',
-    },
-    {
-        label: 'Updated',
-        value: 'May 2026',
-        hint: 'Last full review cycle',
-    },
-];
 
 export const counterArguments: CounterArgument[] = [
     {

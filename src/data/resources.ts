@@ -191,4 +191,10 @@ export const sourceLibrary: SourceItem[] = [
         type: 'Article',
         url: 'https://www.christbible.net/escape-from-reason/when-jesus-insulted-people-a-comprehensive-list',
     },
+    {
+        title: 'Trump Accountability Tracker',
+        author: 'GLAAD',
+        type: 'Article',
+        url: 'https://glaad.org/trump-accountability-tracker/',
+    },
 ];

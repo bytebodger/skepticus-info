@@ -3,14 +3,12 @@ import { BibleVersesPage } from './pages/BibleVersesPage';
 import { ChristianQuizPage } from './pages/ChristianQuizPage';
 import { Layout } from './components/Layout';
 import { ContradictionsPage } from './pages/ContradictionsPage';
-import { CounterApologeticsPage } from './pages/CounterApologeticsPage';
 import { DashboardPage } from './pages/DashboardPage';
 import { DocsPage } from './pages/DocsPage';
 import { GalleryPage } from './pages/GalleryPage';
 import { IllustrationsPage } from './pages/IllustrationsPage';
 import { NotFoundPage } from './pages/NotFoundPage';
 import { ProphecyScorecardPage } from './pages/ProphecyScorecardPage';
-import { ResearchBriefsPage } from './pages/ResearchBriefsPage';
 import { SoundboardPage } from './pages/SoundboardPage';
 import { SourceLibraryPage } from './pages/SourceLibraryPage';
 import { StreamToolkitPage } from './pages/StreamToolkitPage';
@@ -29,12 +27,6 @@ function App()
                 <Route path='/prophecy-scorecard'
                     element={
                         <ProphecyScorecardPage/>}/>
-                <Route path='/counter-apologetics'
-                    element={
-                        <CounterApologeticsPage/>}/>
-                <Route path='/research-briefs'
-                    element={
-                        <ResearchBriefsPage/>}/>
                 <Route path='/source-library'
                     element={
                         <SourceLibraryPage/>}/>

@@ -14,6 +14,7 @@ import { SourceLibraryPage } from './pages/SourceLibraryPage';
 import { StreamToolkitPage } from './pages/StreamToolkitPage';
 import { SyllogismBuilderPage } from './pages/SyllogismBuilderPage';
 import { SyllogismsPage } from './pages/SyllogismsPage';
+import { FailedPropheciesPage } from './pages/FailedPropheciesPage';
 
 function App()
 {
@@ -63,6 +64,9 @@ function App()
                 <Route path='/syllogism-builder'
                     element={
                         <SyllogismBuilderPage/>}/>
+                <Route path='/failed-prophecies'
+                    element={
+                        <FailedPropheciesPage/>}/>
                 <Route path='/home'
                     element={
                         <Navigate to='/'

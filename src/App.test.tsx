@@ -159,4 +159,21 @@ describe('App', () =>
         })).toBeInTheDocument();
         expect(screen.getAllByRole('button', { name: /open syllogism:/i }).length).toBeGreaterThan(0);
     });
+
+     it('renders failed prophecies module route', () =>
+     {
+         render(
+             <HelmetProvider>
+                 <MemoryRouter initialEntries={['/failed-prophecies']}>
+                     <App/>
+                 </MemoryRouter>
+             </HelmetProvider>,
+         );
+
+         expect(screen.getByRole('heading', {
+             level: 2,
+             name: 'Failed Prophecies',
+         })).toBeInTheDocument();
+         expect(screen.getAllByRole('heading', { level: 3 }).length).toBeGreaterThan(0);
+     });
 });

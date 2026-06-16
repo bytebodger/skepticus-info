@@ -78,4 +78,10 @@ export const sourceLibrary: SourceItem[] = [
         type: 'Article',
         url: 'https://glaad.org/trump-accountability-tracker/',
     },
+    {
+        title: 'Copenhagen Survey on Black Holes and Fundamental Physics',
+        author: 'Alice Chen, Phil Harper, Niayesh Afshordi',
+        type: 'Article',
+        url: 'https://arxiv.org/html/2503.15776v1',
+    },
 ];

@@ -51,6 +51,10 @@ const navItems = [
         to: '/syllogisms',
         label: 'Syllogisms',
     },
+    {
+        to: '/failed-prophecies',
+        label: 'Failed Prophecies',
+    },
     // { to: '/stream-toolkit', label: 'Stream Toolkit' },
 ];
 

@@ -283,6 +283,12 @@ export const markdownDocs: MarkdownDoc[] = [
         summary: 'When humans take the initiative to request a sign or negotiate terms, the text reveals a highly specific list of interactions.',
         fileName: 'signs-of-god.md',
     },
+    {
+        slug: 'is-bereshit-jesus',
+        title: 'Does The First Word Of The Bible Refer To Jesus?',
+        summary: 'The bereshit argument fails at nearly every level.',
+        fileName: 'is-bereshit-jesus.md',
+    },
 ];
 
 export function getMarkdownDocsSorted(): MarkdownDoc[]

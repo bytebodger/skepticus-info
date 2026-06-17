@@ -162,7 +162,7 @@ export function ChristianQuizPage() {
             <header className='page-header'>
                 <h2 id='quiz-heading'>How Christian Are You?</h2>
                 <p className='muted'>
-                    Answer each question honestly. Your score is revealed after every answer.
+                    You receive the most points for the answer that matches the bible. Your score is revealed after every answer.
                 </p>
             </header>
 

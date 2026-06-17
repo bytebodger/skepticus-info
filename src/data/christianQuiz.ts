@@ -1539,11 +1539,11 @@ export const christianQuizQuestions: QuizQuestion[] = [
         question: 'On the Day of Atonement, what happens to the scapegoat?',
         reference: 'Leviticus 16:22',
         answers: [
-            'It goes free into the wilderness, but this has nothing to do with Jesus.',
+            'The goat literally takes all of the sins of the Israelites... and is then released. There is no need to kill it.',
             'The goat is killed because sin cannot be forgiven without a blood sacrifice.',
             'The goat is eaten.',
             'The goat is sent off to Canaan.',
-            'The goat literally takes all of the sins of the Israelites... and is then released. There is no need to kill it.',
+            'Whatever the angry jealous storm god wants to happen to the scapegoat',
         ],
     },
     {

@@ -84,4 +84,22 @@ export const sourceLibrary: SourceItem[] = [
         type: 'Article',
         url: 'https://arxiv.org/html/2503.15776v1',
     },
+    {
+        title: 'Prayers Don\'t Help Heart Surgery Patients',
+        author: 'William J. Cromie',
+        type: 'Article',
+        url: 'https://news.harvard.edu/gazette/story/2006/04/prayers-dont-help-heart-surgery-patients-2/',
+    },
+    {
+        title: '1050 Commands of Christ in the New Testament',
+        author: 'Christian Assemblies International',
+        type: 'Article',
+        url: 'https://theparkprisonministry.org/2024/03/1050-commands-of-christ-in-the-new-testament/?print=print',
+    },
+    {
+        title: 'A List of the 613 Mitzvot (Commandments)',
+        author: 'Tracey R Rich',
+        type: 'Article',
+        url: 'https://www.jewfaq.org/613_commandments',
+    },
 ];

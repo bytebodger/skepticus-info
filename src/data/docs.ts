@@ -289,6 +289,12 @@ export const markdownDocs: MarkdownDoc[] = [
         summary: 'The bereshit argument fails at nearly every level.',
         fileName: 'is-bereshit-jesus.md',
     },
+    {
+        slug: 'simplest-arguments-that-debunk-yec',
+        title: 'What Are The Simplest Arguments That Debunk Young Earth Creationism?',
+        summary: 'Here\'s a breakdown of the most obvious and easily verifiable evidence against YEC, organized by category.',
+        fileName: 'simplest-arguments-that-debunk-yec.md',
+    },
 ];
 
 export function getMarkdownDocsSorted(): MarkdownDoc[]

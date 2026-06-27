@@ -225,6 +225,13 @@ export const contradictions: Contradiction[] = [
         otherHand: 'No',
         otherHandVerses: 'Leviticus 11:41-42',
     },
+    {
+        title: 'Is god love?',
+        oneHand: 'Yes',
+        oneHandVerses: '1 John 4:8, 1 John 4:16',
+        otherHand: 'No',
+        otherHandVerses: '1 Corinthians 13:4-7, Exodus 20:5, Exodus 34:14, Deuteronomy 4:24, Deuteronomy 5:9, Deuteronomy 6:15, Deuteronomy 29:20, Joshua 24:19, Nahum 1:2, Ezekiel 16:38-42, Ezekiel 23:25, Ezekiel 36:5-6, Ezekiel 38:19, James 4:5, Isaiah 42:8, Isaiah 48:11, Isaiah 45:5-6, Isaiah 46:9, Jeremiah 9:24, Deuteronomy 32:39, Ezekiel 39:25',
+    },
 ];
 
 export function getContradictionsSorted(): Contradiction[]

@@ -1,7 +1,7 @@
 export type SourceItem = {
     title: string;
     author: string;
-    type: 'Book' | 'Paper' | 'Article' | 'Video' | 'Channel';
+    type: 'Book' | 'Paper' | 'Article' | 'Video' | 'Channel' | 'Tool';
     url: string;
 };
 
@@ -101,5 +101,11 @@ export const sourceLibrary: SourceItem[] = [
         author: 'Tracey R Rich',
         type: 'Article',
         url: 'https://www.jewfaq.org/613_commandments',
+    },
+    {
+        title: 'Bayesian Probability Calculator',
+        author: 'Ariel Lepor',
+        type: 'Tool',
+        url: 'https://bayesian-calculator.greenleafimaging.com/',
     },
 ];

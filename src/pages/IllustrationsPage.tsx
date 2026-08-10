@@ -35,6 +35,12 @@ export function IllustrationsPage()
             path: '/illustrations/indo-european-languages.png',
             alt: 'A language tree of Indo-European languages, illustrating the evolution of language.',
         },
+        {
+            id: 'the-scale-of-belief',
+            name: 'The Scale of Belief',
+            path: '/illustrations/the-scale-of-belief.png',
+            alt: 'A visual representation of the scale of belief.',
+        },
     ];
 
     const sortedIllustrations = [...illustrations].sort((a, b) => a.name.localeCompare(b.name));

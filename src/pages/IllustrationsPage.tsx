@@ -41,6 +41,12 @@ export function IllustrationsPage()
             path: '/illustrations/the-scale-of-belief.png',
             alt: 'A visual representation of the scale of belief.',
         },
+        {
+            id: 'historical-storm-paths',
+            name: 'Historical Storm Paths',
+            path: '/illustrations/historical-storm-paths.png',
+            alt: 'A visual representation of historical storm paths.',
+        },
     ];
 
     const sortedIllustrations = [...illustrations].sort((a, b) => a.name.localeCompare(b.name));

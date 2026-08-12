@@ -108,4 +108,10 @@ export const sourceLibrary: SourceItem[] = [
         type: 'Tool',
         url: 'https://bayesian-calculator.greenleafimaging.com/',
     },
+    {
+        title: 'Bible Contradictions',
+        author: 'LyingForJesus.org, Daniel G. Taylor',
+        type: 'Tool',
+        url: 'https://www.lyingforjesus.org/Bible-Contradictions/',
+    },
 ];
